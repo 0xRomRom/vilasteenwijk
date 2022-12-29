@@ -1,5 +1,4 @@
 //Landing page image cycle
-
 const imageLinks = [
   "./img/cover/img1lux.jpg",
   "./img/cover/img2lux.jpg",
@@ -54,3 +53,32 @@ const cycleImages = () => {
   }, 42000);
 };
 cycleImages();
+
+
+// Content fade in
+
+window.addEventListener("scroll", () => {
+
+  //HeroText
+  const heroText = document.querySelector('.stijl-hero');
+
+
+  const content = document.querySelector(".content");
+  let contentTop = content.getBoundingClientRect().top;
+  console.log(contentTop);
+  let contentBottom = content.getBoundingClientRect().bottom;
+  let screenPosition = window.innerHeight;
+  // console.log(screenPosition);
+  if (contentTop < 800) {
+    content.classList.add("active");
+    heroText.classList.add("active");
+  }
+  if (contentTop > 690) {
+    content.classList.remove("active");
+    heroText.classList.remove("active");
+  }
+
+  // if (contentBottom < 133) {
+  //   content.classList.remove("active");
+  // }
+});
