@@ -70,6 +70,7 @@ body {
 
 .navlist li:hover {
   transform: scale(1.12);
+  text-shadow: 0px 0px 2px gray;
 }
 
 .header-div {
@@ -135,6 +136,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 
 .reserveren-cta {
@@ -270,55 +272,16 @@ body {
 
 .span1 {
   position: relative;
-  /* animation: scroll1 2.15s ease-in-out infinite; */
   transition: all 1.5s ease-in-out;
   
 }
 
 .span2 {
   position: relative;
-  /* animation: scroll2 2.2s ease-in-out infinite; */
   transition: all 1.5s ease-in-out;
 }
 
 .span3 {
   position: relative;
-  /* animation: scroll3 2.3s ease-in-out infinite; */
   transition: all 1.5s ease-in-out;
-}
-
-@keyframes scroll1 {
-  0% {
-    color: rgb(85, 82, 82);
-  }
-  50%{
-    color: white;
-  }
-  100% {
-   color: rgb(85, 82, 82);
-  }
-}
-
-@keyframes scroll2 {
-  0% {
-    color: rgb(85, 82, 82);
-  }
-  50%{
-    color: white;
-  }
-  100% {
-   color: rgb(85, 82, 82);
-  }
-}
-
-@keyframes scroll3 {
-  0% {
-    color: rgb(85, 82, 82);
-  }
-  50%{
-    color: white;
-  }
-  100% {
-   color: rgb(85, 82, 82);
-  }
 }

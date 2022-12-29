@@ -8,10 +8,13 @@ const imageLinks = [
 ];
 
 const landingImg = document.querySelector(".cycle-image");
-
+const ctaDown = document.querySelector(".down-cta-box");
 
 window.onload = () => {
   cycleImages();
+  setTimeout(() =>{
+  ctaDown.style.display = 'flex';
+  }, 1000);
 };
 
 const transitionImage = (imageSrc) => {
@@ -105,7 +108,5 @@ window.addEventListener("scroll", () => {
     heroText.classList.remove("active");
   }
 
-  // if (contentBottom < 133) {
-  //   content.classList.remove("active");
-  // }
+  
 });
