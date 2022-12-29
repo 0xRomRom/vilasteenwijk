@@ -9,6 +9,7 @@ const imageLinks = [
 ];
 
 const villaOverlay = document.querySelector(".villa-overlay");
+const landingImg = document.querySelector(".cycle-image");
 
 window.onload = () => {
   cycleImages();
@@ -16,8 +17,6 @@ window.onload = () => {
     villaOverlay.classList.add("fadeOut");
   }, 1000);
 };
-
-const landingImg = document.querySelector(".cycle-image");
 
 const transitionImage = (imageSrc) => {
   landingImg.classList.remove("smooth-transition");
@@ -29,8 +28,6 @@ const transitionImage = (imageSrc) => {
     landingImg.classList.remove("smooth-transition");
   }, 2500);
 };
-
-const landingContainer = document.querySelector(".landing-img-container");
 
 const cycleImages = () => {
   const cycle = () => {
