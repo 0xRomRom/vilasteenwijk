@@ -7,14 +7,11 @@ const imageLinks = [
   "./img/cover/img5lux.jpg",
 ];
 
-const villaOverlay = document.querySelector(".villa-overlay");
 const landingImg = document.querySelector(".cycle-image");
+
 
 window.onload = () => {
   cycleImages();
-  setTimeout(() => {
-    villaOverlay.classList.add("fadeOut");
-  }, 1000);
 };
 
 const transitionImage = (imageSrc) => {
@@ -72,14 +69,14 @@ const cycleArrows = () => {
     setTimeout(() => {
       span1.style.color = 'rgb(85, 82, 82)';
       span2.style.color = 'white';
-    }, 1000);
+    }, 1500);
     setTimeout(() => {
       span2.style.color = 'rgb(85, 82, 82)';
       span3.style.color = 'white';
-    }, 2000);
+    }, 3000);
 
 
-  }, 3000);
+  }, 4500);
 };
 
 cycleArrows();

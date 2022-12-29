@@ -39,7 +39,7 @@ body {
 }
 
 .navlist {
-  position: absolute;
+  position: fixed;
   top: 0rem;
   width: 100%;
   height: 5rem;
@@ -50,6 +50,7 @@ body {
   gap: 2rem;
   background-color: transparent;
   /* display: none !important; */
+  z-index: 5;
 }
 
 .navlist li {
@@ -316,9 +317,4 @@ body {
   100% {
    color: rgb(85, 82, 82);
   }
-}
-
-a {
-  text-decoration: none !important;
-  border: none;
 }
