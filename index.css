@@ -1,3 +1,8 @@
+@font-face {
+  font-family: luxuryFont;
+  src: url(./fonts/CinzelDecorative-Regular.ttf);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -14,11 +19,6 @@ body {
   position: relative;
   width: 100vw;
   height: auto;
-}
-
-@font-face {
-  font-family: luxuryFont;
-  src: url(./fonts/CinzelDecorative-Regular.ttf);
 }
 
 .navlist {
@@ -43,6 +43,7 @@ body {
   font-size: 1.1rem;
   user-select: none;
   color: #ffd700;
+  text-shadow: 0px 0px 5px black;
 }
 
 .navlist li:hover {
@@ -96,4 +97,70 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+.main-cta-div {
+  position: relative;
+  width: 100vw;
+  height: 4rem;
+  top: 40rem;
+  /* background-color: green; */
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reserveren-cta {
+  position: relative;
+  width: 15rem;
+  height: 3rem;
+  outline: 0;
+  border: 1px solid #ffd700;
+  background-color: #ffd700;
+  color: black;
+  font-family: luxuryFont;
+  font-weight: 800;
+  font-size: 1.5rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.45s ease-in-out;
+  text-decoration: none;
+}
+
+.reserveren-cta:hover {
+  background-color: #0d0b03;
+  color: #ffd700;
+  border: black;
+  text-shadow: 0px 0px 5px #ffd700;
+}
+
+.reserveren-cta a:hover {
+  background-color: transparent;
+  color: #ffd700;
+  border: black;
+  text-shadow: 0px 0px 5px #ffd700;
+}
+
+.reserveren-cta:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffd700;
+  transform-origin: bottom right;
+  transition: transform 0.65s ease-out;
+}
+
+.reserveren-cta:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.cta-a {
+  text-decoration: none;
+  color: black;
 }

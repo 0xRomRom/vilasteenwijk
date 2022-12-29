@@ -1,11 +1,11 @@
 //Landing page image cycle
 
 const imageLinks = [
-  "./img/cover/img1.jpg",
-  "./img/cover/img2.jpg",
-  "./img/cover/img3.jpg",
-  "./img/cover/img4.jpg",
-  "./img/cover/img5.png",
+  "./img/cover/img1lux.jpg",
+  "./img/cover/img2lux.jpg",
+  "./img/cover/img3lux.jpg",
+  "./img/cover/img4lux.jpg",
+  "./img/cover/img5lux.jpg",
 ];
 
 window.onload = () => {
