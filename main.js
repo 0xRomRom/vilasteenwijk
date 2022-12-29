@@ -55,20 +55,50 @@ const cycleImages = () => {
 cycleImages();
 
 
+
+// Animate scroll cta
+
+const span1 = document.querySelector('.span1');
+const span2 = document.querySelector('.span2');
+const span3 = document.querySelector('.span3');
+
+
+const cycleArrows = () => {
+  setInterval(() => { 
+    setTimeout(() => {
+      span3.style.color = 'rgb(85, 82, 82)';
+      span1.style.color = 'white';
+    }, 0);
+    setTimeout(() => {
+      span1.style.color = 'rgb(85, 82, 82)';
+      span2.style.color = 'white';
+    }, 1000);
+    setTimeout(() => {
+      span2.style.color = 'rgb(85, 82, 82)';
+      span3.style.color = 'white';
+    }, 2000);
+
+
+  }, 3000);
+};
+
+cycleArrows();
+
+
+
+
+
 // Content fade in
 
 window.addEventListener("scroll", () => {
-
   //HeroText
   const heroText = document.querySelector('.stijl-hero');
-
-
   const content = document.querySelector(".content");
   let contentTop = content.getBoundingClientRect().top;
-  console.log(contentTop);
+  // console.log(contentTop);
+  // console.log(screenPosition);
   let contentBottom = content.getBoundingClientRect().bottom;
   let screenPosition = window.innerHeight;
-  // console.log(screenPosition);
   if (contentTop < 800) {
     content.classList.add("active");
     heroText.classList.add("active");
