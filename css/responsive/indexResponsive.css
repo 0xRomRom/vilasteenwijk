@@ -1,0 +1,15 @@
+@media only screen and (max-width: 1250px) {
+  .cycle-image {
+    min-width: 1250px !important;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .cycle-image {
+    min-width: 1000px !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .cycle-image {
+    min-width: 800px !important;
+  }
+}

@@ -8,8 +8,13 @@ const imageLinks = [
   "./img/cover/img5lux.jpg",
 ];
 
+const villaOverlay = document.querySelector(".villa-overlay");
+
 window.onload = () => {
   cycleImages();
+  setTimeout(() => {
+    villaOverlay.classList.add("fadeOut");
+  }, 1000);
 };
 
 const landingImg = document.querySelector(".cycle-image");
@@ -25,10 +30,12 @@ const transitionImage = (imageSrc) => {
   }, 2500);
 };
 
+const landingContainer = document.querySelector(".landing-img-container");
+
 const cycleImages = () => {
   const cycle = () => {
     setTimeout(() => {
-      landingImg.src = imageLinks[0];
+      transitionImage(imageLinks[0]);
     }, 0);
     setTimeout(() => {
       transitionImage(imageLinks[1]);
@@ -47,5 +54,6 @@ const cycleImages = () => {
 
   setInterval(() => {
     cycle();
-  }, 33000);
+  }, 42000);
 };
+cycleImages();
