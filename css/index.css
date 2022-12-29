@@ -259,10 +259,15 @@ body {
   font-size: 1.5rem;
 }
 
+.fa-chevron-down {
+  text-decoration: none;
+}
+
 .span1 {
   position: relative;
   /* animation: scroll1 2.15s ease-in-out infinite; */
   transition: all 1.5s ease-in-out;
+  
 }
 
 .span2 {
@@ -311,4 +316,9 @@ body {
   100% {
    color: rgb(85, 82, 82);
   }
+}
+
+a {
+  text-decoration: none !important;
+  border: none;
 }
