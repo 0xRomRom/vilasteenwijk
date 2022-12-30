@@ -1,6 +1,15 @@
+@media only screen and (max-width: 1500px) {
+  .fancy-modal {
+    height: 23rem;
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 1250px) {
   .cycle-image {
     min-width: 1250px !important;
+  }
+  .fancy-modal {
+  font-size: 0.8rem;
   }
 }
 @media only screen and (max-width: 1000px) {
