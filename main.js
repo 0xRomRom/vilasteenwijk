@@ -61,24 +61,31 @@ cycleImages();
 const span1 = document.querySelector('.span1');
 const span2 = document.querySelector('.span2');
 const span3 = document.querySelector('.span3');
+const span4 = document.querySelector('.span4');
+const span5 = document.querySelector('.span5');
+const span6 = document.querySelector('.span6');
 
 
 const cycleArrows = () => {
   setInterval(() => { 
     setTimeout(() => {
       span3.style.color = 'rgb(85, 82, 82)';
+      span6.style.color = 'rgb(85, 82, 82)';
       span1.style.color = 'white';
+      span4.style.color = 'white';
     }, 0);
     setTimeout(() => {
       span1.style.color = 'rgb(85, 82, 82)';
+      span4.style.color = 'rgb(85, 82, 82)';
       span2.style.color = 'white';
+      span5.style.color = 'white';
     }, 1500);
     setTimeout(() => {
       span2.style.color = 'rgb(85, 82, 82)';
+      span5.style.color = 'rgb(85, 82, 82)';
       span3.style.color = 'white';
+      span6.style.color = 'white';
     }, 3000);
-
-
   }, 4500);
 };
 
@@ -105,31 +112,18 @@ window.addEventListener("scroll", () => {
 
   //ReviewText
   const reviewHero = document.querySelector('.review-hero');
+  const ctaBox2 = document.querySelector('.down-cta-box2');
   if (contentTop < -1110) {
     reviewHero.classList.add("active");
   }
   if (contentTop > -1200) {
     reviewHero.classList.remove("active");
   } 
+  if (contentTop > -1450) {
+    ctaBox2.classList.add("active");
+  } 
+  if (contentTop < -1600) {
+    ctaBox2.classList.remove("active");
+  } 
 });
 
-// // Review fade in
-// window.addEventListener("scroll", () => {
-//   //HeroText
-//   const heroText = document.querySelector('.review-hero');
-//   const content = document.querySelector(".reviews");
-//   let contentTop = content.getBoundingClientRect().top;
-//   console.log(contentTop);
-//   let contentBottom = content.getBoundingClientRect().bottom;
-//   let screenPosition = window.innerHeight;
-//   // console.log(contentBottom)
-//   if (contentTop < 760) {
-//     content.classList.add("active");
-//     heroText.classList.add("active");
-//   }
-//   if (contentTop > 800) {
-//     content.classList.add("active");
-//     heroText.classList.add("active");
-//   }
-  
-// });

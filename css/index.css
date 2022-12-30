@@ -34,7 +34,8 @@ a {
 }
 
 body {
-  background-color: rgb(6, 62, 6);
+  /* background-color: rgb(6, 62, 6); */
+  background-color: black;
   overflow-x: hidden;
 }
 
@@ -140,6 +141,21 @@ body {
   justify-content: center;
   align-items: center;
   display: none;
+}
+
+.down-cta-box2 {
+  position: relative;
+  width: 100vw;
+  height: 4rem;
+  top: 11rem;
+  /* background-color: green; */
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+  transform: scale(0.1);
+  opacity: 0 !important;
 }
 
 .reserveren-cta {
@@ -283,6 +299,22 @@ border-bottom: 1px solid #ffd700;
   cursor: pointer;
 }
 
+.down-cta-2 {
+  position: relative;
+  background-color: transparent;
+  border: transparent;
+  outline: 0;
+  /* border: 1px solid white; */
+  height: 6rem;
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0rem;
+  cursor: pointer;
+}
+
 .span-stl {
   color: rgb(85, 82, 82);
   font-size: 1.5rem;
@@ -308,6 +340,21 @@ border-bottom: 1px solid #ffd700;
   transition: all 1.5s ease-in-out;
 }
 
+.span4 {
+  position: relative;
+  transition: all 1.5s ease-in-out;
+}
+
+.span5 {
+  position: relative;
+  transition: all 1.5s ease-in-out;
+}
+
+.span6 {
+  position: relative;
+  transition: all 1.5s ease-in-out;
+}
+
 .content-main {
   position: relative;
   top: 10rem;
@@ -318,7 +365,8 @@ border-bottom: 1px solid #ffd700;
   justify-content: flex-start;
   align-items: center;
   padding-left: 5rem;
-  display: none;
+  /* display: none; */
+  opacity: 0;
 }
 
 .leftbox {
