@@ -3,6 +3,8 @@
   src: url(../fonts/CinzelDecorative-Regular.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -54,6 +56,7 @@ body {
   gap: 2rem;
   background-color: transparent;
   /* display: none !important; */
+  background-color: rgba(0, 0, 0, 0.454);
   z-index: 5;
 }
 
@@ -211,7 +214,8 @@ body {
   position: relative;
   height: 63rem;
   width: 100%;
-  background-color: rgb(6, 57, 6);
+  /* background: linear-gradient(90deg,rgb(16, 15, 15), black, rgb(16, 15, 15)); */
+  background-color: black;
   color: #ffd900;
   letter-spacing: 2px;
   overflow: hidden;
@@ -223,12 +227,14 @@ body {
   top: 7rem;
   width: 100vw;
   height: 5rem;
-  /* background-color: red; */
+  /* background-color: blue; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: 5rem;
 }
+
+
 
 .stijl-hero {
   position: relative;
@@ -284,4 +290,58 @@ body {
 .span3 {
   position: relative;
   transition: all 1.5s ease-in-out;
+}
+
+.content-main {
+  position: relative;
+  top: 10rem;
+  width: 100vw;
+  height: 42rem;
+  border: 1px solid red;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5rem;
+  display: none;
+}
+
+.leftbox {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  border: 1px solid blue;
+}
+
+.textblock {
+  position: relative;
+  width: 50%;
+  left: 25%;
+  height: 80%;
+  top: 10%;
+  /* background-color: green; */
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.imageblock {
+  position: relative;
+  width: 50%;
+  left: 25%;
+  height: 80%;
+  top: 10%;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightbox {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  border: 1px solid yellow;
 }
