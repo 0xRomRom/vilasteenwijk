@@ -156,6 +156,7 @@ body {
   /* display: none; */
   transform: scale(0.1);
   opacity: 0 !important;
+  transition: all 0.2s ease-in-out;
 }
 
 .reserveren-cta {

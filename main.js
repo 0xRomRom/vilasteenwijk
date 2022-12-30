@@ -122,7 +122,7 @@ window.addEventListener("scroll", () => {
   if (contentTop > -1450) {
     ctaBox2.classList.add("active");
   } 
-  if (contentTop < -1600) {
+  if (contentTop < -1350) {
     ctaBox2.classList.remove("active");
   } 
 });
