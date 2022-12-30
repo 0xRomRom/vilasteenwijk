@@ -1,5 +1,5 @@
-//Landing page image cycle
 const imageLinks = [
+  //Landing page image cycle
   "./img/cover/img1lux.jpg",
   "./img/cover/img2lux.jpg",
   "./img/cover/img3lux.jpg",
@@ -89,24 +89,47 @@ cycleArrows();
 
 
 // Content fade in
-
 window.addEventListener("scroll", () => {
-  //HeroText
-  const heroText = document.querySelector('.stijl-hero');
-  const content = document.querySelector(".content");
+  const content = document.querySelector(".app");
   let contentTop = content.getBoundingClientRect().top;
-  // console.log(contentTop);
-  // console.log(screenPosition);
-  let contentBottom = content.getBoundingClientRect().bottom;
-  let screenPosition = window.innerHeight;
-  if (contentTop < 800) {
-    content.classList.add("active");
-    heroText.classList.add("active");
-  }
-  if (contentTop > 690) {
-    content.classList.remove("active");
-    heroText.classList.remove("active");
-  }
+  console.log(contentTop);
 
-  
+  //HeroText
+  const stijlHero = document.querySelector('.stijl-hero');
+  if (contentTop < -140) {
+    stijlHero.classList.add("active");
+  }
+  if (contentTop > -140) {
+    stijlHero.classList.remove("active");
+  } 
+
+  //ReviewText
+  const reviewHero = document.querySelector('.review-hero');
+  if (contentTop < -1110) {
+    reviewHero.classList.add("active");
+  }
+  if (contentTop > -1200) {
+    reviewHero.classList.remove("active");
+  } 
 });
+
+// // Review fade in
+// window.addEventListener("scroll", () => {
+//   //HeroText
+//   const heroText = document.querySelector('.review-hero');
+//   const content = document.querySelector(".reviews");
+//   let contentTop = content.getBoundingClientRect().top;
+//   console.log(contentTop);
+//   let contentBottom = content.getBoundingClientRect().bottom;
+//   let screenPosition = window.innerHeight;
+//   // console.log(contentBottom)
+//   if (contentTop < 760) {
+//     content.classList.add("active");
+//     heroText.classList.add("active");
+//   }
+//   if (contentTop > 800) {
+//     content.classList.add("active");
+//     heroText.classList.add("active");
+//   }
+  
+// });

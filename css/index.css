@@ -196,6 +196,12 @@ body {
   color: black;
 }
 
+.reserveren-li {
+
+border-bottom: 1px solid #ffd700;
+}
+
+
 .villa-overlay {
   position: absolute;
   width: 100vw;
@@ -214,7 +220,7 @@ body {
   position: relative;
   height: 63rem;
   width: 100%;
-  /* background: linear-gradient(90deg,rgb(16, 15, 15), black, rgb(16, 15, 15)); */
+  /* background: linear-gradient(180deg,black, black, black, white); */
   background-color: black;
   color: #ffd900;
   letter-spacing: 2px;
@@ -237,6 +243,16 @@ body {
 
 
 .stijl-hero {
+  position: relative;
+  font-family: luxuryFont;
+  color: #ffd900;
+  font-size: 2.5rem;
+  transform: scale(0.1);
+  opacity: 0 !important;
+  transition: all 0.8s ease-in-out;
+}
+
+.review-hero {
   position: relative;
   font-family: luxuryFont;
   color: #ffd900;
@@ -345,3 +361,29 @@ body {
   width: 50%;
   border: 1px solid yellow;
 }
+
+.reviews {
+  position: relative;
+  height: 63rem;
+  width: 100%;
+  /* border-top: 1px solid white; */
+  background-color: black;
+  color: #ffd900;
+  letter-spacing: 2px;
+  overflow: hidden;
+  font-family: luxuryFont;
+}
+
+
+.hero-div2 {
+  position: relative;
+  top: 7rem;
+  width: 100%;
+  height: 5rem;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5rem;
+}
+
