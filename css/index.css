@@ -266,8 +266,9 @@ border-bottom: 1px solid #ffd700;
   position: relative;
   height: 63rem;
   width: 100%;
-  /* background: linear-gradient(180deg,black, black, black, white); */
-  background-color: black;
+  background: linear-gradient(180deg, rgb(2, 32, 2), rgb(2, 32, 2), rgb(2, 32, 2), rgb(2, 32, 2), black);
+  /* background-color: black; */
+  /* background-color: rgb(2, 32, 2); */
   color: #ffd900;
   letter-spacing: 2px;
   overflow: hidden;
@@ -524,6 +525,9 @@ border-bottom: 1px solid #ffd700;
   transition: all 0.2s ease-in-out;
   font-size: 0.9rem;
   /* background-color: red !important; */
+  transform: scale(0.1);
+  opacity: 0 !important;
+  transition: all 0.8s ease-in-out;
 }
 
 .bekijk-omgeving:hover {
@@ -723,6 +727,7 @@ user-select: none;
   letter-spacing: 2px;
   overflow: hidden;
   font-family: luxuryFont;
+  background: linear-gradient(180deg,black, rgb(2, 32, 2), rgb(2, 32, 2), rgb(2, 32, 2), rgb(2, 32, 2));
 }
 
 

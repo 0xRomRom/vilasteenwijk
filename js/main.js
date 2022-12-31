@@ -176,6 +176,7 @@ window.addEventListener("scroll", () => {
   const downCta3 = document.querySelector('.down-cta-box3');
   const locTextBox = document.querySelector('.loc-text-box');
   const maps = document.querySelector('.maps');
+  const bekijkOmgeving = document.querySelector('.bekijk-omgeving');
   if (contentTop < -2150) {
     locatieHero.classList.add("active");
   } 
@@ -196,9 +197,11 @@ window.addEventListener("scroll", () => {
   } 
   if (contentTop < -2500) {
     maps.classList.add("active");
+    bekijkOmgeving.classList.add("active");
   } 
   if (contentTop > -2700) {
     maps.classList.remove("active");
+    bekijkOmgeving.classList.remove("active");
   } 
 
 });
