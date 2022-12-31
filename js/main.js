@@ -170,6 +170,37 @@ window.addEventListener("scroll", () => {
     modal3.classList.remove("active");
   } 
 
+
+  //Kop van Overijssel
+  const locatieHero = document.querySelector('.locatie-hero');
+  const downCta3 = document.querySelector('.down-cta-box3');
+  const locTextBox = document.querySelector('.loc-text-box');
+  const maps = document.querySelector('.maps');
+  if (contentTop < -2150) {
+    locatieHero.classList.add("active");
+  } 
+  if (contentTop > -2300) {
+    locatieHero.classList.remove("active");
+  } 
+  if (contentTop < -2500) {
+    downCta3.classList.remove("active");
+  } 
+  if (contentTop > -2350) {
+    downCta3.classList.add("active");
+  } 
+  if (contentTop < -2400) {
+    locTextBox.classList.add("active");
+  } 
+  if (contentTop > -2600) {
+    locTextBox.classList.remove("active");
+  } 
+  if (contentTop < -2500) {
+    maps.classList.add("active");
+  } 
+  if (contentTop > -2700) {
+    maps.classList.remove("active");
+  } 
+
 });
 
 
