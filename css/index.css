@@ -263,7 +263,6 @@ border-bottom: 1px solid #ffd700;
   top: 7rem;
   width: 100vw;
   height: 5rem;
-  /* background-color: blue; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -323,6 +322,41 @@ border-bottom: 1px solid #ffd700;
   justify-content: center;
   gap: 0rem;
   cursor: pointer;
+  top: -1rem;
+}
+
+.down-cta-3 {
+  position: relative;
+  background-color: transparent;
+  border: transparent;
+  outline: 0;
+  /* border: 1px solid white; */
+  height: 6rem;
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0rem;
+  cursor: pointer;
+  top: -1rem;
+}
+
+.down-cta-box3 {
+  position: absolute;
+  background-color: transparent;
+  border: transparent;
+  outline: 0;
+  height: 6rem;
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0rem;
+  cursor: pointer;
+  top: 40rem;
+  /* background-color: green; */
 }
 
 .span-stl {
@@ -365,9 +399,24 @@ border-bottom: 1px solid #ffd700;
   transition: all 1.5s ease-in-out;
 }
 
+.span7 {
+  position: relative;
+  transition: all 1.5s ease-in-out;
+}
+
+.span8 {
+  position: relative;
+  transition: all 1.5s ease-in-out;
+}
+
+.span9 {
+  position: relative;
+  transition: all 1.5s ease-in-out;
+}
+
 .content-main {
   position: relative;
-  top: 10rem;
+  top: 9rem;
   width: 100vw;
   height: 42rem;
   /* border: 1px solid red; */
@@ -604,7 +653,23 @@ user-select: none;
   margin-top: 1rem;
   font-size: 0.9rem;
   /* background-color: green; */
+}
 
+
+.locatie {
+  position: relative;
+  height: 63rem;
+  width: 100%;
+  /* border-top: 1px solid white; */
+  background-color: black;
+  color: #ffd900;
+  letter-spacing: 2px;
+  overflow: hidden;
+  font-family: luxuryFont;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 

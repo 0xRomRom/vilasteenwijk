@@ -64,6 +64,9 @@ const span3 = document.querySelector('.span3');
 const span4 = document.querySelector('.span4');
 const span5 = document.querySelector('.span5');
 const span6 = document.querySelector('.span6');
+const span7 = document.querySelector('.span7');
+const span8 = document.querySelector('.span8');
+const span9 = document.querySelector('.span9');
 
 
 const cycleArrows = () => {
@@ -71,20 +74,26 @@ const cycleArrows = () => {
     setTimeout(() => {
       span3.style.color = 'rgb(85, 82, 82)';
       span6.style.color = 'rgb(85, 82, 82)';
+      span9.style.color = 'rgb(85, 82, 82)';
       span1.style.color = 'white';
       span4.style.color = 'white';
+      span7.style.color = 'white';
     }, 0);
     setTimeout(() => {
       span1.style.color = 'rgb(85, 82, 82)';
       span4.style.color = 'rgb(85, 82, 82)';
+      span7.style.color = 'rgb(85, 82, 82)';
       span2.style.color = 'white';
       span5.style.color = 'white';
+      span8.style.color = 'white';
     }, 1500);
     setTimeout(() => {
       span2.style.color = 'rgb(85, 82, 82)';
       span5.style.color = 'rgb(85, 82, 82)';
+      span8.style.color = 'rgb(85, 82, 82)';
       span3.style.color = 'white';
       span6.style.color = 'white';
+      span9.style.color = 'white';
     }, 3000);
   }, 4500);
 };
