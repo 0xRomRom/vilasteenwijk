@@ -512,6 +512,24 @@ border-bottom: 1px solid #ffd700;
   color: white;
 }
 
+.bekijk-omgeving {
+  color: rgb(199, 188, 188);
+  /* position: absolute; */
+  top: 30.5rem;
+  width: 30rem;
+  margin-left: 4.7rem;
+  padding-top: 0.2rem;
+  text-align: right;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.9rem;
+  /* background-color: red !important; */
+}
+
+.bekijk-omgeving:hover {
+  color: white;
+}
+
 
 .rightbox {
   position: relative;
@@ -737,6 +755,7 @@ user-select: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .maps {
   position: relative;
