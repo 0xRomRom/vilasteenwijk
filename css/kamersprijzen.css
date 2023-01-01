@@ -12,6 +12,10 @@
     scroll-behavior: smooth;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .app {
     position: relative;
     min-height: 63rem;
@@ -100,3 +104,185 @@ a {
   opacity: 1 !important;
   transform: scaleY(1);
 }
+
+.kamers-box {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  height: 40rem;
+  top: 15rem;
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.home-img-box {
+  /* position: relative; */
+  width: 12rem;
+  max-height: 20rem;
+  /* border: 1px solid red; */
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 15px 15px 0px 0px;
+  outline: 0;
+  border: transparent;
+  background-color: transparent;
+}
+
+.home-img-box:hover {
+  box-shadow: 0px 0px 5px yellow;
+}
+
+.door-img {
+  background-color: rgb(2, 32, 2);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* border: 1px solid red; */
+  left: 0rem;
+  background-color: transparent;
+}
+
+.fadeIn {
+  animation: fadeIn 1s ease-in-out forwards;
+  cursor: initial;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.transitionOut {
+  animation: transOut 0.5s ease-in-out forwards;
+}
+
+@keyframes transOut {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation: fadeOut 1.3s ease-in-out forwards;
+  cursor: initial;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.kamer-modal {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 10;
+  opacity: 0;
+  transform: scale(0.1);
+}
+.close-modal {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+
+.fa-xmark {
+  font-size: 3rem;
+  position: absolute;
+  transition: all 0.7s ease-in-out;
+}
+
+.close-kamer-btn {
+background-color: transparent;
+color: white;
+outline: 0;
+width: 3rem;
+height: 3rem;
+border: none;
+cursor: pointer;
+position: absolute;
+/* background-color: green; */
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all 0.3s ease-in-out;
+}
+
+.close-kamer-btn:hover {
+  border-radius: 50%;
+box-shadow: 0px 0px 5px white;
+}
+
+.room-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  /* border: 1px solid red; */
+  height: 20rem;
+
+}
+
+.room-name1 {
+  display: inline-block;
+  color: white;
+  position: absolute;
+  top: 31rem;
+  font-family: luxuryFont;
+  color: #ffd700;
+  padding-left: 0.2rem;
+}
+
+.room-name2 {
+  display: inline-block;
+  color: white;
+  position: absolute;
+  top: 31rem;
+  font-family: luxuryFont;
+  color: #ffd700;
+  padding-left: 1.5rem;
+}
+
+.room-name3 {
+  display: inline-block;
+  color: white;
+  position: absolute;
+  top: 31rem;
+  font-family: luxuryFont;
+  color: #ffd700;
+  padding-left: 3rem;
+}
+
+.room-name4 {
+  display: inline-block;
+  color: white;
+  position: absolute;
+  top: 31rem;
+  font-family: luxuryFont;
+  color: #ffd700;
+  padding-left: 1.5rem;
+}
+
