@@ -259,7 +259,6 @@ body {
 }
 
 .reserveren-li {
-
 border-bottom: 1px solid #ffd700;
 }
 
@@ -839,6 +838,7 @@ user-select: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3.5rem;
 }
 
 .links-box {
@@ -862,6 +862,7 @@ user-select: none;
   top: 18.8rem;
   text-align: center;
   /* background-color: green; */
+  user-select: none;
 }
 
 .icon {
@@ -888,6 +889,7 @@ user-select: none;
   text-align: center;
   color: #ffd900;
   font-family: luxuryFont;
+  user-select: none;
 }
 
 .small-hr {
