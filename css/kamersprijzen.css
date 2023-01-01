@@ -78,3 +78,17 @@ a {
   .reserveren-li {
     border-bottom: 1px solid #ffd700;
     }
+
+.page-hero {
+  position: absolute;
+  width: 100vw;
+  height: 4rem;
+  top: 10rem;
+  padding-left: 5rem;
+  user-select: none;
+}
+
+.hero-title {
+  font-family: luxuryFont;
+  color: #ffd700;
+}
