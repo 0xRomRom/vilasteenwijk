@@ -828,17 +828,40 @@ user-select: none;
   /* border: 1px solid red; */
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .logo-box {
   position: relative;
   width: 8rem;
   height: 100%;
-  /* background-color: green; */
+  /* border: 1px solid blue; */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.links-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.copyright {
+  position: absolute;
+  color: rgb(130, 124, 124);
+  font-family: "Open Sans";
+  width: 100%;
+  height: 1rem;
+  top: 18.8rem;
+  text-align: center;
+  /* background-color: green; */
 }
 
 .icon {
@@ -847,6 +870,58 @@ user-select: none;
   width: 8rem;
 }
 
+
+.reserveren-box {
+  position: absolute;
+  top: 5rem;
+  width: 15rem;
+  /* left: 25%; */
+  height: 8rem;
+  /* border: 1px solid white; */
+}
+
+.footer-hero {
+  position: relative;
+  width: 100%;
+  height: 2.5rem;
+  /* border: 1px solid blue; */
+  text-align: center;
+  color: #ffd900;
+  font-family: luxuryFont;
+}
+
+.small-hr {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  border: 1px solid rgb(70, 68, 68);
+}
+
+.icons-box {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  top: 0.5rem;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.icon-box {
+  position: relative;
+  width: 3rem;
+  height: 100%;
+  /* border: 1px solid yellow; */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-box:hover {
+transform: scale(1.1);
+}
 
 .active {
   opacity: 1 !important;
