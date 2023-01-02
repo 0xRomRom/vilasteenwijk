@@ -221,7 +221,7 @@ a {
 }
 
 .kamer-modal {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100vw;
   height: 100vh;
@@ -229,6 +229,7 @@ a {
   z-index: 10;
   opacity: 0;
   transform: scale(0.1);
+  padding-bottom: 92rem;
 }
 .close-modal {
   position: relative;
@@ -490,7 +491,6 @@ transform: scale(1.1);
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .kamer-inner-box {
@@ -501,6 +501,7 @@ transform: scale(1.1);
   background: url("../img/Script.png");
   opacity: 0;
   transition: all 0.5s ease-in-out;
+  /* border: 1px solid red; */
 }
 
 .modal-hero {
@@ -615,6 +616,8 @@ padding-bottom: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
 
 .reserveren-cta  {

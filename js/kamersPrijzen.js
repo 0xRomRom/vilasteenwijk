@@ -41,6 +41,7 @@ const box2 = document.querySelector('.box2');
 const box3 = document.querySelector('.box3');
 const box4 = document.querySelector('.box4');
 const kamerOuter1 = document.querySelector('.kamer-inner-box');
+const ctaButton = document.querySelector('.cta-box');
 
 imageBox.forEach((box) => {
     box.addEventListener('click', (e) => {
@@ -59,6 +60,7 @@ imageBox.forEach((box) => {
         }, 2000)
         setTimeout(() => {
           kamerOuter1.classList.add('opacityIn');
+          ctaButton.classList.add('opacityIn');
         }, 2300)
         }
 
@@ -116,6 +118,7 @@ const closeKamerModal = document.querySelector('.close-kamer-btn');
 
 closeKamerModal.addEventListener('click', () => {
 kamerOuter1.classList.remove('opacityIn');
+ctaButton.classList.remove('opacityIn');
 kamerModal.classList.add('transitionOut');
 kamerModal.classList.remove('fadeIn');
 setTimeout(() => {
