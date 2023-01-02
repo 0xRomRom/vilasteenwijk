@@ -523,6 +523,28 @@ border-bottom: 1px solid #ffd700;
   transition: all 0.2s ease-in-out;
   font-size: 0.9rem;
 }
+.a-href2{
+  color: rgb(199, 188, 188);
+  /* position: absolute; */
+  top: 30.5rem;
+  right: 5rem;
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.9rem;
+}
+.bekijk-kamers {
+  color: rgb(199, 188, 188);
+  /* position: absolute; */
+  top: 30.5rem;
+  right: 5rem;
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.9rem;
+}
 
 .bekijk-kamers:hover {
   color: white;
@@ -543,6 +565,20 @@ border-bottom: 1px solid #ffd700;
   transform: scale(0.1);
   opacity: 0 !important;
   transition: all 0.8s ease-in-out;
+}
+
+.a-href3 {
+  color: rgb(199, 188, 188);
+  /* position: absolute; */
+  top: 30.5rem;
+  width: 30rem;
+  margin-left: 4.7rem;
+  padding-top: 0.2rem;
+  text-align: right;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.9rem;
+  /* background-color: red !important; */
 }
 
 .bekijk-omgeving:hover {
