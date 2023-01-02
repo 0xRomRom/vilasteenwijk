@@ -2,6 +2,7 @@ const block1 = document.querySelector('.block1');
 const block2 = document.querySelector('.block2');
 
 window.onload = () => {
+    cycleImages();
     const pageHero = document.querySelector('.page-hero');
     pageHero.classList.add('active');
     setTimeout(() => {
@@ -39,10 +40,10 @@ const box1 = document.querySelector('.box1');
 const box2 = document.querySelector('.box2');
 const box3 = document.querySelector('.box3');
 const box4 = document.querySelector('.box4');
+const kamerOuter1 = document.querySelector('.kamer-inner-box');
 
 imageBox.forEach((box) => {
     box.addEventListener('click', (e) => {
-
         if(e.target.classList[1] === 'img1') {
         doorImage1.src = './img/animated-door.gif';
         box.disabled = true;
@@ -56,6 +57,9 @@ imageBox.forEach((box) => {
             doorImage1.src = './img/closed-door.jpg';
             box.disabled = false;
         }, 2000)
+        setTimeout(() => {
+          kamerOuter1.classList.add('opacityIn');
+        }, 2300)
         }
 
         if(e.target.classList[1] === 'img2') {
@@ -111,6 +115,7 @@ const kamerModal = document.querySelector('.kamer-modal');
 const closeKamerModal = document.querySelector('.close-kamer-btn');
 
 closeKamerModal.addEventListener('click', () => {
+kamerOuter1.classList.remove('opacityIn');
 kamerModal.classList.add('transitionOut');
 kamerModal.classList.remove('fadeIn');
 setTimeout(() => {
@@ -120,5 +125,54 @@ box1.classList.remove('fadeOut');
 box2.classList.remove('fadeOut');
 box3.classList.remove('fadeOut');
 box4.classList.remove('fadeOut');
-
 });
+
+
+//Rotate images room 1
+
+const room1Image = document.querySelector(".kamer1-img");
+
+const imageLinks1 = [
+    "./img/Room1/Pic1.jpg",
+    "./img/Room1/Pic2.jpeg",
+    "./img/Room1/Pic3.jpeg",
+    "./img/Room1/Pic4.jpeg",
+    "./img/Room1/Pic2.jpeg",
+  ];
+
+const transitionImage = (imageSrc) => {
+    room1Image.classList.remove("smooth-transition");
+    room1Image.classList.add("smooth-transition");
+    setTimeout(() => {
+      room1Image.src = imageSrc;
+    }, 1000);
+    setTimeout(() => {
+      room1Image.classList.remove("smooth-transition");
+    }, 2500);
+  };
+
+const cycleImages = () => {
+    const cycle = () => {
+      setTimeout(() => {
+        transitionImage(imageLinks1[0]);
+      }, 0);
+      setTimeout(() => {
+        transitionImage(imageLinks1[1]);
+      }, 7000);
+      setTimeout(() => {
+        transitionImage(imageLinks1[2]);
+      }, 15000);
+      setTimeout(() => {
+        transitionImage(imageLinks1[3]);
+      }, 23000);
+      setTimeout(() => {
+        transitionImage(imageLinks1[4]);
+      }, 31000);
+    };
+    cycle();
+  
+    setInterval(() => {
+      cycle();
+    }, 41000);
+  };
+  cycleImages();

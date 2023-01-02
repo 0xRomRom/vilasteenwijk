@@ -12,6 +12,22 @@
     scroll-behavior: smooth;
 }
 
+.smooth-transition {
+  animation: imageTransition 1.5s ease-in-out forwards;
+}
+
+@keyframes imageTransition {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .hidden {
   display: none !important;
 }
@@ -144,6 +160,22 @@ a {
   border-radius: 15px 15px 0px 0px !important;
 }
 
+
+
+.opacityIn {
+  animation: opacityIn 0.5s ease-in-out forwards !important;
+}
+
+@keyframes opacityIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 .fadeIn {
   animation: fadeIn 1s ease-in-out forwards;
   cursor: initial;
@@ -205,6 +237,7 @@ a {
   justify-content: flex-end;
   padding-right: 1rem;
   padding-top: 1rem;
+  z-index: 30;
 }
 
 .fa-xmark {
@@ -447,6 +480,159 @@ transform: scale(1.1);
   opacity: 1 !important;
   transform: scaleY(1);
 }
-
-
 /* Footer code end */
+
+.kamer-outer-box {
+  position: relative;
+  width: 100vw;
+  height: 57.5rem;
+  top: -3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.kamer-inner-box {
+  position: relative;
+  width: 40rem;
+  height: 45rem;
+  border-radius: 20px 5px 20px 5px;
+  background: url("../img/Script.png");
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.modal-hero {
+  width: 100%;
+  text-align: center;
+  font-family: luxuryFont;
+  padding-top: 1rem;
+}
+
+.kamer-img-box {
+  position: relative;
+  width: 95%;
+  left: 2.5%;
+  height: 15rem;
+  top: 1rem;
+  /* border: 1px solid blue; */
+  border-radius: 0.4rem;
+}
+
+.kamer1-img {
+  position: relative;
+  width: 100%;
+  min-height: 15rem;
+  border-radius: 0.4rem;
+  border-radius: 20px 5px 20px 5px;
+}
+
+.prijs {
+  position: absolute;
+  color: black;
+  top: 27rem;
+  left: 1rem;
+  font-family: "Open Sans";
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.voorzieningen {
+  position: relative;
+  height: 17rem;
+  width: 13.8rem;
+  left: 25rem;
+  top: 8.5rem;
+  /* border: 1px solid red; */
+  border-left: 1px solid gray;
+}
+
+.voorzien-hero {
+  /* background-color: green; */
+  text-align: center;
+font-family: "Open Sans";
+position: relative;
+width: 100%;
+text-align: center;
+/* left: 25%; */
+text-decoration: underline;
+}
+
+.voorzien-list {
+  position: absolute;
+  /* background-color: red; */
+  top: 2.5rem;
+  width: 11.3rem;
+  height: 12rem;
+  list-style-type: none;
+  left: 2.5rem;
+  text-align: start;
+}
+
+.voorzien-list li{
+font-size: 1.1rem;
+padding-bottom: 0.5rem;
+}
+
+.icon-list {
+  position: absolute;
+  width: 2rem;
+  top: 2.5rem;
+  height: 12rem;
+  /* background-color: green; */
+  list-style-type: none;
+  text-align: center;
+}
+
+.icon-list li{
+  font-size: 1.1rem;
+  padding-bottom: 0.5rem;
+}
+
+.kamer-desc-box {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  top: 30rem;
+  left: 1rem;
+  /* border: 1px solid red; */
+}
+
+.kamer-desc {
+  color: black;
+  font-size: 1.1rem;
+  font-family: "Open Sans";
+}
+
+.cta-box {
+  position: absolute;
+  width: 100vw;
+  height: 3rem;
+  /* background-color: green; */
+  top: 52rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reserveren-cta  {
+  width: 10rem;
+  height: 3rem;
+  outline: 0;
+  font-family: luxuryFont;
+  background-color: transparent;
+  border: 1px solid #ffd700;
+  color: #ffd700;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.reserveren-cta:hover {
+  background-color:#ffd700;
+  color: black;
+}
+
