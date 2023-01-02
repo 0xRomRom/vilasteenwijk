@@ -1,15 +1,15 @@
 @font-face {
-    font-family: luxuryFont;
-    src: url(../fonts/CinzelDecorative-Regular.ttf);
+  font-family: luxuryFont;
+  src: url(../fonts/CinzelDecorative-Regular.ttf);
 }
-  
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-  
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .smooth-transition {
@@ -33,72 +33,81 @@
 }
 
 .app {
-    position: relative;
-    min-height: 63rem;
-    width: 100vw;
-    /* background-color: rgb(2, 32, 2); */
-    background: linear-gradient(180deg, rgb(2, 32, 2),rgb(2, 32, 2),rgb(2, 32, 2),rgb(2, 32, 2),rgb(2, 32, 2),rgb(2, 32, 2), black);
+  position: relative;
+  min-height: 63rem;
+  width: 100vw;
+  /* background-color: rgb(2, 32, 2); */
+  background: linear-gradient(
+    180deg,
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    black
+  );
 }
- 
+
 a {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 .navlist {
-    position: fixed;
-    top: 0rem;
-    width: 100%;
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    padding-right: 2rem;
-    align-items: center;
-    gap: 2rem;
-    background-color: transparent;
-    /* display: none !important; */
-    background-color: rgba(0, 0, 0, 0.454);
-    z-index: 5;
-    text-decoration: none;
-  }
-  
-  .navlist li {
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    list-style-type: none;
-    font-family: luxuryFont;
-    font-size: 1.1rem;
-    user-select: none;
-    color: #ffd900;
-    text-shadow: 0px 0px 5px black;
-  }
-  
-  .navlist li:hover {
-    transform: scale(1.12);
-    text-shadow: 0px 0px 2px gray;
-  }
+  position: fixed;
+  top: 0rem;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  padding-right: 2rem;
+  align-items: center;
+  gap: 2rem;
+  background-color: transparent;
+  /* display: none !important; */
+  background-color: rgba(0, 0, 0, 0.454);
+  z-index: 5;
+  text-decoration: none;
+}
+
+.navlist li {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  list-style-type: none;
+  font-family: luxuryFont;
+  font-size: 1.1rem;
+  user-select: none;
+  color: #ffd900;
+  text-shadow: 0px 0px 5px black;
+}
+
+.navlist li:hover {
+  transform: scale(1.12);
+  text-shadow: 0px 0px 2px gray;
+}
 
 .nav-logo-href {
-    position: fixed;
-    width: 0rem;
-    top: 0.5rem;
-    left: 0rem;
+  position: fixed;
+  width: 0rem;
+  top: 0.5rem;
+  left: 0rem;
 }
 
 .brand-logo {
-    position: absolute;
-    width: 4rem;
-    left: 1rem;
-    cursor: pointer;
-  }
+  position: absolute;
+  width: 4rem;
+  left: 1rem;
+  cursor: pointer;
+}
 
-  .cta-a {
-    text-decoration: none;
-    color: black;
-  }
+.cta-a {
+  text-decoration: none;
+  color: black;
+}
 
-  .reserveren-li {
-    border-bottom: 1px solid #ffd700;
-    }
+.reserveren-li {
+  border-bottom: 1px solid #ffd700;
+}
 
 .page-hero {
   position: absolute;
@@ -160,8 +169,6 @@ a {
   border-radius: 15px 15px 0px 0px !important;
 }
 
-
-
 .opacityIn {
   animation: opacityIn 0.5s ease-in-out forwards !important;
 }
@@ -174,7 +181,6 @@ a {
     opacity: 1;
   }
 }
-
 
 .fadeIn {
   animation: fadeIn 1s ease-in-out forwards;
@@ -248,24 +254,24 @@ a {
 }
 
 .close-kamer-btn {
-background-color: transparent;
-color: white;
-outline: 0;
-width: 3rem;
-height: 3rem;
-border: none;
-cursor: pointer;
-position: absolute;
-/* background-color: green; */
-display: flex;
-justify-content: center;
-align-items: center;
-transition: all 0.3s ease-in-out;
+  background-color: transparent;
+  color: white;
+  outline: 0;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .close-kamer-btn:hover {
   border-radius: 50%;
-box-shadow: 0px 0px 5px white;
+  box-shadow: 0px 0px 5px white;
 }
 
 .room-flex {
@@ -275,7 +281,7 @@ box-shadow: 0px 0px 5px white;
   justify-content: flex-start;
   gap: 2rem;
   border-radius: 15px 15px 0px 0px !important;
-  height: 24rem;  
+  height: 24rem;
   position: relative;
 }
 
@@ -287,7 +293,6 @@ box-shadow: 0px 0px 5px white;
   font-family: luxuryFont;
   color: #ffd700;
   padding-left: 0.2rem;
-
 }
 
 .room-name2 {
@@ -334,9 +339,9 @@ box-shadow: 0px 0px 5px white;
 }
 
 .dropIn {
-animation: dropIn 0.5s ease-in-out forwards;
-visibility: visible;
-transition: all 0.3s ease-in-out;
+  animation: dropIn 0.5s ease-in-out forwards;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
 }
 
 @keyframes dropIn {
@@ -350,7 +355,6 @@ transition: all 0.3s ease-in-out;
   }
 }
 
-
 /* Footer code */
 
 .footer {
@@ -358,7 +362,6 @@ transition: all 0.3s ease-in-out;
   width: 100vw;
   height: 30rem;
   background-color: black;
-
 }
 
 .hr {
@@ -402,7 +405,6 @@ transition: all 0.3s ease-in-out;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .copyright {
@@ -422,7 +424,6 @@ transition: all 0.3s ease-in-out;
   /* background-color: white; */
   width: 8rem;
 }
-
 
 .reserveren-box {
   position: absolute;
@@ -463,7 +464,6 @@ transition: all 0.3s ease-in-out;
   gap: 1rem;
 }
 
-
 .icon-box {
   position: relative;
   width: 3rem;
@@ -474,7 +474,7 @@ transition: all 0.3s ease-in-out;
 }
 
 .icon-box:hover {
-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .active {
@@ -491,9 +491,43 @@ transform: scale(1.1);
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 1px solid red; */
 }
 
-.kamer-inner-box {
+.kamer-inner-box1 {
+  position: relative;
+  width: 40rem;
+  height: 45rem;
+  border-radius: 20px 5px 20px 5px;
+  background: url("../img/Script.png");
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  /* border: 1px solid red; */
+}
+
+.kamer-inner-box2 {
+  position: relative;
+  width: 40rem;
+  height: 45rem;
+  border-radius: 20px 5px 20px 5px;
+  background: url("../img/Script.png");
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  /* border: 1px solid red; */
+}
+
+.kamer-inner-box3 {
+  position: relative;
+  width: 40rem;
+  height: 45rem;
+  border-radius: 20px 5px 20px 5px;
+  background: url("../img/Script.png");
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  /* border: 1px solid red; */
+}
+
+.kamer-inner-box4 {
   position: relative;
   width: 40rem;
   height: 45rem;
@@ -529,6 +563,30 @@ transform: scale(1.1);
   border-radius: 20px 5px 20px 5px;
 }
 
+.kamer2-img {
+  position: relative;
+  width: 100%;
+  min-height: 15rem;
+  border-radius: 0.4rem;
+  border-radius: 20px 5px 20px 5px;
+}
+
+.kamer3-img {
+  position: relative;
+  width: 100%;
+  min-height: 15rem;
+  border-radius: 0.4rem;
+  border-radius: 20px 5px 20px 5px;
+}
+
+.kamer4-img {
+  position: relative;
+  width: 100%;
+  min-height: 15rem;
+  border-radius: 0.4rem;
+  border-radius: 20px 5px 20px 5px;
+}
+
 .prijs {
   position: absolute;
   color: black;
@@ -552,12 +610,12 @@ transform: scale(1.1);
 .voorzien-hero {
   /* background-color: green; */
   text-align: center;
-font-family: "Open Sans";
-position: relative;
-width: 100%;
-text-align: center;
-/* left: 25%; */
-text-decoration: underline;
+  font-family: "Open Sans";
+  position: relative;
+  width: 100%;
+  text-align: center;
+  /* left: 25%; */
+  text-decoration: underline;
 }
 
 .voorzien-list {
@@ -571,9 +629,9 @@ text-decoration: underline;
   text-align: start;
 }
 
-.voorzien-list li{
-font-size: 1.1rem;
-padding-bottom: 0.5rem;
+.voorzien-list li {
+  font-size: 1.1rem;
+  padding-bottom: 0.5rem;
 }
 
 .icon-list {
@@ -586,7 +644,7 @@ padding-bottom: 0.5rem;
   text-align: center;
 }
 
-.icon-list li{
+.icon-list li {
   font-size: 1.1rem;
   padding-bottom: 0.5rem;
 }
@@ -620,7 +678,7 @@ padding-bottom: 0.5rem;
   transition: all 0.5s ease-in-out;
 }
 
-.reserveren-cta  {
+.reserveren-cta {
   width: 10rem;
   height: 3rem;
   outline: 0;
@@ -635,7 +693,6 @@ padding-bottom: 0.5rem;
 }
 
 .reserveren-cta:hover {
-  background-color:#ffd700;
+  background-color: #ffd700;
   color: black;
 }
-

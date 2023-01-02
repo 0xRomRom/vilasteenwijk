@@ -1,137 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="./css/kamersprijzen.css" rel="stylesheet" />
-        <link href="./css/responsive/kamersResponsive.css" rel="stylesheet" />
-        <script defer src="./js/kamersPrijzen.js"></script>
-        <script
-        src="https://kit.fontawesome.com/5f3c108898.js"
-        crossorigin="anonymous"
-      ></script>
-        <title>Villa Boutique Steenwijk</title>
-        <link rel="icon" type="image/x-icon" href="./img/ico2.ico" />
-      </head>
-<body>
-  <div class="app">
-    <nav>
-      <ul class="navlist">
-        <a href="/" class="nav-logo-href"><img src="./img/Villa.png" class="brand-logo" alt="Villa Steenwijk logo"></a>
-        <a href="/"><li class="home">Home</li></a>
-        <a href="kamersprijzen.html"><li>Kamers & Prijzen</li></a>
-        <a href="fotos.html"><li>Foto's</li></a>
-        <a href="omgeving.html"><li>Omgeving</li></a>
-        <a href="contact.html"><li>Contact</li></a>
-        <a target="_blank" class="cta-a reserveren-li" href="https://www.booking.com/"
-          ><li class="r">Reserveren</li></a
-        >
-      </ul>
-    </nav>
-    <div class="page-hero"><h1 class="hero-title">Kamers & Prijzen</h1></div>
-    <div class="kamers-box">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/kamersprijzen.css" rel="stylesheet" />
+    <link href="./css/responsive/kamersResponsive.css" rel="stylesheet" />
+    <script defer src="./js/kamersPrijzen.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5f3c108898.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Villa Boutique Steenwijk</title>
+    <link rel="icon" type="image/x-icon" href="./img/ico2.ico" />
+  </head>
+  <body>
+    <div class="app">
+      <nav>
+        <ul class="navlist">
+          <a href="/" class="nav-logo-href"
+            ><img
+              src="./img/Villa.png"
+              class="brand-logo"
+              alt="Villa Steenwijk logo"
+          /></a>
+          <a href="/"><li class="home">Home</li></a>
+          <a href="kamersprijzen.html"><li>Kamers & Prijzen</li></a>
+          <a href="fotos.html"><li>Foto's</li></a>
+          <a href="omgeving.html"><li>Omgeving</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+          <a
+            target="_blank"
+            class="cta-a reserveren-li"
+            href="https://www.booking.com/"
+            ><li class="r">Reserveren</li></a
+          >
+        </ul>
+      </nav>
+      <div class="page-hero"><h1 class="hero-title">Kamers & Prijzen</h1></div>
+      <div class="kamers-box">
+        <div class="room-flex">
+          <button class="home-img-box box1">
+            <span class="room-name1">Johan van den Kornput</span>
+            <img src="./img/closed-door.jpg" class="door-img img1" />
+          </button>
+        </div>
 
-      <div class="room-flex">
-        <button class="home-img-box box1">
-          <span class="room-name1">Johan van den Kornput</span>
-          <img src="./img/closed-door.jpg" class="door-img img1">
-        </button>      
-      </div>
-      
-      <div class="room-flex">
-        <button class="home-img-box box2">
-          <span class="room-name2">Willem Alexander</span>
-          <img src="./img/closed-door.jpg" class="door-img img2">
-        </button>
-      </div>
+        <div class="room-flex">
+          <button class="home-img-box box2">
+            <span class="room-name2">Willem Alexander</span>
+            <img src="./img/closed-door.jpg" class="door-img img2" />
+          </button>
+        </div>
 
-      <div class="room-flex">
-        <button class="home-img-box box3">
-          <span class="room-name3">Mark Rutte</span>
-           <img src="./img/closed-door.jpg" class="door-img img3">
-        </button>
-      </div>
+        <div class="room-flex">
+          <button class="home-img-box box3">
+            <span class="room-name3">Mark Rutte</span>
+            <img src="./img/closed-door.jpg" class="door-img img3" />
+          </button>
+        </div>
 
-      <div class="room-flex">
-        <button class="home-img-box box4">
-          <span class="room-name4">Antoinne Francois</span>
-          <img src="./img/closed-door.jpg" class="door-img img4">
-        </button>
-      </div>
-    </div>
-    <div class="kamer-modal">
-      <div class="close-modal"><button class="close-kamer-btn"><i class="fa-solid fa-xmark"></i></button></div>
-      <div class="kamer-outer-box">
-        <div class="kamer-inner-box">
-          <h1 class="modal-hero">Johan Van Den Kornput</h1>
-          <div class="kamer-img-box">
-            <img src="./img/Room1/Pic1.jpg" class="kamer1-img">
-          </div>
-          <span class="prijs">€99,- per nacht</span>
-          <div class="voorzieningen">
-            <h2 class="voorzien-hero">Voorzieningen</h2>
-            <ul class="icon-list">
-              <li>
-                <i class="fa-solid fa-wifi"></i>
-              </li>
-              <li>
-                <i class="fa-solid fa-snowflake"></i>
-              </li>
-              <li>
-                <i class="fa-solid fa-tv"></i>
-              </li>
-              <li>
-                <i class="fa-solid fa-temperature-three-quarters"></i>
-              </li>
-              <li>
-                <i class="fa-solid fa-mug-saucer"></i>
-              </li>
-              <li>
-                <i class="fa-solid fa-square-parking"></i>
-              </li>
-              <li>
-                <i class="fa-solid fa-bed"></i>
-              </li>
-              <li>
-                <i class="fa-solid fa-tree"></i>
-              </li>
-            </ul>
-            <ul class="voorzien-list">
-              <li>Wifi</li>
-              <li>Airco</li>
-              <li>43" TV met Netflix etc.</li>
-              <li>Mini koelkast</li>
-              <li>Koffiezetapparaat</li>
-              <li>Gratis parkeren</li>
-              <li>Extra kussens en dekens</li>
-              <li>Uitzicht op het park</li>
-            </ul>
-          </div>
-          <div class="kamer-desc-box"><p class="kamer-desc">Een kamer met historie. Johan van den kornput Id alias assumenda quam reiciendis maiores temporibus est similique eaque. Provident aperiam maiores incidunt quidem officiis rerum voluptatibus esse voluptates iure ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sapiente labore dolorem. Quia fugit labore molestiae consequatur iste sed corporis repellendus optio adipisci. Aliquid eaque, nulla ratione iste corrupti non.</p></div>
+        <div class="room-flex">
+          <button class="home-img-box box4">
+            <span class="room-name4">Antoinne Francois</span>
+            <img src="./img/closed-door.jpg" class="door-img img4" />
+          </button>
         </div>
       </div>
-      <div class="cta-box"><button class="reserveren-cta">Reserveren</button></div>
-    </div>
-  </div>
-  <footer class="footer">
-    <hr class="hr">
-    <div class="footer-inner">
-      <div class="logo-box"><img src="./img/Villa.png" class="icon"></div>
-      <div class="links-box">
-        <div class="reserveren-box">
-          <div class="footer-hero">
-            <h2 class="footer-hero-text">Reserveer</h2>
-            <hr class="small-hr">
+      <div class="kamer-modal">
+        <div class="close-modal">
+          <button class="close-kamer-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="kamer-outer-box">
+          <!-- Room 1-->
+          <div class="kamer-inner-box1 hidden">
+            <h1 class="modal-hero">Johan Van Den Kornput</h1>
+            <div class="kamer-img-box">
+              <img src="./img/Room1/Pic1.jpg" class="kamer1-img" />
+            </div>
+            <span class="prijs">€99,- per nacht</span>
+            <div class="voorzieningen">
+              <h2 class="voorzien-hero">Voorzieningen</h2>
+              <ul class="icon-list">
+                <li>
+                  <i class="fa-solid fa-wifi"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-snowflake"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-tv"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-temperature-three-quarters"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-mug-saucer"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-square-parking"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-bed"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-tree"></i>
+                </li>
+              </ul>
+              <ul class="voorzien-list">
+                <li>Wifi</li>
+                <li>Airco</li>
+                <li>43" TV met Netflix etc.</li>
+                <li>Mini koelkast</li>
+                <li>Koffiezetapparaat</li>
+                <li>Gratis parkeren</li>
+                <li>Extra kussens en dekens</li>
+                <li>Uitzicht op het park</li>
+              </ul>
+            </div>
+            <div class="kamer-desc-box">
+              <p class="kamer-desc">
+                Een kamer met historie. Johan van den kornput Id alias assumenda
+                quam reiciendis maiores temporibus est similique eaque.
+                Provident aperiam maiores incidunt quidem officiis rerum
+                voluptatibus esse voluptates iure ratione. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Earum sapiente labore
+                dolorem. Quia fugit labore molestiae consequatur iste sed
+                corporis repellendus optio adipisci. Aliquid eaque, nulla
+                ratione iste corrupti non.
+              </p>
+            </div>
           </div>
-          <div class="icons-box">             
-              <img src="./img/bookingcom-1.svg" class="icon-box">
-              <img src="./img/airbnb-1.svg" class="icon-box">
+          <!-- Room 2-->
+          <div class="kamer-inner-box2 hidden">
+            <h1 class="modal-hero">Willem Alexander</h1>
+            <div class="kamer-img-box">
+              <img src="./img/Room1/Pic1.jpg" class="kamer2-img" />
+            </div>
+            <span class="prijs">€99,- per nacht</span>
+            <div class="voorzieningen">
+              <h2 class="voorzien-hero">Voorzieningen</h2>
+              <ul class="icon-list">
+                <li>
+                  <i class="fa-solid fa-wifi"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-snowflake"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-tv"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-temperature-three-quarters"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-mug-saucer"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-square-parking"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-bed"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-tree"></i>
+                </li>
+              </ul>
+              <ul class="voorzien-list">
+                <li>Wifi</li>
+                <li>Airco</li>
+                <li>43" TV met Netflix etc.</li>
+                <li>Mini koelkast</li>
+                <li>Koffiezetapparaat</li>
+                <li>Gratis parkeren</li>
+                <li>Extra kussens en dekens</li>
+                <li>Uitzicht op het park</li>
+              </ul>
+            </div>
+            <div class="kamer-desc-box">
+              <p class="kamer-desc">
+                Een kamer met historie. Johan van den kornput Id alias assumenda
+                quam reiciendis maiores temporibus est similique eaque.
+                Provident aperiam maiores incidunt quidem officiis rerum
+                voluptatibus esse voluptates iure ratione. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Earum sapiente labore
+                dolorem. Quia fugit labore molestiae consequatur iste sed
+                corporis repellendus optio adipisci. Aliquid eaque, nulla
+                ratione iste corrupti non.
+              </p>
+            </div>
+          </div>
+          <!-- Room 3 -->
+          <div class="kamer-inner-box3 hidden">
+            <h1 class="modal-hero">Mark Rutte</h1>
+            <div class="kamer-img-box">
+              <img src="./img/Room1/Pic1.jpg" class="kamer3-img" />
+            </div>
+            <span class="prijs">€99,- per nacht</span>
+            <div class="voorzieningen">
+              <h2 class="voorzien-hero">Voorzieningen</h2>
+              <ul class="icon-list">
+                <li>
+                  <i class="fa-solid fa-wifi"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-snowflake"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-tv"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-temperature-three-quarters"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-mug-saucer"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-square-parking"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-bed"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-tree"></i>
+                </li>
+              </ul>
+              <ul class="voorzien-list">
+                <li>Wifi</li>
+                <li>Airco</li>
+                <li>43" TV met Netflix etc.</li>
+                <li>Mini koelkast</li>
+                <li>Koffiezetapparaat</li>
+                <li>Gratis parkeren</li>
+                <li>Extra kussens en dekens</li>
+                <li>Uitzicht op het park</li>
+              </ul>
+            </div>
+            <div class="kamer-desc-box">
+              <p class="kamer-desc">
+                Een kamer met historie. Johan van den kornput Id alias assumenda
+                quam reiciendis maiores temporibus est similique eaque.
+                Provident aperiam maiores incidunt quidem officiis rerum
+                voluptatibus esse voluptates iure ratione. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Earum sapiente labore
+                dolorem. Quia fugit labore molestiae consequatur iste sed
+                corporis repellendus optio adipisci. Aliquid eaque, nulla
+                ratione iste corrupti non.
+              </p>
+            </div>
+          </div>
+
+          <!-- Room 4 -->
+          <div class="kamer-inner-box4 hidden">
+            <h1 class="modal-hero">Antoinne Francois</h1>
+            <div class="kamer-img-box">
+              <img src="./img/Room1/Pic1.jpg" class="kamer4-img" />
+            </div>
+            <span class="prijs">€99,- per nacht</span>
+            <div class="voorzieningen">
+              <h2 class="voorzien-hero">Voorzieningen</h2>
+              <ul class="icon-list">
+                <li>
+                  <i class="fa-solid fa-wifi"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-snowflake"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-tv"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-temperature-three-quarters"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-mug-saucer"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-square-parking"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-bed"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-tree"></i>
+                </li>
+              </ul>
+              <ul class="voorzien-list">
+                <li>Wifi</li>
+                <li>Airco</li>
+                <li>43" TV met Netflix etc.</li>
+                <li>Mini koelkast</li>
+                <li>Koffiezetapparaat</li>
+                <li>Gratis parkeren</li>
+                <li>Extra kussens en dekens</li>
+                <li>Uitzicht op het park</li>
+              </ul>
+            </div>
+            <div class="kamer-desc-box">
+              <p class="kamer-desc">
+                Een kamer met historie. Johan van den kornput Id alias assumenda
+                quam reiciendis maiores temporibus est similique eaque.
+                Provident aperiam maiores incidunt quidem officiis rerum
+                voluptatibus esse voluptates iure ratione. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Earum sapiente labore
+                dolorem. Quia fugit labore molestiae consequatur iste sed
+                corporis repellendus optio adipisci. Aliquid eaque, nulla
+                ratione iste corrupti non.
+              </p>
+            </div>
           </div>
         </div>
-        <span class="copyright">© 2023 Villa Boutique Steenwijk</span>
+        <div class="cta-box">
+          <button class="reserveren-cta">Reserveren</button>
+        </div>
       </div>
     </div>
-  </footer>
-</body>
+    <footer class="footer">
+      <hr class="hr" />
+      <div class="footer-inner">
+        <div class="logo-box"><img src="./img/Villa.png" class="icon" /></div>
+        <div class="links-box">
+          <div class="reserveren-box">
+            <div class="footer-hero">
+              <h2 class="footer-hero-text">Reserveer</h2>
+              <hr class="small-hr" />
+            </div>
+            <div class="icons-box">
+              <img src="./img/bookingcom-1.svg" class="icon-box" />
+              <img src="./img/airbnb-1.svg" class="icon-box" />
+            </div>
+          </div>
+          <span class="copyright">© 2023 Villa Boutique Steenwijk</span>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
