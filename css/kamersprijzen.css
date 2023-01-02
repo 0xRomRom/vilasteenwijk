@@ -119,13 +119,10 @@ a {
 }
 
 .home-img-box {
-  /* position: relative; */
   width: 12rem;
   max-height: 20rem;
-  /* border: 1px solid red; */
-  overflow: hidden;
   cursor: pointer;
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 15px 15px 0px 0px !important;
   outline: 0;
   border: transparent;
   background-color: transparent;
@@ -143,6 +140,7 @@ a {
   /* border: 1px solid red; */
   left: 0rem;
   background-color: transparent;
+  border-radius: 15px 15px 0px 0px !important;
 }
 
 .fadeIn {
@@ -241,26 +239,27 @@ box-shadow: 0px 0px 5px white;
   align-items: center;
   justify-content: flex-start;
   gap: 2rem;
-  /* border: 1px solid red; */
-  height: 20rem;
-
+  border-radius: 15px 15px 0px 0px !important;
+  height: 24rem;  
+  position: relative;
 }
 
 .room-name1 {
   display: inline-block;
   color: white;
   position: absolute;
-  top: 31rem;
+  top: 21rem;
   font-family: luxuryFont;
   color: #ffd700;
   padding-left: 0.2rem;
+
 }
 
 .room-name2 {
   display: inline-block;
   color: white;
   position: absolute;
-  top: 31rem;
+  top: 21rem;
   font-family: luxuryFont;
   color: #ffd700;
   padding-left: 1.5rem;
@@ -270,7 +269,7 @@ box-shadow: 0px 0px 5px white;
   display: inline-block;
   color: white;
   position: absolute;
-  top: 31rem;
+  top: 21rem;
   font-family: luxuryFont;
   color: #ffd700;
   padding-left: 3rem;
@@ -280,9 +279,38 @@ box-shadow: 0px 0px 5px white;
   display: inline-block;
   color: white;
   position: absolute;
-  top: 31rem;
+  top: 21rem;
   font-family: luxuryFont;
   color: #ffd700;
   padding-left: 1.5rem;
 }
 
+.box1 {
+  visibility: hidden;
+}
+.box2 {
+  visibility: hidden;
+}
+.box3 {
+  visibility: hidden;
+}
+.box4 {
+  visibility: hidden;
+}
+
+.dropIn {
+animation: dropIn 0.5s ease-in-out forwards;
+visibility: visible;
+transition: all 0.3s ease-in-out;
+}
+
+@keyframes dropIn {
+  from {
+    transform: translateY(-1.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
