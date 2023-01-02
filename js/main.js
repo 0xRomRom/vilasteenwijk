@@ -176,7 +176,7 @@ window.addEventListener("scroll", () => {
   const downCta3 = document.querySelector('.down-cta-box3');
   const locTextBox = document.querySelector('.loc-text-box');
   const maps = document.querySelector('.maps');
-  const bekijkOmgeving = document.querySelector('.bekijk-omgeving');
+  const bekijkOmgeving = document.querySelector('.a-href3');
   if (contentTop < -2150) {
     locatieHero.classList.add("active");
   } 
@@ -252,4 +252,13 @@ reviewModal3.addEventListener("mouseleave", () => {
     visited3.classList.add("fadeOut");
     visited3.classList.add("hidden");
     visited3.classList.remove("fadeIn");
+});
+
+
+// Scroll to top from footer
+
+const scollToTop = document.querySelector('.fa-arrow-turn-up');
+scollToTop.addEventListener('click', () => {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
 });

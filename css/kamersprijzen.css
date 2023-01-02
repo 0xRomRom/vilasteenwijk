@@ -317,14 +317,14 @@ transition: all 0.3s ease-in-out;
 }
 
 
+/* Footer code */
+
 .footer {
   position: relative;
   width: 100vw;
   height: 30rem;
   background-color: black;
-  /* border-top: 1px solid white; */
-  /* padding-top: 10rem; */
-  /* background: linear-gradient(180deg, rgb(2, 32, 2), black); */
+
 }
 
 .hr {
@@ -447,3 +447,6 @@ transform: scale(1.1);
   opacity: 1 !important;
   transform: scaleY(1);
 }
+
+
+/* Footer code end */
