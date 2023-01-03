@@ -16,6 +16,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .app {
   position: relative;
   width: 100vw;
@@ -120,7 +124,8 @@ a {
   width: 90%;
   left: 5%;
   /* opacity: 0; */
-  animation: opaIn 0.8s ease-in-out forwards;
+  height: auto;
+  animation: opaIn 1.5s ease-in-out forwards;
 }
 
 .grid-item {
@@ -129,6 +134,7 @@ a {
   position: relative;
   /* border: 1px solid yellow; */
   padding: 0.3rem;
+  cursor: pointer;
 }
 .grid-item img {
   width: 100%;
@@ -271,3 +277,21 @@ a {
   transform: scaleY(1);
 }
 /* Footer code end */
+
+.image-overlay {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 500 !important;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-image {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
