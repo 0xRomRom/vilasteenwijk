@@ -1,35 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="./css/fotos.css" rel="stylesheet" />
-        <link href="./css/responsive/fotosResponsive.css" rel="stylesheet" />
-        <script defer src="./js/fotos.js"></script>
-        <script
-        src="https://kit.fontawesome.com/5f3c108898.js"
-        crossorigin="anonymous"
-      ></script>
-        <title>Villa Boutique Steenwijk</title>
-        <link rel="icon" type="image/x-icon" href="./img/ico2.ico" />
-      </head>
-<body>
-  <div class="app">
-    <nav>
-      <ul class="navlist">
-        <a href="/" class="nav-logo-href"><img src="./img/Villa.png" class="brand-logo" alt="Villa Steenwijk logo"></a>
-        <a href="/"><li class="home">Home</li></a>
-        <a href="kamersprijzen.html"><li>Kamers & Prijzen</li></a>
-        <a href="fotos.html"><li>Foto's</li></a>
-        <a href="omgeving.html"><li>Omgeving</li></a>
-        <a href="contact.html"><li>Contact</li></a>
-        <a target="_blank" class="cta-a reserveren-li" href="https://www.booking.com/"
-          ><li class="r">Reserveren</li></a
-        >
-      </ul>
-    </nav>
-    <div class="page-hero"><h1 class="hero-title">Foto's</h1></div>
-  </div> 
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/fotos.css" rel="stylesheet" />
+    <link href="./css/responsive/fotosResponsive.css" rel="stylesheet" />
+    <script
+      defer
+      src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"
+    ></script>
+    <script defer src="./js/fotos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5f3c108898.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Villa Boutique Steenwijk</title>
+    <link rel="icon" type="image/x-icon" href="./img/ico2.ico" />
+  </head>
+  <body>
+    <div class="app">
+      <nav>
+        <ul class="navlist">
+          <a href="/" class="nav-logo-href"
+            ><img
+              src="./img/Villa.png"
+              class="brand-logo"
+              alt="Villa Steenwijk logo"
+          /></a>
+          <a href="/"><li class="home">Home</li></a>
+          <a href="kamersprijzen.html"><li>Kamers & Prijzen</li></a>
+          <a href="fotos.html"><li>Foto's</li></a>
+          <a href="omgeving.html"><li>Omgeving</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+          <a
+            target="_blank"
+            class="cta-a reserveren-li"
+            href="https://www.booking.com/"
+            ><li class="r">Reserveren</li></a
+          >
+        </ul>
+      </nav>
+      <div class="page-hero"><h1 class="hero-title">Foto's</h1></div>
+      <div class="grid">
+        <div class="grid-item"><img src="./img/Room1/Pic1.jpg" /></div>
+        <div class="grid-item grid-item--width2">
+          <img src="./img/Room1/Pic3.jpeg" />
+        </div>
+        <div class="grid-item"><img src="./img/Room1/Pic1.jpg" /></div>
+        <div class="grid-item"><img src="./img/Wall.png" /></div>
+        <div class="grid-item"><img src="./img/Room1/Pic4.jpeg" /></div>
+        <div class="grid-item"><img src="./img/Room1/Pic2.jpeg" /></div>
+        <div class="grid-item"><img src="./img/Vintage.jpeg" /></div>
+        <div class="grid-item"><img src="./img/Dining.jpeg" /></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <hr class="hr" />
+      <div class="footer-inner">
+        <div class="logo-box"><img src="./img/Villa.png" class="icon" /></div>
+        <div class="links-box">
+          <div class="reserveren-box">
+            <div class="footer-hero">
+              <h2 class="footer-hero-text">Reserveer</h2>
+              <hr class="small-hr" />
+            </div>
+            <div class="icons-box">
+              <img src="./img/bookingcom-1.svg" class="icon-box" />
+              <img src="./img/airbnb-1.svg" class="icon-box" />
+            </div>
+          </div>
+          <span class="copyright">© 2023 Villa Boutique Steenwijk</span>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
