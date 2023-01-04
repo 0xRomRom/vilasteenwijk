@@ -119,6 +119,16 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: opaIn 1.5s ease-in-out forwards;
+}
+
+@keyframes opaIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .omgeving-inner {
