@@ -1,35 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="./css/contact.css" rel="stylesheet" />
-        <link href="./css/responsive/contactResponsive.css" rel="stylesheet" />
-        <script defer src="./js/contact.js"></script>
-        <script
-        src="https://kit.fontawesome.com/5f3c108898.js"
-        crossorigin="anonymous"
-      ></script>
-        <title>Villa Boutique Steenwijk</title>
-        <link rel="icon" type="image/x-icon" href="./img/ico2.ico" />
-      </head>
-<body>
-  <div class="app">
-    <nav>
-      <ul class="navlist">
-        <a href="/" class="nav-logo-href"><img src="./img/Villa.png" class="brand-logo" alt="Villa Steenwijk logo"></a>
-        <a href="/"><li class="home">Home</li></a>
-        <a href="kamersprijzen.html"><li>Kamers & Prijzen</li></a>
-        <a href="fotos.html"><li>Foto's</li></a>
-        <a href="omgeving.html"><li>Omgeving</li></a>
-        <a href="contact.html"><li>Contact</li></a>
-        <a target="_blank" class="cta-a reserveren-li" href="https://www.booking.com/"
-          ><li class="r">Reserveren</li></a
-        >
-      </ul>
-    </nav>
-    <div class="page-hero"><h1 class="hero-title">Contact</h1></div>
-  </div>  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/contact.css" rel="stylesheet" />
+    <link href="./css/responsive/contactResponsive.css" rel="stylesheet" />
+    <script defer src="./js/contact.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5f3c108898.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Villa Boutique Steenwijk</title>
+    <link rel="icon" type="image/x-icon" href="./img/ico2.ico" />
+  </head>
+  <body>
+    <div class="app">
+      <nav>
+        <ul class="navlist">
+          <a href="/" class="nav-logo-href"
+            ><img
+              src="./img/Villa.png"
+              class="brand-logo"
+              alt="Villa Steenwijk logo"
+          /></a>
+          <a href="/"><li class="home">Home</li></a>
+          <a href="kamersprijzen.html"><li>Kamers & Prijzen</li></a>
+          <a href="fotos.html"><li>Foto's</li></a>
+          <a href="omgeving.html"><li>Omgeving</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+          <a
+            target="_blank"
+            class="cta-a reserveren-li"
+            href="https://www.booking.com/"
+            ><li class="r">Reserveren</li></a
+          >
+        </ul>
+      </nav>
+      <div class="page-hero"><h1 class="hero-title">Contact</h1></div>
+      <div class="contact-modal-box">
+        <div class="contact-layers">
+          <div class="layer">
+            <div class="icon-boxs">
+              <i class="fa-solid fa-location-dot icon-stl"></i>
+            </div>
+            <div class="info-box">
+              <span>Villa Boutique Hotel</span>
+              <span>Meppelerweg 56</span>
+              <span>8331 CX Steenwijk</span>
+            </div>
+          </div>
+          <div class="layer">
+            <div class="icon-boxs">
+              <i class="fa-solid fa-phone icon-stl"></i>
+            </div>
+            <div class="info-box">
+              <span>+31 612345678</span>
+            </div>
+          </div>
+          <div class="layer">
+            <div class="icon-boxs">
+              <i class="fa-solid fa-envelope icon-stl"></i>
+            </div>
+            <div class="info-box">
+              <span>info@villaboutique.nl</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-modal">
+          <div class="inner-modal">
+            <textarea
+              class="textbox"
+              spellcheck="false"
+              placeholder="Of stuur ons een berichtje"
+            ></textarea>
+            <input
+              type="email"
+              class="sender-email"
+              placeholder="Uw E-mail address"
+            />
+            <button class="verzenden">Verzenden</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <hr class="hr" />
+      <div class="footer-inner">
+        <div class="logo-box"><img src="./img/Villa.png" class="icon" /></div>
+        <div class="links-box">
+          <div class="reserveren-box">
+            <div class="footer-hero">
+              <h2 class="footer-hero-text">Reserveer</h2>
+              <hr class="small-hr" />
+            </div>
+            <div class="icons-box">
+              <img src="./img/bookingcom-1.svg" class="icon-box" />
+              <img src="./img/airbnb-1.svg" class="icon-box" />
+            </div>
+          </div>
+          <span class="copyright">© 2023 Villa Boutique Steenwijk</span>
+        </div>
+      </div>
+      <i class="fa-solid fa-arrow-turn-up"></i>
+    </footer>
+  </body>
 </html>
