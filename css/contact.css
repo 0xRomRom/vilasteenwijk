@@ -19,6 +19,10 @@
   background-color: rgb(0, 0, 0);
 }
 
+.hidden {
+  display: none !important;
+}
+
 a {
   text-decoration: none !important;
 }
@@ -210,6 +214,7 @@ a {
   border-radius: 0.8rem;
   border: 1px solid rgb(4, 61, 4);
   box-shadow: 0px 0px 27px rgb(4, 61, 4);
+  overflow: hidden;
 }
 
 .textbox {
@@ -218,7 +223,7 @@ a {
   width: 95%;
   left: 2.5%;
   top: 0.5rem;
-  height: 17rem;
+  height: 13rem;
   background-color: black;
   border: 1px solid rgb(5, 53, 12);
   outline: 0;
@@ -232,6 +237,24 @@ a {
 
 .textbox::placeholder {
   text-align: center;
+}
+
+.succes {
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+  text-align: center;
+  /* background-color: black; */
+  height: 11rem;
+  color: white;
+  z-index: 50;
+  font-family: "Open Sans";
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  user-select: none;
 }
 
 .sender-email {
@@ -252,6 +275,28 @@ a {
 }
 
 .sender-email::placeholder {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.sender-naam {
+  position: relative;
+  width: 100%;
+  width: 95%;
+  left: 2.5%;
+  background-color: black;
+  border: 1px solid rgb(5, 53, 12);
+  margin-top: 1.5rem;
+  height: 2rem;
+  border-radius: 0.4rem;
+  outline: 0;
+  padding-left: 0.5rem;
+  color: white;
+  font-size: 1.1rem;
+  box-shadow: 0px 0px 10px rgb(4, 61, 4);
+}
+
+.sender-naam::placeholder {
   text-align: center;
   font-size: 1.1rem;
 }
@@ -407,3 +452,58 @@ a {
   transform: scaleY(1);
 }
 /* Footer code end */
+
+.shake {
+  animation: shake 1s ease-in-out forwards;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0rem);
+  }
+  20% {
+    transform: translateX(-0.5rem);
+  }
+  40% {
+    transform: translateX(0.5rem);
+  }
+  60% {
+    transform: translateX(-0.5rem);
+  }
+
+  80% {
+    transform: translateX(0.5rem);
+  }
+
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
+.slideOut {
+  animation: slideOut 0.4s ease-in-out forwards;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0rem);
+  }
+
+  to {
+    transform: translateX(30rem);
+  }
+}
+
+.slideIn {
+  animation: slideIn 0.4s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-30rem);
+  }
+
+  to {
+    transform: translateX(0rem);
+  }
+}

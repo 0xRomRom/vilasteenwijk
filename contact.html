@@ -11,6 +11,15 @@
       src="https://kit.fontawesome.com/5f3c108898.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script defer type="text/javascript">
+      (function () {
+        emailjs.init("1ExHLcqOKMpwg2JF5");
+      })();
+    </script>
     <title>Villa Boutique Steenwijk</title>
     <link rel="icon" type="image/x-icon" href="./img/ico2.ico" />
   </head>
@@ -68,19 +77,21 @@
           </div>
         </div>
         <div class="contact-modal">
-          <div class="inner-modal">
+          <form class="inner-modal">
+            <span class="succes hidden">U hoort spoedig van ons!</span>
             <textarea
               class="textbox"
               spellcheck="false"
               placeholder="Of stuur ons een berichtje"
             ></textarea>
+            <input type="text" class="sender-naam" placeholder="Uw naam" />
             <input
               type="email"
               class="sender-email"
               placeholder="Uw E-mail address"
             />
             <button class="verzenden">Verzenden</button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
