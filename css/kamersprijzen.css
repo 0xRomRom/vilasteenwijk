@@ -230,12 +230,13 @@ a {
   position: absolute;
   top: 0;
   width: 100vw;
-  height: 100vh;
+  height: 70rem;
   background-color: black;
   z-index: 10;
   opacity: 0;
   transform: scale(0.1);
-  padding-bottom: 92rem;
+  /* padding-bottom: 92rem; */
+  overflow: hidden;
 }
 .close-modal {
   position: relative;
@@ -486,7 +487,7 @@ a {
 .kamer-outer-box {
   position: relative;
   width: 100vw;
-  height: 57.5rem;
+  height: 62rem;
   top: -3rem;
   display: flex;
   justify-content: center;
@@ -676,6 +677,7 @@ a {
   align-items: center;
   opacity: 0;
   transition: all 0.5s ease-in-out;
+  margin-top: 2rem;
 }
 
 .reserveren-cta {
