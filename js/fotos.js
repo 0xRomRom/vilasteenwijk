@@ -7,7 +7,7 @@ window.onload = () => {
   const msnry = new Masonry(elem, {
     // options
     itemSelector: ".grid-item",
-    gutter: 1,
+    gutter: 3,
   });
 };
 
