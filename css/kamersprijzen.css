@@ -47,6 +47,7 @@
     rgb(2, 32, 2),
     black
   );
+  overflow-x: hidden !important;
 }
 
 a {
