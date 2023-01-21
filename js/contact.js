@@ -3,6 +3,12 @@ window.onload = () => {
   pageHero.classList.add("active");
 };
 
+const verzendenButton = document.querySelector(".verzenden");
+const messageInput = document.querySelector(".textbox");
+const naamInput = document.querySelector(".sender-naam");
+const emailInput = document.querySelector(".sender-email");
+const succesMessage = document.querySelector(".succes");
+
 verzendenButton.addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -41,7 +47,12 @@ verzendenButton.addEventListener("click", (e) => {
     reply_email: emailInput.value,
     message: messageInput.value,
   };
-  emailjs.send("service_syt8eao", "Standaard", params, "1ExHLcqOKMpwg2JF5");
+  emailjs.send(
+    "service_syt8eao",
+    "template_zsbkdcj",
+    params,
+    "1ExHLcqOKMpwg2JF5"
+  );
 
   setTimeout(() => {
     messageInput.classList.add("slideOut");

@@ -309,27 +309,27 @@ boekingBevestigen.addEventListener("click", () => {
 
   console.log(reservation);
 
-  // const params = {
-  //   date:
-  //     reservation.date[1] +
-  //     "," +
-  //     reservation.date[2] +
-  //     "," +
-  //     reservation.date[3],
-  //   room: reservation.room,
-  //   total: reservation.totalPrice,
-  //   name: reservation.userInfo.name,
-  //   surname: reservation.userInfo.surname,
-  //   gender: reservation.userInfo.gender,
-  //   address: reservation.userInfo.address,
-  //   city: reservation.userInfo.city,
-  //   zipcode: reservation.userInfo.zipcode,
-  //   country: reservation.userInfo.country,
-  //   emailaddress: reservation.userInfo.emailAddress,
-  //   phonenumber: reservation.userInfo.phoneNumber,
-  //   payment: reservation.userInfo.payment,
-  // };
-  // emailjs.send("service_syt8eao", "Standaard", params, "1ExHLcqOKMpwg2JF5");
+  const params = {
+    date:
+      reservation.date[1] +
+      "," +
+      reservation.date[2] +
+      "," +
+      reservation.date[3],
+    room: reservation.room,
+    guests: reservation.totalGuests,
+    total: reservation.totalPrice,
+    name: reservation.userInfo.name,
+    surname: reservation.userInfo.surname,
+    gender: reservation.userInfo.gender,
+    address: reservation.userInfo.address,
+    city: reservation.userInfo.city,
+    zipcode: reservation.userInfo.zipcode,
+    emailaddress: reservation.userInfo.emailAddress,
+    phonenumber: reservation.userInfo.phoneNumber,
+    payment: reservation.userInfo.payment,
+  };
+  emailjs.send("service_syt8eao", "Standaard", params, "1ExHLcqOKMpwg2JF5");
 });
 
 const vanafCalendarButton = document.querySelector(".calendar-icon");
