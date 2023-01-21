@@ -271,6 +271,46 @@ a {
   flex-direction: column;
 }
 
+.person-count-box {
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  height: 3rem;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  top: 4rem;
+}
+
+.person1 {
+  width: 6rem;
+  height: 2rem;
+  background-color: transparent;
+  border: 1px solid rgb(4, 61, 4);
+  /* /* box-shadow: 0px 0px 5px rgb(4, 61, 4); */
+  border-radius: 0.3rem;
+  color: rgb(185, 174, 174);
+  cursor: pointer;
+}
+
+.person2 {
+  width: 6rem;
+  height: 2rem;
+  background-color: transparent;
+  border: 1px solid rgb(4, 61, 4);
+  /* /* box-shadow: 0px 0px 5px rgb(4, 61, 4); */
+  border-radius: 0.3rem;
+  color: rgb(185, 174, 174);
+  cursor: pointer;
+}
+
+.person-select {
+  background-color: rgb(4, 61, 4);
+  cursor: initial;
+}
+
 .rooms-box {
   position: relative;
   width: 90%;

@@ -102,6 +102,7 @@ let reservation = {
   days: 0,
   room: "",
   totalPrice: 0,
+  totalGuests: 1,
   userInfo: {
     name: "",
     surname: "",
@@ -144,8 +145,11 @@ kamerBevestigen.addEventListener("click", () => {
     alert("Kies een kamer");
     return;
   }
-
-  reservation.totalPrice = 99 * reservation.days;
+  if (reservation.totalGuests === 1) {
+    reservation.totalPrice = 89 * reservation.days;
+  } else {
+    reservation.totalPrice = 99 * reservation.days;
+  }
   totalPrice.textContent = "";
   totalPrice.textContent = "Totaal: €" + reservation.totalPrice;
   boekingString.textContent = `${reservation.days} overnachting${
@@ -868,4 +872,29 @@ datumBevestigen.addEventListener("click", () => {
   page1.classList.add("hidden");
   page2.classList.remove("hidden");
   page3.classList.add("hidden");
+});
+
+//Toggle 1 or 2 person
+
+const person1 = document.querySelector(".person1");
+const person2 = document.querySelector(".person2");
+
+const roomPrices = document.querySelectorAll(".price");
+
+person1.addEventListener("click", () => {
+  person1.classList.add("person-select");
+  person2.classList.remove("person-select");
+  roomPrices.forEach((room) => {
+    room.textContent = "€89,- Per Nacht";
+  });
+  reservation.totalGuests = 1;
+});
+
+person2.addEventListener("click", () => {
+  person2.classList.add("person-select");
+  person1.classList.remove("person-select");
+  roomPrices.forEach((room) => {
+    room.textContent = "€99,- Per Nacht";
+  });
+  reservation.totalGuests = 2;
 });
