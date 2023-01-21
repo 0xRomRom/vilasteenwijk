@@ -347,6 +347,8 @@ const calendarGrid = document.querySelector(".calendar-grid");
 maandDropdown.addEventListener("change", (e) => {
   renderCalendar(e.target.value);
 });
+
+let a = 1;
 const calendarDates = {
   Januari: {
     1: true,
