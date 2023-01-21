@@ -3,13 +3,6 @@ window.onload = () => {
   pageHero.classList.add("active");
 };
 
-const verzendenButton = document.querySelector(".verzenden");
-
-const emailInput = document.querySelector(".sender-email");
-const naamInput = document.querySelector(".sender-naam");
-const messageInput = document.querySelector(".textbox");
-const succesMessage = document.querySelector(".succes");
-
 verzendenButton.addEventListener("click", (e) => {
   e.preventDefault();
 

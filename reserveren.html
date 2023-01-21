@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/reserveren.css" rel="stylesheet" />
+    <link href="./css/responsive/reserverenResponsive.css" rel="stylesheet" />
+    <script defer src="./js/reserveren.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5f3c108898.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script defer type="text/javascript">
+      (function () {
+        emailjs.init("1ExHLcqOKMpwg2JF5");
+      })();
+    </script>
+    <title>Boutique Hotel Villa Steenwyck</title>
+    <link rel="icon" type="image/x-icon" href="./img/ico2.ico" />
+  </head>
+  <body>
+    <div class="app">
+      <nav>
+        <ul class="navlist">
+          <a href="/" class="nav-logo-href"
+            ><img
+              src="./img/Villa.png"
+              class="brand-logo"
+              alt="Boutique Hotel Villa Steenwyck logo"
+          /></a>
+          <a href="/"><li class="home">Home</li></a>
+          <a href="kamersprijzen.html"><li>Kamers & Prijzen</li></a>
+          <a href="fotos.html"><li>Foto's</li></a>
+          <a href="omgeving.html"><li>Omgeving</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+          <li class="reserveren-li">Reserveren</li>
+        </ul>
+      </nav>
+      <div class="page-hero"><h1 class="hero-title">Reserveren</h1></div>
+      <div class="reserveren-modal-box">
+        <div class="reserveren-center">
+          <div class="page1">
+            <div class="nav1">
+              <button class="nav-item current tab1">Datum</button>
+              <button class="nav-item tab2">Kamer</button>
+              <button class="nav-item tab3">Gegevens</button>
+            </div>
+            <div class="vanaf-box">
+              <span class="vanaf">Datum</span>
+              <img
+                src="https://www.bedandbreakfast.nl/images/layout/icons/calendar.png"
+                class="calendar-icon"
+              />
+            </div>
+            <div class="calendar-box">
+              <div class="month-box">
+                <select name="maand" class="maand-select">
+                  <option value="Januari">Januari</option>
+                  <option value="Februari">Februari</option>
+                  <option value="Maart">Maart</option>
+                  <option value="April">April</option>
+                  <option value="Mei">Mei</option>
+                  <option value="Juni">Juni</option>
+                  <option value="Juli">Juli</option>
+                  <option value="Augustus">Augustus</option>
+                  <option value="September">September</option>
+                  <option value="Oktober">Oktober</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+                </select>
+                <span class="jaar">2023</span>
+              </div>
+              <div class="calendar-grid">
+                <div class="date">1</div>
+              </div>
+              <div class="beschikbaarheid-box">
+                <div class="box-row">
+                  <span class="beschikbaar-green">Hi</span
+                  ><span class="beschikbaarheid-text">Beschikbaar</span>
+                </div>
+                <div class="box-row">
+                  <span class="bezet-rood">Hi</span>
+                  <span class="beschikbaarheid-text">Bezet</span>
+                </div>
+              </div>
+            </div>
+            <div class="button-cta-box">
+              <button class="cta-btn cta1">Datum(s) Bevestigen</button>
+            </div>
+            <div class="picked-dates">
+              <div class="date-row row1 hidden">
+                <p class="date1 pick-stl"></p>
+                <i class="fa-regular fa-trash-can del1"></i>
+              </div>
+              <div class="date-row row2 hidden">
+                <p class="date2 pick-stl"></p>
+                <i class="fa-regular fa-trash-can del2"></i>
+              </div>
+              <div class="date-row row3 hidden">
+                <p class="date3 pick-stl"></p>
+                <i class="fa-regular fa-trash-can del3"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="page2 hidden">
+            <div class="nav2">
+              <button class="nav-item tab1">Datum</button>
+              <button class="nav-item current tab2">Kamer</button>
+              <button class="nav-item tab3">Gegevens</button>
+            </div>
+            <div class="rooms-box">
+              <div class="room-option opt1">
+                <h2 class="room-hero">Johan Van den Kornput</h2>
+                <h3 class="price">€99,- Per Nacht</h3>
+                <i class="fa-solid fa-check c1"></i>
+              </div>
+              <div class="room-option opt2">
+                <h2 class="room-hero">Hildo Krop</h2>
+                <h3 class="price">€99,- Per Nacht</h3>
+                <i class="fa-solid fa-check c2"></i>
+              </div>
+              <div class="room-option opt3">
+                <h2 class="room-hero">Tromp Meesters</h2>
+                <h3 class="price">€99,- Per Nacht</h3>
+                <i class="fa-solid fa-check c3"></i>
+              </div>
+              <div class="room-option opt4">
+                <h2 class="room-hero">Kleibeuker</h2>
+                <h3 class="price">€99,- Per Nacht</h3>
+                <i class="fa-solid fa-check c4"></i>
+              </div>
+            </div>
+            <div class="button-cta-box2">
+              <button class="cta-btn cta2">Kamer Bevestigen</button>
+            </div>
+          </div>
+
+          <div class="page3 hidden">
+            <div class="nav3">
+              <button class="nav-item tab1">Datum</button>
+              <button class="nav-item tab2">Kamer</button>
+              <button class="nav-item current tab3">Gegevens</button>
+            </div>
+            <form class="form-box">
+              <div class="form-row">
+                <label for="name" class="form-label">Naam*</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="name-input input-stl"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-row">
+                <label for="surname" class="form-label">Achternaam*</label>
+                <input
+                  type="text"
+                  id="surname"
+                  class="surname-input input-stl"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-row">
+                <label for="gender" class="form-label">Geslacht*</label>
+                <div class="span-div">
+                  <span class="gender-span male gender-choice">Man</span>
+                  <span class="gender-span female">Vrouw</span>
+                </div>
+              </div>
+              <div class="form-row">
+                <label for="address" class="form-label">Adres*</label>
+                <input
+                  type="text"
+                  id="address"
+                  class="address-input input-stl"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-row">
+                <label for="city" class="form-label">Stad*</label>
+                <input
+                  type="text"
+                  id="city"
+                  class="city-input input-stl"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-row">
+                <label for="zipcode" class="form-label">Postcode</label>
+                <input
+                  type="text"
+                  id="zipcode"
+                  class="zipcode-input input-stl"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-row">
+                <label for="email" class="form-label">Email*</label>
+                <input
+                  type="text"
+                  id="email"
+                  class="email-input input-stl"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-row">
+                <label for="confirm-email" class="form-label"
+                  >Bevestig Email*</label
+                >
+                <input
+                  type="text"
+                  id="confirm-email"
+                  class="confirm-email-input input-stl"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-row">
+                <label for="phone-number" class="form-label"
+                  >Telefoonnummer*</label
+                >
+                <input
+                  type="text"
+                  id="phone-number"
+                  class="phone-number-input input-stl"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-row">
+                <label for="gender" class="form-label">Betaalmethode</label>
+                <div class="span-div">
+                  <span class="pay-span transfer pay-choice"
+                    >Overschrijving</span
+                  >
+                  <span class="pay-span cash">Contant</span>
+                </div>
+              </div>
+            </form>
+            <div class="button-cta-box3">
+              <hr class="hr2" />
+              <span class="total-price">Totaal: €</span>
+              <button class="cta-btn cta3">Boeking Bevestigen</button>
+              <span class="order-string"></span>
+            </div>
+          </div>
+          <div class="page4 hidden">
+            <h1 class="page4-hero">Uw boeking wordt verwerkt</h1>
+
+            <p class="page4-hero-sub1"></p>
+            <p class="page4-hero-sub">Villa Steenwyck</p>
+            <p class="page4-hero-sub">IBAN: NL09 ABNA 0117 267384</p>
+            <hr class="hr-center" />
+            <p class="page4-hero-sub2">
+              Wanneer de betaling ontvangen is en alle gegevens correct zijn,
+              ontvangt u een reserveringsbevestiging.
+            </p>
+          </div>
+          <div class="page5 hidden">
+            <h1 class="page4-hero">Uw boeking wordt verwerkt</h1>
+
+            <p class="page4-hero-sub3">
+              Als alle gegevens correct zijn, ontvangt u een
+              reserveringsbevestiging.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <hr class="hr" />
+      <div class="footer-inner">
+        <div class="logo-box"><img src="./img/Villa.png" class="icon" /></div>
+        <div class="links-box">
+          <div class="reserveren-box">
+            <div class="footer-hero">
+              <h2 class="footer-hero-text">Reserveer</h2>
+              <hr class="small-hr" />
+            </div>
+            <div class="icons-box">
+              <img src="./img/bookingcom-1.svg" class="icon-box" />
+              <img src="./img/airbnb-1.svg" class="icon-box" />
+            </div>
+          </div>
+          <span class="copyright">© 2023 Boutique Hotel Villa Steenwyck</span>
+        </div>
+      </div>
+      <i class="fa-solid fa-arrow-turn-up"></i>
+    </footer>
+  </body>
+</html>
