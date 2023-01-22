@@ -31,6 +31,10 @@ window.onload = () => {
 
 //Animate doors
 const imageBox = document.querySelectorAll(".room-flex");
+const picture1 = document.querySelector(".imag1");
+const picture2 = document.querySelector(".imag2");
+const picture3 = document.querySelector(".imag3");
+const picture4 = document.querySelector(".imag4");
 const doorImage1 = document.querySelector(".img1");
 const doorImage2 = document.querySelector(".img2");
 const doorImage3 = document.querySelector(".img3");
@@ -46,7 +50,8 @@ const kamerOuter4 = document.querySelector(".kamer-inner-box4");
 const ctaButton = document.querySelector(".cta-box");
 
 doorImage1.addEventListener("click", () => {
-  doorImage1.src = "./img/animated-door2.gif";
+  doorImage1.disabled = true;
+  picture1.src = "./img/animated-door2.gif";
   let width = screen.width;
 
   kamerOuter1.classList.remove("hidden");
@@ -61,7 +66,8 @@ doorImage1.addEventListener("click", () => {
     kamerModal.classList.add("fadeIn");
   }, 1000);
   setTimeout(() => {
-    doorImage1.src = "./img/closed-door2.jpg";
+    picture1.src = "./img/closed-door2.jpg";
+    doorImage1.disabled = false;
   }, 2000);
   setTimeout(() => {
     kamerOuter1.classList.add("opacityIn");
@@ -75,8 +81,9 @@ doorImage1.addEventListener("click", () => {
 });
 
 doorImage2.addEventListener("click", () => {
+  doorImage2.disabled = true;
   let width = screen.width;
-  doorImage2.src = "./img/animated-door2.gif";
+  picture2.src = "./img/animated-door2.gif";
   kamerOuter2.classList.remove("hidden");
   kamerOuter1.classList.add("hidden");
   kamerOuter3.classList.add("hidden");
@@ -89,7 +96,8 @@ doorImage2.addEventListener("click", () => {
     kamerModal.classList.add("fadeIn");
   }, 1000);
   setTimeout(() => {
-    doorImage2.src = "./img/closed-door2.jpg";
+    doorImage2.disabled = false;
+    picture2.src = "./img/closed-door2.jpg";
   }, 2000);
   setTimeout(() => {
     kamerOuter2.classList.add("opacityIn");
@@ -103,8 +111,9 @@ doorImage2.addEventListener("click", () => {
 });
 
 doorImage3.addEventListener("click", () => {
+  doorImage3.disabled = true;
   let width = screen.width;
-  doorImage3.src = "./img/animated-door2.gif";
+  picture3.src = "./img/animated-door2.gif";
   kamerOuter3.classList.remove("hidden");
   kamerOuter1.classList.add("hidden");
   kamerOuter2.classList.add("hidden");
@@ -117,7 +126,8 @@ doorImage3.addEventListener("click", () => {
     kamerModal.classList.add("fadeIn");
   }, 1000);
   setTimeout(() => {
-    doorImage3.src = "./img/closed-door2.jpg";
+    picture3.src = "./img/closed-door2.jpg";
+    doorImage3.disabled = false;
   }, 2000);
   setTimeout(() => {
     kamerOuter3.classList.add("opacityIn");
@@ -131,7 +141,8 @@ doorImage3.addEventListener("click", () => {
 });
 
 doorImage4.addEventListener("click", () => {
-  doorImage4.src = "./img/animated-door2.gif";
+  doorImage4.disabled = true;
+  picture4.src = "./img/animated-door2.gif";
   kamerOuter4.classList.remove("hidden");
   kamerOuter1.classList.add("hidden");
   kamerOuter2.classList.add("hidden");
@@ -145,8 +156,8 @@ doorImage4.addEventListener("click", () => {
     kamerModal.classList.add("fadeIn");
   }, 1000);
   setTimeout(() => {
-    kamerOuter4.classList.add("opacityIn");
-    doorImage4.src = "./img/closed-door2.jpg";
+    doorImage4.disabled = false;
+    picture4.src = "./img/closed-door2.jpg";
   }, 2000);
   setTimeout(() => {
     kamerOuter4.classList.add("opacityIn");
