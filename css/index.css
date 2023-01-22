@@ -986,3 +986,7 @@ body {
 .fa-arrow-turn-up:hover {
   color: white;
 }
+
+.anchor {
+  color: #ffd900;
+}

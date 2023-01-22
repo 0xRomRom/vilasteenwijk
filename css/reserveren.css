@@ -589,6 +589,12 @@ a {
   user-select: none;
 }
 
+.footer-hero-text {
+  position: relative;
+  width: 20rem;
+  left: -2.7rem;
+}
+
 .small-hr {
   position: relative;
   width: 80%;

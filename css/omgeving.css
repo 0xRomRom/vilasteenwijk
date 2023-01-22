@@ -380,3 +380,7 @@ a {
   transform: scaleY(1);
 }
 /* Footer code end */
+
+.anchor {
+  color: #ffd900;
+}

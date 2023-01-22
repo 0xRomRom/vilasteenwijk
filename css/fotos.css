@@ -296,3 +296,7 @@ a {
   max-height: 100vh;
   cursor: pointer;
 }
+
+.anchor {
+  color: #ffd900;
+}
