@@ -188,36 +188,52 @@ const room2Image = document.querySelector(".kamer2-img");
 const room3Image = document.querySelector(".kamer3-img");
 const room4Image = document.querySelector(".kamer4-img");
 
+//Johan Van den Kornput
 const imageLinks1 = [
-  "./img/Room1/Pic1.jpg",
+  "./img/Room1/Pic1.jpeg",
   "./img/Room1/Pic2.jpeg",
   "./img/Room1/Pic3.jpeg",
   "./img/Room1/Pic4.jpeg",
-  "./img/Room1/Pic2.jpeg",
+  "./img/Room1/Pic5.jpeg",
+  "./img/Room1/Pic6.jpeg",
+  "./img/Room1/Pic7.jpeg",
+  "./img/Room1/Pic8.jpeg",
 ];
 
+//Hildo Krop
 const imageLinks2 = [
-  "./img/Room1/Pic1.jpg",
-  "./img/Room1/Pic2.jpeg",
-  "./img/Room1/Pic3.jpeg",
-  "./img/Room1/Pic4.jpeg",
-  "./img/Room1/Pic2.jpeg",
+  "./img/Room2/Pic1.jpeg",
+  "./img/Room2/Pic2.jpeg",
+  "./img/Room2/Pic3.jpeg",
+  "./img/Room2/Pic4.jpeg",
+  "./img/Room2/Pic5.jpeg",
+  "./img/Room2/Pic6.jpeg",
+  "./img/Room2/Pic7.jpeg",
+  "./img/Room2/Pic8.jpeg",
 ];
 
+//Tromp Meester
 const imageLinks3 = [
-  "./img/Room1/Pic1.jpg",
-  "./img/Room1/Pic2.jpeg",
-  "./img/Room1/Pic3.jpeg",
-  "./img/Room1/Pic4.jpeg",
-  "./img/Room1/Pic2.jpeg",
+  "./img/Room3/Pic1.jpeg",
+  "./img/Room3/Pic2.jpeg",
+  "./img/Room3/Pic3.jpeg",
+  "./img/Room3/Pic4.jpeg",
+  "./img/Room3/Pic5.jpeg",
+  "./img/Room3/Pic6.jpeg",
+  "./img/Room3/Pic7.jpeg",
+  "./img/Room3/Pic8.jpeg",
 ];
 
+//Kleibeuker
 const imageLinks4 = [
-  "./img/Room1/Pic1.jpg",
+  "./img/Room1/Pic1.jpeg",
   "./img/Room1/Pic2.jpeg",
   "./img/Room1/Pic3.jpeg",
   "./img/Room1/Pic4.jpeg",
-  "./img/Room1/Pic2.jpeg",
+  "./img/Room1/Pic5.jpeg",
+  "./img/Room1/Pic6.jpeg",
+  "./img/Room1/Pic7.jpeg",
+  "./img/Room1/Pic8.jpeg",
 ];
 
 const transitionImage = (imageSrc, src) => {
@@ -263,11 +279,29 @@ const cycleImages = () => {
       transitionImage(imageLinks3[4], room3Image);
       transitionImage(imageLinks4[4], room4Image);
     }, 31000);
+    setTimeout(() => {
+      transitionImage(imageLinks1[5], room1Image);
+      transitionImage(imageLinks2[5], room2Image);
+      transitionImage(imageLinks3[5], room3Image);
+      transitionImage(imageLinks4[5], room4Image);
+    }, 39000);
+    setTimeout(() => {
+      transitionImage(imageLinks1[6], room1Image);
+      transitionImage(imageLinks2[6], room2Image);
+      transitionImage(imageLinks3[6], room3Image);
+      transitionImage(imageLinks4[6], room4Image);
+    }, 47000);
+    setTimeout(() => {
+      transitionImage(imageLinks1[7], room1Image);
+      transitionImage(imageLinks2[7], room2Image);
+      transitionImage(imageLinks3[7], room3Image);
+      transitionImage(imageLinks4[7], room4Image);
+    }, 55000);
   };
   cycle();
 
   setInterval(() => {
     cycle();
-  }, 41000);
+  }, 65000);
 };
 cycleImages();

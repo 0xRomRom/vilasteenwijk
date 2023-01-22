@@ -581,16 +581,15 @@ a {
   position: relative;
   width: 95%;
   left: 2.5%;
-  height: 15rem;
+  height: 21rem;
   top: 1rem;
-  /* border: 1px solid blue; */
   border-radius: 0.4rem;
 }
 
 .kamer1-img {
   position: relative;
   width: 100%;
-  min-height: 15rem;
+  height: 100%;
   border-radius: 0.4rem;
   border-radius: 20px 5px 20px 5px;
 }
@@ -598,7 +597,7 @@ a {
 .kamer2-img {
   position: relative;
   width: 100%;
-  min-height: 15rem;
+  height: 100%;
   border-radius: 0.4rem;
   border-radius: 20px 5px 20px 5px;
 }
@@ -606,7 +605,7 @@ a {
 .kamer3-img {
   position: relative;
   width: 100%;
-  min-height: 15rem;
+  height: 100%;
   border-radius: 0.4rem;
   border-radius: 20px 5px 20px 5px;
 }
@@ -614,7 +613,7 @@ a {
 .kamer4-img {
   position: relative;
   width: 100%;
-  min-height: 15rem;
+  height: 100%;
   border-radius: 0.4rem;
   border-radius: 20px 5px 20px 5px;
 }
@@ -643,7 +642,7 @@ a {
   height: 17rem;
   width: 13.8rem;
   left: 25rem;
-  top: 8.5rem;
+  top: 2.2rem;
   /* border: 1px solid red; */
   border-left: 1px solid gray;
 }
