@@ -175,7 +175,6 @@ a {
 .home-img-box {
   width: 12rem;
   max-height: 20rem;
-  cursor: pointer;
   border-radius: 15px 15px 0px 0px !important;
   outline: 0;
   border: transparent;
@@ -313,6 +312,11 @@ a {
   border-radius: 15px 15px 0px 0px !important;
   height: 24rem;
   position: relative;
+  cursor: pointer;
+}
+
+.room-flex:hover span {
+  text-decoration: underline;
 }
 
 .room-name1 {
@@ -358,15 +362,19 @@ a {
 
 .box1 {
   visibility: hidden;
+  cursor: pointer;
 }
 .box2 {
   visibility: hidden;
+  cursor: pointer;
 }
 .box3 {
   visibility: hidden;
+  cursor: pointer;
 }
 .box4 {
   visibility: hidden;
+  cursor: pointer;
 }
 
 .dropIn {
