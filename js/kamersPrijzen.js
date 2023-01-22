@@ -181,9 +181,12 @@ closeKamerModal.addEventListener("click", () => {
   ctaButton.classList.remove("opacityIn");
   kamerModal.classList.add("transitionOut");
   kamerModal.classList.remove("fadeIn");
-  imageBox.forEach((box) => {
-    box.disabled = true;
-  });
+
+  doorImage1.disabled = true;
+  doorImage2.disabled = true;
+  doorImage3.disabled = true;
+  doorImage4.disabled = true;
+
   setTimeout(() => {
     kamerModal.classList.remove("transitionOut");
     kamerOuter1.classList.add("hidden");
@@ -193,9 +196,10 @@ closeKamerModal.addEventListener("click", () => {
   }, 1000);
 
   setTimeout(() => {
-    imageBox.forEach((box) => {
-      box.disabled = false;
-    });
+    doorImage1.disabled = false;
+    doorImage2.disabled = false;
+    doorImage3.disabled = false;
+    doorImage4.disabled = false;
   }, 1000);
 
   box1.classList.remove("fadeOut");
