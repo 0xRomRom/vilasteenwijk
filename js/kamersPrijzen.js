@@ -6,20 +6,20 @@ window.onload = () => {
   const pageHero = document.querySelector(".page-hero");
   pageHero.classList.add("active");
   setTimeout(() => {
-    box1.classList.add("dropIn");
-    box1.style.visibility = "visible";
-  }, 1000);
-  setTimeout(() => {
     box2.classList.add("dropIn");
     box2.style.visibility = "visible";
-  }, 1500);
+  }, 1000);
   setTimeout(() => {
     box3.classList.add("dropIn");
     box3.style.visibility = "visible";
-  }, 2000);
+  }, 1500);
   setTimeout(() => {
     box4.classList.add("dropIn");
     box4.style.visibility = "visible";
+  }, 2000);
+  setTimeout(() => {
+    box1.classList.add("dropIn");
+    box1.style.visibility = "visible";
   }, 2500);
   setTimeout(() => {
     box1.classList.remove("dropIn");
