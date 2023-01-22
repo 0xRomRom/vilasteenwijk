@@ -6,8 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin: 0 !important;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -313,6 +313,7 @@ body {
   transform: scale(0.1);
   opacity: 0 !important;
   transition: all 0.8s ease-in-out;
+  padding-left: 5rem !important;
 }
 
 .review-hero {
@@ -323,6 +324,7 @@ body {
   transform: scale(0.1);
   opacity: 0 !important;
   transition: all 0.8s ease-in-out;
+  padding-left: 5rem !important;
 }
 
 .locatie-hero {
@@ -638,7 +640,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 5rem;
+  padding-left: 5rem !important;
   color: #ffd900;
 }
 
@@ -754,7 +756,7 @@ body {
   /* border: 1px solid red; */
   color: rgb(0, 0, 0);
   font-weight: 800 !important;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "Open Sans";
   user-select: none;
 }
@@ -989,4 +991,29 @@ body {
 
 .anchor {
   color: #ffd900;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 4;
+  position: relative;
+  right: -755%;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.active {
+  opacity: 1;
+  transform: scale(1);
 }

@@ -73,3 +73,11 @@ verzendenButton.addEventListener("click", (e) => {
     succesMessage.classList.add("slideIn");
   }, 1000);
 });
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".navlist");
+//Burger menu for mobile
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});

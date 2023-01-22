@@ -1,10 +1,9 @@
-
 @media only screen and (max-width: 1300px) {
   .cycle-image {
     min-width: 1250px !important;
   }
   .fancy-modal {
-  font-size: 0.9rem;
+    font-size: 0.9rem;
   }
   .leftbox {
     width: 35rem;
@@ -31,6 +30,13 @@
     top: 29.3rem;
     right: 0.2rem;
   }
+  .locatie-box {
+    top: 15rem;
+    flex-direction: column;
+  }
+  .locatie {
+    height: 80rem;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -42,5 +48,240 @@
 @media only screen and (max-width: 800px) {
   .cycle-image {
     min-width: 800px !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .hamburger {
+    right: 5%;
+    top: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: fixed;
+    padding-top: 0.35rem;
+    display: block;
+    z-index: 50;
+    color: white;
+    z-index: 401 !important;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .navlist {
+    position: fixed;
+    left: -100%;
+    top: 0rem;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    text-align: center;
+    transition: 0.3s;
+    height: 100%;
+    z-index: 400 !important;
+  }
+  .navlist.active {
+    width: 100vw;
+    overflow: hidden !important;
+    margin: 0;
+    padding: 0;
+  }
+  .underline {
+    color: black;
+  }
+  .nav-link {
+    margin: 16px 0;
+  }
+  .navlist.active {
+    padding-top: 10rem;
+    left: 0;
+    height: 100vh;
+    z-index: 3;
+    display: flex;
+    gap: 3%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .cycle-image {
+    width: auto;
+    height: 100%;
+    width: 200%;
+    max-height: 100vh;
+  }
+
+  .landing-img-container {
+    width: 200%;
+    left: -50%;
+    transform: scale(0.9);
+    top: 1rem;
+  }
+  .header-div {
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .cycle-image {
+    width: auto;
+    height: 100%;
+    width: 200%;
+    max-height: 100vh;
+  }
+
+  .landing-img-container {
+    width: 200%;
+    left: -50%;
+    transform: scale(0.9);
+    top: 1rem;
+  }
+  .header-div {
+    overflow: hidden;
+  }
+  .content {
+    height: 80rem;
+  }
+  .content-main {
+    position: relative;
+    top: 16rem;
+    width: 100vw;
+    height: 42rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 0rem;
+  }
+  .bekijk-kamers {
+    color: rgb(199, 188, 188);
+    /* position: absolute; */
+    top: 20rem;
+    right: 5rem;
+    width: 100%;
+    left: -0.5rem;
+    text-align: right;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: 0.9rem;
+  }
+  .down-cta-box2 {
+    top: 25rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .reviews-container {
+    transform: scale(0.9);
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .reviews-container {
+    flex-direction: column;
+    top: 35rem;
+  }
+  .reviews {
+    height: 112rem;
+  }
+  .modal-img {
+    left: 0.5rem;
+    top: 0.5rem;
+  }
+  .visited1 {
+    position: absolute;
+    left: 0rem;
+    display: flex !important;
+    top: 27rem;
+    width: 100vw;
+    color: white;
+    /* z-index: 500 !important; */
+    opacity: 1 !important;
+  }
+  .visited2 {
+    position: absolute;
+    left: 2.5rem;
+    display: flex !important;
+    top: 27rem;
+    width: 100vw;
+    color: white;
+    /* z-index: 500 !important; */
+    opacity: 1 !important;
+  }
+  .visited3 {
+    position: absolute;
+    left: 1.2rem;
+    display: flex !important;
+    top: 27rem;
+    width: 100vw;
+    color: white;
+    /* z-index: 500 !important; */
+    opacity: 1 !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .stijl-hero {
+    font-size: 1.7rem;
+    padding-left: 2rem !important;
+  }
+  .icon {
+    width: 5rem;
+  }
+  .fa-arrow-turn-up {
+    left: 52vw;
+    top: 0rem;
+  }
+  .locatie-box {
+    transform: scale(0.8);
+    top: 10rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content-main {
+    top: 10rem;
+    transform: scale(0.8) !important;
+  }
+  .down-cta-box2 {
+    top: 18rem;
+  }
+  .locatie-box {
+    transform: scale(0.7);
+    top: 9rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .content-main {
+    transform: scale(0.7) !important;
+  }
+  .stijl-hero {
+    font-size: 1.5rem;
+    padding-left: 0.5rem !important;
+  }
+  .icon {
+    position: absolute;
+    top: -2rem;
+    left: 50vw;
+  }
+  .footer-inner {
+    width: 100vw;
+    left: -2rem;
+  }
+  .locatie-box {
+    transform: scale(0.6);
+    top: 5rem;
+  }
+  .locatie {
+    height: 70rem;
+  }
+  .hero-div3 {
+    padding-left: 2rem !important;
   }
 }

@@ -515,3 +515,28 @@ a {
 .anchor {
   color: #ffd900;
 }
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 4;
+  position: relative;
+  right: -755%;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.active {
+  opacity: 1;
+  transform: scale(1);
+}
