@@ -30,7 +30,6 @@ window.onload = () => {
 };
 
 //Animate doors
-
 const imageBox = document.querySelectorAll(".room-flex");
 const doorImage1 = document.querySelector(".img1");
 const doorImage2 = document.querySelector(".img2");
