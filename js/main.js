@@ -1,10 +1,10 @@
 const imageLinks = [
   //Landing page image cycle
-  "./img/cover/img1lux.jpg",
-  "./img/cover/img2lux.jpg",
-  "./img/cover/img3lux.jpg",
-  "./img/cover/img4lux.jpg",
-  "./img/cover/img5lux.jpg",
+  "./img/landing/1.jpg",
+  "./img/landing/2.JPG",
+  "./img/landing/3.JPG",
+  "./img/landing/4.JPG",
+  "./img/landing/5.JPG",
 ];
 
 const landingImg = document.querySelector(".cycle-image");
