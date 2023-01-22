@@ -48,6 +48,7 @@ const ctaButton = document.querySelector(".cta-box");
 
 imageBox.forEach((box) => {
   box.addEventListener("click", (e) => {
+    let width = screen.width;
     if (e.target.classList[1] === "img1") {
       kamerOuter1.classList.remove("hidden");
       kamerOuter2.classList.add("hidden");
@@ -69,7 +70,11 @@ imageBox.forEach((box) => {
       setTimeout(() => {
         kamerOuter1.classList.add("opacityIn");
         ctaButton.classList.add("opacityIn");
-        window.scrollTo({ top: 100, behavior: "smooth" });
+        if (width > 900) {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } else {
+          window.scrollTo({ top: 100, behavior: "smooth" });
+        }
       }, 2300);
     }
 
@@ -94,7 +99,11 @@ imageBox.forEach((box) => {
       setTimeout(() => {
         kamerOuter2.classList.add("opacityIn");
         ctaButton.classList.add("opacityIn");
-        window.scrollTo({ top: 100, behavior: "smooth" });
+        if (width > 900) {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } else {
+          window.scrollTo({ top: 100, behavior: "smooth" });
+        }
       }, 2300);
     }
 
@@ -119,7 +128,11 @@ imageBox.forEach((box) => {
       setTimeout(() => {
         kamerOuter3.classList.add("opacityIn");
         ctaButton.classList.add("opacityIn");
-        window.scrollTo({ top: 100, behavior: "smooth" });
+        if (width > 900) {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } else {
+          window.scrollTo({ top: 100, behavior: "smooth" });
+        }
       }, 2300);
     }
 
@@ -145,7 +158,11 @@ imageBox.forEach((box) => {
       setTimeout(() => {
         kamerOuter4.classList.add("opacityIn");
         ctaButton.classList.add("opacityIn");
-        window.scrollTo({ top: 100, behavior: "smooth" });
+        if (width > 900) {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } else {
+          window.scrollTo({ top: 100, behavior: "smooth" });
+        }
       }, 2300);
     }
   });
