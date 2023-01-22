@@ -52,7 +52,6 @@ const ctaButton = document.querySelector(".cta-box");
 doorImage1.addEventListener("click", () => {
   doorImage1.disabled = true;
   picture1.src = "./img/animated-door2.gif";
-  let width = screen.width;
 
   kamerOuter1.classList.remove("hidden");
   kamerOuter2.classList.add("hidden");
@@ -72,17 +71,12 @@ doorImage1.addEventListener("click", () => {
   setTimeout(() => {
     kamerOuter1.classList.add("opacityIn");
     ctaButton.classList.add("opacityIn");
-    if (width > 900) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      window.scrollTo({ top: 100, behavior: "smooth" });
-    }
+    window.scrollTo({ top: -30, behavior: "smooth" });
   }, 2300);
 });
 
 doorImage2.addEventListener("click", () => {
   doorImage2.disabled = true;
-  let width = screen.width;
   picture2.src = "./img/animated-door2.gif";
   kamerOuter2.classList.remove("hidden");
   kamerOuter1.classList.add("hidden");
@@ -102,17 +96,12 @@ doorImage2.addEventListener("click", () => {
   setTimeout(() => {
     kamerOuter2.classList.add("opacityIn");
     ctaButton.classList.add("opacityIn");
-    if (width > 900) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      window.scrollTo({ top: 100, behavior: "smooth" });
-    }
+    window.scrollTo({ top: -30, behavior: "smooth" });
   }, 2300);
 });
 
 doorImage3.addEventListener("click", () => {
   doorImage3.disabled = true;
-  let width = screen.width;
   picture3.src = "./img/animated-door2.gif";
   kamerOuter3.classList.remove("hidden");
   kamerOuter1.classList.add("hidden");
@@ -132,11 +121,7 @@ doorImage3.addEventListener("click", () => {
   setTimeout(() => {
     kamerOuter3.classList.add("opacityIn");
     ctaButton.classList.add("opacityIn");
-    if (width > 900) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      window.scrollTo({ top: 100, behavior: "smooth" });
-    }
+    window.scrollTo({ top: -30, behavior: "smooth" });
   }, 2300);
 });
 
@@ -147,7 +132,6 @@ doorImage4.addEventListener("click", () => {
   kamerOuter1.classList.add("hidden");
   kamerOuter2.classList.add("hidden");
   kamerOuter3.classList.add("hidden");
-  let width = screen.width;
 
   box1.classList.add("fadeOut");
   box2.classList.add("fadeOut");
@@ -162,11 +146,7 @@ doorImage4.addEventListener("click", () => {
   setTimeout(() => {
     kamerOuter4.classList.add("opacityIn");
     ctaButton.classList.add("opacityIn");
-    if (width > 900) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      window.scrollTo({ top: 100, behavior: "smooth" });
-    }
+    window.scrollTo({ top: -30, behavior: "smooth" });
   }, 2300);
 });
 
