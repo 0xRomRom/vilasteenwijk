@@ -45,126 +45,118 @@ const kamerOuter3 = document.querySelector(".kamer-inner-box3");
 const kamerOuter4 = document.querySelector(".kamer-inner-box4");
 const ctaButton = document.querySelector(".cta-box");
 
-imageBox.forEach((box) => {
-  box.addEventListener("click", (e) => {
-    let width = screen.width;
-    if (e.target.classList[1] === "img1") {
-      kamerOuter1.classList.remove("hidden");
-      kamerOuter2.classList.add("hidden");
-      kamerOuter3.classList.add("hidden");
-      kamerOuter4.classList.add("hidden");
+doorImage1.addEventListener("click", () => {
+  doorImage1.src = "./img/animated-door2.gif";
+  let width = screen.width;
 
-      doorImage1.src = "./img/animated-door2.gif";
-      box.disabled = true;
-      box2.classList.add("fadeOut");
-      box3.classList.add("fadeOut");
-      box4.classList.add("fadeOut");
-      setTimeout(() => {
-        kamerModal.classList.add("fadeIn");
-      }, 1000);
-      setTimeout(() => {
-        doorImage1.src = "./img/closed-door2.jpg";
-        box.disabled = false;
-      }, 2000);
-      setTimeout(() => {
-        kamerOuter1.classList.add("opacityIn");
-        ctaButton.classList.add("opacityIn");
-        if (width > 900) {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        } else {
-          window.scrollTo({ top: 100, behavior: "smooth" });
-        }
-      }, 2300);
+  kamerOuter1.classList.remove("hidden");
+  kamerOuter2.classList.add("hidden");
+  kamerOuter3.classList.add("hidden");
+  kamerOuter4.classList.add("hidden");
+
+  box2.classList.add("fadeOut");
+  box3.classList.add("fadeOut");
+  box4.classList.add("fadeOut");
+  setTimeout(() => {
+    kamerModal.classList.add("fadeIn");
+  }, 1000);
+  setTimeout(() => {
+    doorImage1.src = "./img/closed-door2.jpg";
+  }, 2000);
+  setTimeout(() => {
+    kamerOuter1.classList.add("opacityIn");
+    ctaButton.classList.add("opacityIn");
+    if (width > 900) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 100, behavior: "smooth" });
     }
+  }, 2300);
+});
 
-    if (e.target.classList[1] === "img2") {
-      kamerOuter1.classList.add("hidden");
-      kamerOuter2.classList.remove("hidden");
-      kamerOuter3.classList.add("hidden");
-      kamerOuter4.classList.add("hidden");
+doorImage2.addEventListener("click", () => {
+  let width = screen.width;
+  doorImage2.src = "./img/animated-door2.gif";
+  kamerOuter2.classList.remove("hidden");
+  kamerOuter1.classList.add("hidden");
+  kamerOuter3.classList.add("hidden");
+  kamerOuter4.classList.add("hidden");
 
-      doorImage2.src = "./img/animated-door2.gif";
-      box.disabled = true;
-      box1.classList.add("fadeOut");
-      box3.classList.add("fadeOut");
-      box4.classList.add("fadeOut");
-      setTimeout(() => {
-        kamerModal.classList.add("fadeIn");
-      }, 1000);
-      setTimeout(() => {
-        doorImage2.src = "./img/closed-door2.jpg";
-        box.disabled = false;
-      }, 2000);
-      setTimeout(() => {
-        kamerOuter2.classList.add("opacityIn");
-        ctaButton.classList.add("opacityIn");
-        if (width > 900) {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        } else {
-          window.scrollTo({ top: 100, behavior: "smooth" });
-        }
-      }, 2300);
+  box1.classList.add("fadeOut");
+  box3.classList.add("fadeOut");
+  box4.classList.add("fadeOut");
+  setTimeout(() => {
+    kamerModal.classList.add("fadeIn");
+  }, 1000);
+  setTimeout(() => {
+    doorImage2.src = "./img/closed-door2.jpg";
+  }, 2000);
+  setTimeout(() => {
+    kamerOuter2.classList.add("opacityIn");
+    ctaButton.classList.add("opacityIn");
+    if (width > 900) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 100, behavior: "smooth" });
     }
+  }, 2300);
+});
 
-    if (e.target.classList[1] === "img3") {
-      kamerOuter1.classList.add("hidden");
-      kamerOuter2.classList.add("hidden");
-      kamerOuter3.classList.remove("hidden");
-      kamerOuter4.classList.add("hidden");
+doorImage3.addEventListener("click", () => {
+  let width = screen.width;
+  doorImage3.src = "./img/animated-door2.gif";
+  kamerOuter3.classList.remove("hidden");
+  kamerOuter1.classList.add("hidden");
+  kamerOuter2.classList.add("hidden");
+  kamerOuter4.classList.add("hidden");
 
-      doorImage3.src = "./img/animated-door2.gif";
-      box.disabled = true;
-      box1.classList.add("fadeOut");
-      box2.classList.add("fadeOut");
-      box4.classList.add("fadeOut");
-      setTimeout(() => {
-        kamerModal.classList.add("fadeIn");
-      }, 1000);
-      setTimeout(() => {
-        doorImage3.src = "./img/closed-door2.jpg";
-        box.disabled = false;
-      }, 2000);
-      setTimeout(() => {
-        kamerOuter3.classList.add("opacityIn");
-        ctaButton.classList.add("opacityIn");
-        if (width > 900) {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        } else {
-          window.scrollTo({ top: 100, behavior: "smooth" });
-        }
-      }, 2300);
+  box1.classList.add("fadeOut");
+  box2.classList.add("fadeOut");
+  box4.classList.add("fadeOut");
+  setTimeout(() => {
+    kamerModal.classList.add("fadeIn");
+  }, 1000);
+  setTimeout(() => {
+    doorImage3.src = "./img/closed-door2.jpg";
+  }, 2000);
+  setTimeout(() => {
+    kamerOuter3.classList.add("opacityIn");
+    ctaButton.classList.add("opacityIn");
+    if (width > 900) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 100, behavior: "smooth" });
     }
+  }, 2300);
+});
 
-    if (e.target.classList[1] === "img4") {
-      kamerOuter1.classList.add("hidden");
-      kamerOuter2.classList.add("hidden");
-      kamerOuter3.classList.add("hidden");
-      kamerOuter4.classList.remove("hidden");
+doorImage4.addEventListener("click", () => {
+  doorImage4.src = "./img/animated-door2.gif";
+  kamerOuter4.classList.remove("hidden");
+  kamerOuter1.classList.add("hidden");
+  kamerOuter2.classList.add("hidden");
+  kamerOuter3.classList.add("hidden");
+  let width = screen.width;
 
-      doorImage4.src = "./img/animated-door2.gif";
-      box.disabled = true;
-      box1.classList.add("fadeOut");
-      box2.classList.add("fadeOut");
-      box3.classList.add("fadeOut");
-      setTimeout(() => {
-        kamerModal.classList.add("fadeIn");
-      }, 1000);
-      setTimeout(() => {
-        kamerOuter4.classList.add("opacityIn");
-        doorImage4.src = "./img/closed-door2.jpg";
-        box.disabled = false;
-      }, 2000);
-      setTimeout(() => {
-        kamerOuter4.classList.add("opacityIn");
-        ctaButton.classList.add("opacityIn");
-        if (width > 900) {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        } else {
-          window.scrollTo({ top: 100, behavior: "smooth" });
-        }
-      }, 2300);
+  box1.classList.add("fadeOut");
+  box2.classList.add("fadeOut");
+  box3.classList.add("fadeOut");
+  setTimeout(() => {
+    kamerModal.classList.add("fadeIn");
+  }, 1000);
+  setTimeout(() => {
+    kamerOuter4.classList.add("opacityIn");
+    doorImage4.src = "./img/closed-door2.jpg";
+  }, 2000);
+  setTimeout(() => {
+    kamerOuter4.classList.add("opacityIn");
+    ctaButton.classList.add("opacityIn");
+    if (width > 900) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 100, behavior: "smooth" });
     }
-  });
+  }, 2300);
 });
 
 const kamerModal = document.querySelector(".kamer-modal");
