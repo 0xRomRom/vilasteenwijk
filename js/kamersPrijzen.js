@@ -55,7 +55,7 @@ imageBox.forEach((box) => {
       kamerOuter3.classList.add("hidden");
       kamerOuter4.classList.add("hidden");
 
-      doorImage1.src = "../img/animated-door2.gif";
+      doorImage1.src = "./img/animated-door2.gif";
       box.disabled = true;
       box2.classList.add("fadeOut");
       box3.classList.add("fadeOut");
@@ -64,7 +64,7 @@ imageBox.forEach((box) => {
         kamerModal.classList.add("fadeIn");
       }, 1000);
       setTimeout(() => {
-        doorImage1.src = "../img/closed-door2.jpg";
+        doorImage1.src = "./img/closed-door2.jpg";
         box.disabled = false;
       }, 2000);
       setTimeout(() => {
@@ -84,7 +84,7 @@ imageBox.forEach((box) => {
       kamerOuter3.classList.add("hidden");
       kamerOuter4.classList.add("hidden");
 
-      doorImage2.src = "../img/animated-door2.gif";
+      doorImage2.src = "./img/animated-door2.gif";
       box.disabled = true;
       box1.classList.add("fadeOut");
       box3.classList.add("fadeOut");
@@ -93,7 +93,7 @@ imageBox.forEach((box) => {
         kamerModal.classList.add("fadeIn");
       }, 1000);
       setTimeout(() => {
-        doorImage2.src = "../img/closed-door2.jpg";
+        doorImage2.src = "./img/closed-door2.jpg";
         box.disabled = false;
       }, 2000);
       setTimeout(() => {
@@ -113,7 +113,7 @@ imageBox.forEach((box) => {
       kamerOuter3.classList.remove("hidden");
       kamerOuter4.classList.add("hidden");
 
-      doorImage3.src = "../img/animated-door2.gif";
+      doorImage3.src = "./img/animated-door2.gif";
       box.disabled = true;
       box1.classList.add("fadeOut");
       box2.classList.add("fadeOut");
@@ -122,7 +122,7 @@ imageBox.forEach((box) => {
         kamerModal.classList.add("fadeIn");
       }, 1000);
       setTimeout(() => {
-        doorImage3.src = "../img/closed-door2.jpg";
+        doorImage3.src = "./img/closed-door2.jpg";
         box.disabled = false;
       }, 2000);
       setTimeout(() => {
@@ -142,7 +142,7 @@ imageBox.forEach((box) => {
       kamerOuter3.classList.add("hidden");
       kamerOuter4.classList.remove("hidden");
 
-      doorImage4.src = "../img/animated-door2.gif";
+      doorImage4.src = "./img/animated-door2.gif";
       box.disabled = true;
       box1.classList.add("fadeOut");
       box2.classList.add("fadeOut");
@@ -152,7 +152,7 @@ imageBox.forEach((box) => {
       }, 1000);
       setTimeout(() => {
         kamerOuter4.classList.add("opacityIn");
-        doorImage4.src = "../img/closed-door2.jpg";
+        doorImage4.src = "./img/closed-door2.jpg";
         box.disabled = false;
       }, 2000);
       setTimeout(() => {
