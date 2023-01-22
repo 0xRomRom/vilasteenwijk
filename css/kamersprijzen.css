@@ -96,6 +96,7 @@ a {
   background-color: rgba(0, 0, 0, 0.454);
   z-index: 5;
   text-decoration: none;
+  padding-top: 0rem !important;
 }
 
 .navlist li {
@@ -257,7 +258,7 @@ a {
 .kamer-modal {
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 70rem;
   background-color: black;
   z-index: 10;
@@ -271,10 +272,12 @@ a {
   width: 100vw;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding-right: 2rem;
-  padding-top: 1rem;
+  left: 0rem !important;
   z-index: 30;
-  height: 3rem;
+  height: 4rem;
+  /* background-color: green; */
 }
 
 .fa-xmark {
@@ -287,11 +290,11 @@ a {
   background-color: transparent;
   color: white;
   outline: 0;
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border: none;
   cursor: pointer;
-  position: absolute;
+  position: relative;
   /* background-color: green; */
   display: flex;
   justify-content: center;

@@ -69,6 +69,7 @@ imageBox.forEach((box) => {
       setTimeout(() => {
         kamerOuter1.classList.add("opacityIn");
         ctaButton.classList.add("opacityIn");
+        window.scrollTo({ top: 100, behavior: "smooth" });
       }, 2300);
     }
 
@@ -93,6 +94,7 @@ imageBox.forEach((box) => {
       setTimeout(() => {
         kamerOuter2.classList.add("opacityIn");
         ctaButton.classList.add("opacityIn");
+        window.scrollTo({ top: 100, behavior: "smooth" });
       }, 2300);
     }
 
@@ -117,6 +119,7 @@ imageBox.forEach((box) => {
       setTimeout(() => {
         kamerOuter3.classList.add("opacityIn");
         ctaButton.classList.add("opacityIn");
+        window.scrollTo({ top: 100, behavior: "smooth" });
       }, 2300);
     }
 
@@ -142,6 +145,7 @@ imageBox.forEach((box) => {
       setTimeout(() => {
         kamerOuter4.classList.add("opacityIn");
         ctaButton.classList.add("opacityIn");
+        window.scrollTo({ top: 100, behavior: "smooth" });
       }, 2300);
     }
   });

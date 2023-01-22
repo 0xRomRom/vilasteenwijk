@@ -54,4 +54,185 @@
     display: flex;
     gap: 3%;
   }
+  .kamers-box {
+    /* flex-direction: column; */
+    /* top: 50rem; */
+    gap: 2rem;
+  }
+  .close-modal {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+    top: 0rem;
+  }
+  .close-kamer-btn {
+    background-color: black;
+    border-radius: 0.2rem;
+    z-index: 600 !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .kamers-box {
+    flex-direction: column;
+    top: 45rem;
+    gap: 5rem;
+  }
+  .app {
+    height: 140rem;
+  }
+  .page-hero {
+    padding-left: 2rem;
+    top: 6rem;
+  }
+  .kamer-outer-box {
+    top: 0.5rem;
+  }
+  .close-modal {
+    top: 1rem;
+  }
+  .cta-box {
+    top: 51rem;
+  }
+  .kamer-modal {
+    height: 140rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .kamer-outer-box {
+    transform: scale(0.9);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .page-hero {
+    position: absolute;
+    width: 100vw;
+    height: 4rem;
+    top: 10rem;
+    font-size: 0.9rem;
+    padding-left: 2rem;
+    user-select: none;
+    transition: all 0.8s ease-in-out;
+  }
+  .footer-inner {
+    left: 3rem;
+  }
+  .links-box {
+    width: 100vw;
+    left: 0rem;
+  }
+  .icon {
+    position: absolute;
+    width: 5rem;
+    top: -3rem;
+    left: 35vw;
+  }
+  .kamer-outer-box {
+    transform: scale(0.8) !important;
+    top: -4rem;
+  }
+  .cta-box {
+    top: 49rem;
+  }
+  .kamer-desc-box {
+    position: absolute;
+    width: 17rem;
+    height: 14rem;
+    top: 30rem;
+    left: 1rem;
+    /* border: 1px solid red; */
+    overflow-y: scroll;
+    padding-right: 0.3rem;
+  }
+  .voorzieningen {
+    left: 20rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .voorzieningen {
+    left: 18rem;
+  }
+  .kamer-desc-box {
+    width: 15rem;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .voorzieningen {
+    left: 18rem;
+  }
+  .kamer-desc-box {
+    width: 13rem;
+  }
+  .prijs {
+    font-size: 0.8rem;
+  }
+  .prijs2 {
+    /* left: 10rem; */
+    top: 27.5rem;
+    font-size: 0.8rem;
+  }
+  .voorzieningen {
+    left: 15rem;
+  }
+  .cta-box {
+    top: 45rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .kamer-outer-box {
+    transform: scale(0.7);
+    top: -4rem;
+    overflow: hidden;
+  }
+  .voorzien-list {
+    top: 3rem;
+    width: 12rem;
+    height: 15rem;
+  }
+  .voorzien-hero {
+    left: -2rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .icon {
+    left: 33vw;
+  }
+  .footer-inner {
+    left: 1.5rem;
+  }
+  .voorzien-list {
+    width: 11rem;
+    font-size: 0.9rem;
+    left: 0.3rem;
+  }
+  .voorzieningen {
+    left: 13rem;
+  }
+  .kamer-desc-box {
+    width: 12rem;
+  }
+  .voorzien-hero {
+    top: -0.5rem;
+    left: -2rem;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .kamer-outer-box {
+    transform: scale(1) !important;
+    top: 0rem;
+  }
+  .cta-box {
+    top: 51.5rem;
+  }
 }
