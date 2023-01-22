@@ -9,7 +9,6 @@ window.onload = async () => {
   );
   const data = await fetcher.json();
   currentDates = await data;
-  console.log(currentDates);
   renderCalendar(month);
 };
 

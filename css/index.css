@@ -3,7 +3,7 @@
   src: url(../fonts/CinzelDecorative-Regular.ttf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 * {
   padding: 0;
@@ -15,8 +15,6 @@
 .hidden {
   display: none !important;
 }
-
-
 
 .fadeIn {
   animation: fadeIn 0.3s ease-in-out forwards;
@@ -259,9 +257,8 @@ body {
 }
 
 .reserveren-li {
-border-bottom: 1px solid #ffd700;
+  border-bottom: 1px solid #ffd700;
 }
-
 
 .villa-overlay {
   position: absolute;
@@ -281,7 +278,14 @@ border-bottom: 1px solid #ffd700;
   position: relative;
   height: 63rem;
   width: 100%;
-  background: linear-gradient(180deg, rgb(2, 32, 2), rgb(2, 32, 2), rgb(2, 32, 2), rgb(2, 32, 2), black);
+  background: linear-gradient(
+    180deg,
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    black
+  );
   /* background-color: black; */
   /* background-color: rgb(2, 32, 2); */
   color: #ffd900;
@@ -300,8 +304,6 @@ border-bottom: 1px solid #ffd700;
   align-items: center;
   padding-left: 5rem;
 }
-
-
 
 .stijl-hero {
   position: relative;
@@ -323,7 +325,6 @@ border-bottom: 1px solid #ffd700;
   transition: all 0.8s ease-in-out;
 }
 
-
 .locatie-hero {
   position: relative;
   font-family: luxuryFont;
@@ -333,7 +334,6 @@ border-bottom: 1px solid #ffd700;
   opacity: 0 !important;
   transition: all 0.8s ease-in-out;
 }
-
 
 .down-cta-1 {
   position: relative;
@@ -414,7 +414,6 @@ border-bottom: 1px solid #ffd700;
 .span1 {
   position: relative;
   transition: all 1.5s ease-in-out;
-  
 }
 
 .span2 {
@@ -468,6 +467,7 @@ border-bottom: 1px solid #ffd700;
   align-items: center;
   /* display: none; */
   /* opacity: 0; */
+  gap: 3rem;
 }
 
 .leftbox {
@@ -485,14 +485,19 @@ border-bottom: 1px solid #ffd700;
 
 .fancy-modal {
   position: relative;
-  width: 80%;
-  height: 18rem;
+  width: 55rem;
+  height: 33rem;
   border-radius: 0.4rem;
   /* border: 2px solid #ffd900; */
   color: #ffd900;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 1rem;
+}
+
+.intro-text {
+  letter-spacing: 3px;
 }
 
 .video-block {
@@ -503,7 +508,6 @@ border-bottom: 1px solid #ffd700;
   justify-content: center;
   align-items: center;
   /* border: 1px solid red; */
-
 }
 
 .demo-video {
@@ -523,7 +527,7 @@ border-bottom: 1px solid #ffd700;
   transition: all 0.2s ease-in-out;
   font-size: 0.9rem;
 }
-.a-href2{
+.a-href2 {
   color: rgb(199, 188, 188);
   /* position: absolute; */
   top: 30.5rem;
@@ -562,7 +566,6 @@ border-bottom: 1px solid #ffd700;
   transition: all 0.2s ease-in-out;
   font-size: 0.9rem;
   /* background-color: red !important; */
-
 }
 
 .a-href3 {
@@ -585,7 +588,6 @@ border-bottom: 1px solid #ffd700;
 .bekijk-omgeving:hover {
   color: white;
 }
-
 
 .rightbox {
   position: relative;
@@ -613,7 +615,6 @@ border-bottom: 1px solid #ffd700;
   overflow: hidden;
   font-family: luxuryFont;
   /* border: 1px solid blue; */
-
 }
 
 .hero-div2 {
@@ -675,11 +676,10 @@ border-bottom: 1px solid #ffd700;
   transition: all 0.8s ease-in-out;
 }
 .modal3 {
-    transform: scale(0.1);
+  transform: scale(0.1);
   opacity: 0 !important;
   transition: all 0.8s ease-in-out;
 }
-
 
 .review-modal {
   position: relative;
@@ -689,7 +689,7 @@ border-bottom: 1px solid #ffd700;
   top: 0.5rem;
   /* border: 1px solid white; */
   /* background-color: rgb(124, 188, 209); */
-  background: url('../img/Script.png');
+  background: url("../img/Script.png");
   border-radius: 0.6rem;
   transition: all 0.4s ease-in-out;
   box-shadow: 0px 0px 10px yellow;
@@ -707,7 +707,6 @@ border-bottom: 1px solid #ffd700;
   height: 4rem;
   /* background-color: green; */
 }
-
 
 .modal-img {
   position: relative;
@@ -747,17 +746,17 @@ border-bottom: 1px solid #ffd700;
 }
 
 .review-text-box {
-position: relative;
-width: 90%;
-top: 4rem;
-height: 15rem;
-left: 5%;
-/* border: 1px solid red; */
-color: rgb(0, 0, 0);
-font-weight: 800 !important;
-font-size: 1.5rem;
-font-family: "Open Sans";
-user-select: none;
+  position: relative;
+  width: 90%;
+  top: 4rem;
+  height: 15rem;
+  left: 5%;
+  /* border: 1px solid red; */
+  color: rgb(0, 0, 0);
+  font-weight: 800 !important;
+  font-size: 1.5rem;
+  font-family: "Open Sans";
+  user-select: none;
 }
 
 .review-visited {
@@ -767,7 +766,6 @@ user-select: none;
   font-size: 0.9rem;
   /* background-color: green; */
 }
-
 
 .locatie {
   position: relative;
@@ -779,9 +777,16 @@ user-select: none;
   letter-spacing: 2px;
   overflow: hidden;
   font-family: luxuryFont;
-  background: linear-gradient(180deg,black, rgb(2, 32, 2), rgb(2, 32, 2), rgb(2, 32, 2), rgb(2, 32, 2), black);
+  background: linear-gradient(
+    180deg,
+    black,
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    black
+  );
 }
-
 
 .locatie-box {
   position: relative;
@@ -824,7 +829,6 @@ user-select: none;
   transition: all 0.8s ease-in-out;
 }
 
-
 .loc-text-box {
   position: relative;
   width: 90%;
@@ -844,7 +848,6 @@ user-select: none;
   height: 30rem;
   background-color: black;
   /* border-top: 1px solid white; */
-
 }
 
 .hr {
@@ -888,7 +891,6 @@ user-select: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .copyright {
@@ -908,7 +910,6 @@ user-select: none;
   /* background-color: white; */
   width: 8rem;
 }
-
 
 .reserveren-box {
   position: absolute;
@@ -949,7 +950,6 @@ user-select: none;
   gap: 1rem;
 }
 
-
 .icon-box {
   position: relative;
   width: 3rem;
@@ -961,7 +961,7 @@ user-select: none;
 }
 
 .icon-box:hover {
-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .active {
