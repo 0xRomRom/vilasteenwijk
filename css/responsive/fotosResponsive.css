@@ -6,19 +6,19 @@
     left: 10%;
   }
   .app {
-    height: 150rem;
+    height: 240rem;
   }
 }
 
 @media only screen and (max-width: 1350px) {
   .app {
-    height: 130rem;
+    height: 220rem;
   }
 }
 
 @media only screen and (max-width: 1150px) {
   .app {
-    height: 115rem;
+    height: 190rem;
   }
 }
 
@@ -77,5 +77,73 @@
     z-index: 3;
     display: flex;
     gap: 3%;
+  }
+  .app {
+    height: 170rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .app {
+    height: 150rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .page-hero {
+    padding-left: 4.7rem;
+  }
+  .app {
+    height: 140rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .app {
+    height: 120rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .page-hero {
+    padding-left: 2rem;
+  }
+  .grid {
+    left: 1.5rem;
+    width: 95%;
+  }
+  .image-overlay {
+    position: fixed;
+    /* width: 100vw !important;
+    height: 100vw !important; */
+  }
+  .app {
+    overflow: hidden !important;
+    height: 110rem;
+  }
+  .logo-box {
+    position: absolute;
+    top: -9rem;
+    transform: scale(0.6);
+    /* background-color: red; */
+    left: 20vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .app {
+    height: 100rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .app {
+    height: 90rem;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .app {
+    height: 80rem;
   }
 }
