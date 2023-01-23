@@ -152,6 +152,9 @@
   .voorzieningen {
     left: 20rem;
   }
+  .dotbox {
+    left: 27%;
+  }
 }
 
 @media only screen and (max-width: 560px) {
@@ -201,6 +204,32 @@
     left: -2rem;
     font-size: 1.2rem;
   }
+  .kamer-outer-box {
+    transform: scale(1) !important;
+    top: 0rem;
+  }
+  .kamer-img-box {
+    left: 0rem;
+    width: 100vw;
+  }
+  .cta-box {
+    top: 52rem;
+  }
+  .kamer-inner-box2 {
+    margin-right: 0.5rem;
+  }
+  .kamer-desc-box {
+    left: 0.5rem;
+  }
+  .prijs {
+    left: 0.5rem;
+  }
+  .prijs2 {
+    left: 0.5rem;
+  }
+  .dotbox {
+    left: 24%;
+  }
 }
 
 @media only screen and (max-width: 440px) {
@@ -226,13 +255,15 @@
     left: -2rem;
     font-size: 1.2rem;
   }
+  .dotbox {
+    left: 22%;
+  }
 }
 @media only screen and (max-width: 400px) {
-  .kamer-outer-box {
-    transform: scale(1) !important;
-    top: 0rem;
-  }
   .cta-box {
     top: 51.5rem;
+  }
+  .dotbox {
+    left: 20%;
   }
 }

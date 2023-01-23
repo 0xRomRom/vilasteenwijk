@@ -585,6 +585,38 @@ a {
   padding-top: 1rem;
 }
 
+.dotbox {
+  position: absolute;
+  width: 15rem;
+  height: 2rem;
+  /* border: 1px solid red; */
+  z-index: 100;
+  top: 18.5rem;
+  left: 11.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.dot-stl {
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: transparent;
+  border: 1px solid rgb(37, 49, 96);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.dot-active {
+  font-size: 1.5rem;
+  color: rgb(37, 49, 96);
+  border: 1px solid rgb(37, 49, 96);
+  background-color: rgb(37, 49, 96);
+  border-radius: 2rem;
+}
+
 .kamer-img-box {
   position: relative;
   width: 95%;
