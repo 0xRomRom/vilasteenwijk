@@ -66,6 +66,7 @@
     align-items: center;
     z-index: 30;
     top: 0rem;
+    padding: 0rem;
   }
   .close-kamer-btn {
     background-color: black;
@@ -232,6 +233,9 @@
   .dotbox {
     left: 24%;
   }
+  .johan {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 440px) {
@@ -247,7 +251,7 @@
     left: 0.3rem;
   }
   .voorzieningen {
-    left: 13rem;
+    left: 15rem;
   }
   .kamer-desc-box {
     width: 12rem;
@@ -267,5 +271,19 @@
   }
   .dotbox {
     left: 20%;
+  }
+  .voorzieningen {
+    left: 14rem;
+  }
+  .prijs {
+    font-size: 0.7rem;
+  }
+  .prijs2 {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .voorzieningen {
+    left: 13rem;
   }
 }
