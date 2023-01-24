@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1300px) {
   .cycle-image {
-    min-width: 1250px !important;
+    min-width: 80vw;
   }
   .fancy-modal {
     font-size: 0.9rem;
@@ -110,18 +110,14 @@
 }
 
 @media only screen and (max-width: 1350px) {
-  .cycle-image {
+  /* .cycle-image {
     width: auto;
     height: 100%;
     width: 200%;
     max-height: 100vh;
-  }
+  } */
 
   .landing-img-container {
-    width: 200%;
-    left: -50%;
-    /* transform: scale(0.9); */
-    /* top: 1rem; */
     height: 100%;
   }
   .header-div {
@@ -245,6 +241,9 @@
     font-size: 1.7rem;
     padding-left: 0rem !important;
   }
+  .fa-arrow-turn-up {
+    top: -15rem;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -265,6 +264,14 @@
   .locatie-hero {
     left: -2rem;
   }
+  .footer-inner {
+    top: 0rem;
+  }
+  .fa-arrow-turn-up {
+    top: -17rem;
+    /* left: 40vw; */
+    position: relative;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -275,15 +282,7 @@
     font-size: 1.5rem;
     padding-left: 0.5rem !important;
   }
-  .icon {
-    position: absolute;
-    top: -2rem;
-    left: 50vw;
-  }
-  .footer-inner {
-    width: 100vw;
-    left: -2rem;
-  }
+
   .locatie-box {
     transform: scale(0.6);
     top: 5rem;
@@ -297,6 +296,9 @@
   }
   .locatie {
     height: 57rem;
+  }
+  .nav-list {
+    z-index: 0 !important;
   }
 }
 

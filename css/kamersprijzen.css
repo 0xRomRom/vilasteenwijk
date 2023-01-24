@@ -71,7 +71,6 @@
     rgb(2, 32, 2),
     black
   );
-  overflow-y: hidden !important;
 }
 
 body {
@@ -407,8 +406,7 @@ a {
   position: relative;
   width: 90%;
   left: 5%;
-  /* background-color: gray;
-  color: gray; */
+  color: gray;
   border: 1px solid rgb(70, 68, 68);
 }
 

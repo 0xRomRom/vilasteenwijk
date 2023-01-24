@@ -55,3 +55,127 @@
     gap: 3%;
   }
 }
+
+@media only screen and (max-width: 650px) {
+  .page-hero {
+    padding-left: 1rem;
+  }
+  .reserveren-modal-box {
+    transform: scale(0.9);
+    top: 14rem;
+  }
+  .footer-inner {
+    top: 0rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .reserveren-modal-box {
+    transform: scale(0.8);
+  }
+  .calendar-grid {
+    transform: scale(0.9);
+    left: -1rem;
+  }
+  .beschikbaarheid-box {
+    left: 17rem;
+  }
+  .form-row {
+    position: relative;
+    width: 100%;
+    left: 0%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.8rem;
+  }
+  .order-string {
+    left: 10rem;
+    font-size: 0.9rem;
+    padding-top: 0.2rem;
+  }
+  .total-price {
+    font-size: 1.3rem;
+  }
+  .page4 {
+    transform: scale(0.9);
+  }
+  .fa-check {
+    left: 17rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .page4 {
+    transform: scale(0.8);
+  }
+  .page4-hero {
+    font-size: 1.7rem;
+  }
+  .page5-hero {
+    font-size: 1.6rem;
+  }
+  .page5-hero-sub3 {
+    width: 15rem;
+  }
+
+  .copyright {
+    position: absolute;
+    top: 8rem;
+    z-index: 500;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .reserveren-modal-box {
+    transform: scale(0.8);
+  }
+  .calendar-grid {
+    transform: scale(0.8);
+    left: -2rem;
+  }
+  .beschikbaarheid-box {
+    left: 16rem;
+  }
+  .order-string {
+    left: 9rem;
+    /* transform: scale(0.9); */
+  }
+  .input-stl {
+    width: 11rem;
+  }
+  .span-div {
+    transform: scale(0.9);
+    padding-left: 3.5rem;
+  }
+  .transfer {
+    min-width: 7rem;
+    left: -3rem;
+  }
+  .span-div2 {
+    transform: scale(0.8);
+    padding-left: 2rem;
+  }
+  .page4-hero-sub2 {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .input-stl {
+    width: 9rem;
+  }
+  .page4-hero {
+    font-size: 1.6rem;
+  }
+  .page4 {
+    width: 130%;
+    left: -15%;
+  }
+  .page5-hero {
+    font-size: 1.3rem;
+  }
+  .copyright {
+    transform: scale(0.8);
+  }
+}

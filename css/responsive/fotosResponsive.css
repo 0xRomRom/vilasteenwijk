@@ -71,7 +71,7 @@
     margin: 16px 0;
   }
   .navlist.active {
-    padding-top: 10rem;
+    padding-top: 0rem;
     left: 0;
     height: 100vh;
     z-index: 3;
