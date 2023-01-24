@@ -1,3 +1,17 @@
+@media (max-width: 1150px) {
+  .contact-modal-box {
+    flex-direction: column;
+    gap: 3rem;
+    top: 30rem;
+  }
+  .layer {
+    height: 7rem;
+  }
+  .app {
+    height: 85rem;
+  }
+}
+
 @media (max-width: 1100px) {
   .hamburger {
     right: 5%;
@@ -53,5 +67,46 @@
     z-index: 3;
     display: flex;
     gap: 3%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .page-hero {
+    padding-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .contact-layers {
+    transform: scale(0.8);
+  }
+  .contact-modal {
+    transform: scale(0.8);
+  }
+  .contact-modal-box {
+    gap: 0rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .contact-layers {
+    transform: scale(0.7);
+    top: -5rem;
+  }
+  .contact-modal {
+    transform: scale(0.7);
+    top: -8rem;
+  }
+  .app {
+    height: 70rem;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .contact-layers {
+    transform: scale(0.6);
+  }
+  .contact-modal {
+    transform: scale(0.6);
   }
 }
