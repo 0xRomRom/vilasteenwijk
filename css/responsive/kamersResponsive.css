@@ -47,7 +47,6 @@
     margin: 16px 0;
   }
   .navlist.active {
-    padding-top: 10rem;
     left: 0;
     height: 100vh;
     z-index: 3;
@@ -105,6 +104,9 @@
 @media only screen and (max-width: 700px) {
   .kamer-outer-box {
     transform: scale(0.9);
+  }
+  .copyright {
+    top: 10rem;
   }
 }
 

@@ -53,7 +53,6 @@
     margin: 16px 0;
   }
   .navlist.active {
-    padding-top: 10rem;
     left: 0;
     height: 100vh;
     z-index: 3;
@@ -94,6 +93,9 @@
   }
   .app {
     height: 150rem;
+  }
+  .footer-inner {
+    top: -4rem;
   }
 }
 

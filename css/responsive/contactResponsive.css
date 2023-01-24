@@ -61,7 +61,6 @@
     margin: 16px 0;
   }
   .navlist.active {
-    padding-top: 10rem;
     left: 0;
     height: 100vh;
     z-index: 3;
@@ -73,6 +72,12 @@
 @media only screen and (max-width: 700px) {
   .page-hero {
     padding-left: 1rem;
+  }
+  .footer-inner {
+    top: 0rem;
+  }
+  .copyright {
+    top: 8rem;
   }
 }
 
