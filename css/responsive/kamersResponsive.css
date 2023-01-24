@@ -76,6 +76,9 @@
   .blackbox {
     display: block;
   }
+  .kamer-modal {
+    top: 4rem;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -92,7 +95,7 @@
     top: 6rem;
   }
   .kamer-outer-box {
-    top: 0.5rem;
+    top: -1rem;
   }
   .close-modal {
     top: 1rem;

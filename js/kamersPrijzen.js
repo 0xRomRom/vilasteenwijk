@@ -232,14 +232,14 @@ const imageLinks3 = [
 
 //Kleibeuker
 const imageLinks4 = [
-  "./img/Room1/Pic1.jpeg",
-  "./img/Room1/Pic2.jpeg",
-  "./img/Room1/Pic3.jpeg",
-  "./img/Room1/Pic4.jpeg",
-  "./img/Room1/Pic5.jpeg",
-  "./img/Room1/Pic6.jpeg",
-  "./img/Room1/Pic7.jpeg",
-  "./img/Room1/Pic8.jpeg",
+  "./img/Room4/Pic1.jpeg",
+  "./img/Room4/Pic2.jpeg",
+  "./img/Room4/Pic3.jpeg",
+  "./img/Room4/Pic4.jpeg",
+  "./img/Room4/Pic5.jpeg",
+  "./img/Room4/Pic6.jpeg",
+  "./img/Room4/Pic7.jpeg",
+  "./img/Room4/Pic8.jpeg",
 ];
 
 //Dotbox transition
@@ -404,102 +404,102 @@ dotBox3.addEventListener("click", (e) => {
   if (e.target.classList.contains("d17")) {
     dot17.classList.add("dot-active");
     hideClasses(dot18, dot19, dot20, dot21, dot22, dot23, dot24);
-    image.src = imageLinks3[0];
+    image.src = imageLinks4[0];
     return;
   }
   if (e.target.classList.contains("d18")) {
     dot18.classList.add("dot-active");
     hideClasses(dot17, dot19, dot20, dot21, dot22, dot23, dot24);
-    image.src = imageLinks3[1];
+    image.src = imageLinks4[1];
     return;
   }
   if (e.target.classList.contains("d19")) {
     dot19.classList.add("dot-active");
     hideClasses(dot17, dot18, dot20, dot21, dot22, dot23, dot24);
-    image.src = imageLinks3[2];
+    image.src = imageLinks4[2];
     return;
   }
   if (e.target.classList.contains("d20")) {
     dot20.classList.add("dot-active");
     hideClasses(dot17, dot18, dot19, dot21, dot22, dot23, dot24);
-    image.src = imageLinks3[3];
+    image.src = imageLinks4[3];
     return;
   }
   if (e.target.classList.contains("d21")) {
     dot21.classList.add("dot-active");
     hideClasses(dot17, dot18, dot19, dot20, dot22, dot23, dot24);
-    image.src = imageLinks3[4];
+    image.src = imageLinks4[4];
     return;
   }
   if (e.target.classList.contains("d22")) {
     dot22.classList.add("dot-active");
     hideClasses(dot17, dot18, dot19, dot20, dot21, dot23, dot24);
-    image.src = imageLinks3[5];
+    image.src = imageLinks4[5];
     return;
   }
   if (e.target.classList.contains("d23")) {
     dot23.classList.add("dot-active");
     hideClasses(dot17, dot18, dot19, dot20, dot21, dot22, dot24);
-    image.src = imageLinks3[6];
+    image.src = imageLinks4[6];
     return;
   }
   if (e.target.classList.contains("d24")) {
     dot24.classList.add("dot-active");
     hideClasses(dot17, dot18, dot19, dot20, dot21, dot22, dot23);
-    image.src = imageLinks3[7];
+    image.src = imageLinks4[7];
     return;
   }
 });
 
-//Tromp meester
+//Johan
 dotBox4.addEventListener("click", (e) => {
   const image = document.querySelector(".kamer1-img");
   if (e.target.classList.contains("d25")) {
     dot25.classList.add("dot-active");
     hideClasses(dot26, dot27, dot28, dot29, dot30, dot31, dot32);
-    image.src = imageLinks3[0];
+    image.src = imageLinks1[0];
     return;
   }
   if (e.target.classList.contains("d26")) {
     dot26.classList.add("dot-active");
     hideClasses(dot25, dot27, dot28, dot29, dot30, dot31, dot32);
-    image.src = imageLinks3[1];
+    image.src = imageLinks1[1];
     return;
   }
   if (e.target.classList.contains("d27")) {
     dot27.classList.add("dot-active");
     hideClasses(dot25, dot26, dot28, dot29, dot30, dot31, dot32);
-    image.src = imageLinks3[2];
+    image.src = imageLinks1[2];
     return;
   }
   if (e.target.classList.contains("d28")) {
     dot28.classList.add("dot-active");
     hideClasses(dot25, dot26, dot27, dot29, dot30, dot31, dot32);
-    image.src = imageLinks3[3];
+    image.src = imageLinks1[3];
     return;
   }
   if (e.target.classList.contains("d29")) {
     dot29.classList.add("dot-active");
     hideClasses(dot25, dot26, dot27, dot28, dot30, dot31, dot32);
-    image.src = imageLinks3[4];
+    image.src = imageLinks1[4];
     return;
   }
   if (e.target.classList.contains("d30")) {
     dot30.classList.add("dot-active");
     hideClasses(dot25, dot26, dot27, dot28, dot29, dot31, dot32);
-    image.src = imageLinks3[5];
+    image.src = imageLinks1[5];
     return;
   }
   if (e.target.classList.contains("d31")) {
     dot31.classList.add("dot-active");
     hideClasses(dot25, dot26, dot27, dot28, dot29, dot30, dot32);
-    image.src = imageLinks3[6];
+    image.src = imageLinks1[6];
     return;
   }
   if (e.target.classList.contains("d32")) {
     dot32.classList.add("dot-active");
     hideClasses(dot25, dot26, dot27, dot28, dot29, dot30, dot31);
-    image.src = imageLinks3[7];
+    image.src = imageLinks1[7];
     return;
   }
 });

@@ -253,7 +253,7 @@ a {
 
 .kamer-modal {
   position: absolute;
-  top: 0;
+  top: 0rem;
   width: 100vw;
   height: 70rem;
   background-color: black;

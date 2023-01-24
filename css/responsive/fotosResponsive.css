@@ -6,19 +6,19 @@
     left: 10%;
   }
   .app {
-    height: 240rem;
+    height: 550rem;
   }
 }
 
 @media only screen and (max-width: 1350px) {
   .app {
-    height: 220rem;
+    height: 500rem;
   }
 }
 
 @media only screen and (max-width: 1150px) {
   .app {
-    height: 190rem;
+    height: 430rem;
   }
 }
 
@@ -79,25 +79,36 @@
     gap: 3%;
   }
   .app {
-    height: 170rem;
+    height: 410rem;
   }
   .blackbox {
     display: block;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .app {
-    height: 150rem;
+    height: 380rem;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .app {
+    height: 310rem;
+  }
+}
+/* @media only screen and (max-width: 750px) {
+  .app {
+    height: 300rem;
+  }
+} */
 
 @media only screen and (max-width: 800px) {
   .page-hero {
     padding-left: 4.7rem;
   }
   .app {
-    height: 140rem;
+    height: 310rem;
   }
   .copyright {
     top: 10rem;
@@ -106,7 +117,7 @@
 
 @media only screen and (max-width: 680px) {
   .app {
-    height: 120rem;
+    height: 270rem;
   }
 }
 
@@ -125,7 +136,7 @@
   }
   .app {
     overflow: hidden !important;
-    height: 110rem;
+    height: 240rem;
   }
   .logo-box {
     position: absolute;
@@ -138,18 +149,18 @@
 
 @media only screen and (max-width: 500px) {
   .app {
-    height: 100rem;
+    height: 230rem;
   }
 }
 
 @media only screen and (max-width: 430px) {
   .app {
-    height: 90rem;
+    height: 190rem;
   }
 }
 
 @media only screen and (max-width: 390px) {
   .app {
-    height: 80rem;
+    height: 170rem;
   }
 }

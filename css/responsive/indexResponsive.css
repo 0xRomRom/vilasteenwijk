@@ -39,12 +39,6 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  .cycle-image {
-    min-width: 1000px !important;
-  }
-}
-
 @media only screen and (max-width: 800px) {
   .cycle-image {
     min-width: 800px !important;
@@ -207,14 +201,6 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .cycle-image {
-    position: absolute;
-    width: auto;
-    height: 100%;
-    width: 60%;
-    max-height: 100vh;
-  }
-
   .header-div {
     overflow: hidden;
   }
