@@ -1,7 +1,4 @@
 window.onload = () => {
-  const pageHero = document.querySelector(".page-hero");
-  pageHero.classList.add("active");
-
   //Grid layout
   const elem = document.querySelector(".grid");
   const msnry = new Masonry(elem, {
@@ -10,6 +7,9 @@ window.onload = () => {
     gutter: 2,
   });
 };
+
+const pageHero = document.querySelector(".page-hero");
+pageHero.classList.add("active");
 
 //Toggle fullscreen image
 const overlayContainer = document.querySelector(".image-overlay");
