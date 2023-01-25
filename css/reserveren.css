@@ -799,6 +799,7 @@ a {
   font-size: 1.5rem;
   color: rgb(186, 179, 179);
   top: -0.5rem;
+  left: -0.6rem;
 }
 
 .shake {
@@ -1000,7 +1001,7 @@ a {
   position: absolute;
   width: 25rem;
   height: 2rem;
-  left: 1.7rem;
+  left: 1.2rem;
   top: -2rem;
   /* border: 1px solid blue; */
   font-size: 1.2rem;
