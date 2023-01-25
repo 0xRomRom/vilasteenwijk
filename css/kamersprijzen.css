@@ -625,6 +625,14 @@ a {
   border-radius: 0.4rem;
 }
 
+.kamer-img-stl {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem;
+  border-radius: 20px 5px 20px 5px;
+}
+
 .kamer1-img {
   position: relative;
   width: 100%;
