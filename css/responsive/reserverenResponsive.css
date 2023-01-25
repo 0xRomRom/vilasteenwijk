@@ -140,8 +140,11 @@
     left: 16rem;
   }
   .order-string {
-    left: 11rem;
+    left: 8.2rem;
     /* transform: scale(0.9); */
+  }
+  .total-price {
+    font-size: 1rem;
   }
   .input-stl {
     width: 11rem;
@@ -182,5 +185,9 @@
   }
   .copyright {
     transform: scale(0.8);
+  }
+  .order-string {
+    left: 7rem;
+    /* transform: scale(0.9); */
   }
 }
