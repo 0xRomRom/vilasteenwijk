@@ -301,14 +301,14 @@ const hideImages = (a, b, c, d, e, f, g) => {
 
 //Hildo krop
 
-const k1img1 = document.querySelector(".kamer1-img1");
-const k1img2 = document.querySelector(".kamer1-img2");
-const k1img3 = document.querySelector(".kamer1-img3");
-const k1img4 = document.querySelector(".kamer1-img4");
-const k1img5 = document.querySelector(".kamer1-img5");
-const k1img6 = document.querySelector(".kamer1-img6");
-const k1img7 = document.querySelector(".kamer1-img7");
-const k1img8 = document.querySelector(".kamer1-img8");
+const k1img1 = document.querySelector(".kamer4-img1");
+const k1img2 = document.querySelector(".kamer4-img2");
+const k1img3 = document.querySelector(".kamer4-img3");
+const k1img4 = document.querySelector(".kamer4-img4");
+const k1img5 = document.querySelector(".kamer4-img5");
+const k1img6 = document.querySelector(".kamer4-img6");
+const k1img7 = document.querySelector(".kamer4-img7");
+const k1img8 = document.querySelector(".kamer4-img8");
 
 dotBox1.addEventListener("click", (e) => {
   if (e.target.classList.contains("d1")) {
