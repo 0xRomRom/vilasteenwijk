@@ -91,11 +91,7 @@
     justify-content: space-between;
     padding-top: 0.8rem;
   }
-  .order-string {
-    left: 10rem;
-    font-size: 0.9rem;
-    padding-top: 0.2rem;
-  }
+
   .total-price {
     font-size: 1.3rem;
   }
@@ -140,8 +136,7 @@
     left: 16rem;
   }
   .order-string {
-    left: 6rem;
-    /* transform: scale(0.9); */
+    font-size: 0.8rem;
   }
   .total-price {
     font-size: 1rem;
@@ -165,7 +160,7 @@
     width: 80%;
   }
   .total-price {
-    padding-left: 0.2rem;
+    padding-left: 1.7rem;
   }
 }
 
@@ -185,9 +180,5 @@
   }
   .copyright {
     transform: scale(0.8);
-  }
-  .order-string {
-    left: 7rem;
-    /* transform: scale(0.9); */
   }
 }
