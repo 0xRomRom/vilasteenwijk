@@ -356,107 +356,141 @@ dotBox1.addEventListener("click", (e) => {
 });
 
 //Trompmeester
+
+const k2img1 = document.querySelector(".kamer2-img1");
+const k2img2 = document.querySelector(".kamer2-img2");
+const k2img3 = document.querySelector(".kamer2-img3");
+const k2img4 = document.querySelector(".kamer2-img4");
+const k2img5 = document.querySelector(".kamer2-img5");
+const k2img6 = document.querySelector(".kamer2-img6");
+const k2img7 = document.querySelector(".kamer2-img7");
+const k2img8 = document.querySelector(".kamer2-img8");
+
 dotBox2.addEventListener("click", (e) => {
-  const image = document.querySelector(".kamer3-img");
   if (e.target.classList.contains("d9")) {
     dot9.classList.add("dot-active");
     hideClasses(dot10, dot11, dot12, dot13, dot14, dot15, dot16);
-    image.src = imageLinks3[0];
+    k2img1.classList.remove("hidden");
+    hideImages(k2img2, k2img3, k2img4, k2img5, k2img6, k2img7, k2img8);
     return;
   }
   if (e.target.classList.contains("d10")) {
     dot10.classList.add("dot-active");
     hideClasses(dot9, dot11, dot12, dot13, dot14, dot15, dot16);
-    image.src = imageLinks3[1];
+    k2img2.classList.remove("hidden");
+    hideImages(k2img1, k2img3, k2img4, k2img5, k2img6, k2img7, k2img8);
     return;
   }
   if (e.target.classList.contains("d11")) {
     dot11.classList.add("dot-active");
     hideClasses(dot9, dot10, dot12, dot13, dot14, dot15, dot16);
-    image.src = imageLinks3[2];
+    k2img3.classList.remove("hidden");
+    hideImages(k2img1, k2img2, k2img4, k2img5, k2img6, k2img7, k2img8);
     return;
   }
   if (e.target.classList.contains("d12")) {
     dot12.classList.add("dot-active");
     hideClasses(dot9, dot10, dot11, dot13, dot14, dot15, dot16);
-    image.src = imageLinks3[3];
+    k2img4.classList.remove("hidden");
+    hideImages(k2img1, k2img2, k2img3, k2img5, k2img6, k2img7, k2img8);
     return;
   }
   if (e.target.classList.contains("d13")) {
     dot13.classList.add("dot-active");
     hideClasses(dot9, dot10, dot11, dot12, dot14, dot15, dot16);
-    image.src = imageLinks3[4];
+    k2img5.classList.remove("hidden");
+    hideImages(k2img1, k2img2, k2img3, k2img4, k2img6, k2img7, k2img8);
     return;
   }
   if (e.target.classList.contains("d14")) {
     dot14.classList.add("dot-active");
     hideClasses(dot9, dot10, dot11, dot12, dot13, dot15, dot16);
-    image.src = imageLinks3[5];
+    k2img6.classList.remove("hidden");
+    hideImages(k2img1, k2img2, k2img3, k2img4, k2img5, k2img7, k2img8);
     return;
   }
   if (e.target.classList.contains("d15")) {
     dot15.classList.add("dot-active");
     hideClasses(dot9, dot10, dot11, dot12, dot13, dot14, dot16);
-    image.src = imageLinks3[6];
+    k2img7.classList.remove("hidden");
+    hideImages(k2img1, k2img2, k2img3, k2img4, k2img5, k2img6, k2img8);
     return;
   }
   if (e.target.classList.contains("d16")) {
     dot16.classList.add("dot-active");
     hideClasses(dot9, dot10, dot11, dot12, dot13, dot14, dot15);
-    image.src = imageLinks3[7];
+    k2img8.classList.remove("hidden");
+    hideImages(k2img1, k2img2, k2img3, k2img4, k2img5, k2img6, k2img7);
     return;
   }
 });
 
 //Kleibreuker
+
+const k3img1 = document.querySelector(".kamer3-img1");
+const k3img2 = document.querySelector(".kamer3-img2");
+const k3img3 = document.querySelector(".kamer3-img3");
+const k3img4 = document.querySelector(".kamer3-img4");
+const k3img5 = document.querySelector(".kamer3-img5");
+const k3img6 = document.querySelector(".kamer3-img6");
+const k3img7 = document.querySelector(".kamer3-img7");
+const k3img8 = document.querySelector(".kamer3-img8");
+
 dotBox3.addEventListener("click", (e) => {
-  const image = document.querySelector(".kamer4-img");
   if (e.target.classList.contains("d17")) {
     dot17.classList.add("dot-active");
     hideClasses(dot18, dot19, dot20, dot21, dot22, dot23, dot24);
-    image.src = imageLinks4[0];
+    k3img1.classList.remove("hidden");
+    hideImages(k3img2, k3img3, k3img4, k3img5, k3img6, k3img7, k3img8);
     return;
   }
   if (e.target.classList.contains("d18")) {
     dot18.classList.add("dot-active");
     hideClasses(dot17, dot19, dot20, dot21, dot22, dot23, dot24);
-    image.src = imageLinks4[1];
+    k3img2.classList.remove("hidden");
+    hideImages(k3img1, k3img3, k3img4, k3img5, k3img6, k3img7, k3img8);
     return;
   }
   if (e.target.classList.contains("d19")) {
     dot19.classList.add("dot-active");
     hideClasses(dot17, dot18, dot20, dot21, dot22, dot23, dot24);
-    image.src = imageLinks4[2];
+    k3img3.classList.remove("hidden");
+    hideImages(k3img1, k3img2, k3img4, k3img5, k3img6, k3img7, k3img8);
     return;
   }
   if (e.target.classList.contains("d20")) {
     dot20.classList.add("dot-active");
     hideClasses(dot17, dot18, dot19, dot21, dot22, dot23, dot24);
-    image.src = imageLinks4[3];
+    k3img4.classList.remove("hidden");
+    hideImages(k3img1, k3img2, k3img3, k3img5, k3img6, k3img7, k3img8);
     return;
   }
   if (e.target.classList.contains("d21")) {
     dot21.classList.add("dot-active");
     hideClasses(dot17, dot18, dot19, dot20, dot22, dot23, dot24);
-    image.src = imageLinks4[4];
+    k3img5.classList.remove("hidden");
+    hideImages(k3img1, k3img2, k3img3, k3img4, k3img6, k3img7, k3img8);
     return;
   }
   if (e.target.classList.contains("d22")) {
     dot22.classList.add("dot-active");
     hideClasses(dot17, dot18, dot19, dot20, dot21, dot23, dot24);
-    image.src = imageLinks4[5];
+    k3img6.classList.remove("hidden");
+    hideImages(k3img1, k3img2, k3img3, k3img4, k3img5, k3img7, k3img8);
     return;
   }
   if (e.target.classList.contains("d23")) {
     dot23.classList.add("dot-active");
     hideClasses(dot17, dot18, dot19, dot20, dot21, dot22, dot24);
-    image.src = imageLinks4[6];
+    k3img7.classList.remove("hidden");
+    hideImages(k3img1, k3img2, k3img3, k3img4, k3img5, k3img6, k3img8);
     return;
   }
   if (e.target.classList.contains("d24")) {
     dot24.classList.add("dot-active");
     hideClasses(dot17, dot18, dot19, dot20, dot21, dot22, dot23);
-    image.src = imageLinks4[7];
+    k3img8.classList.remove("hidden");
+    hideImages(k3img1, k3img2, k3img3, k3img4, k3img5, k3img6, k3img7);
     return;
   }
 });
