@@ -185,13 +185,6 @@ closeKamerModal.addEventListener("click", () => {
   box4.classList.remove("fadeOut");
 });
 
-//Rotate images room 1
-
-const room1Image = document.querySelector(".kamer1-img");
-const room2Image = document.querySelector(".kamer2-img");
-const room3Image = document.querySelector(".kamer3-img");
-const room4Image = document.querySelector(".kamer4-img");
-
 //Johan Van den Kornput
 const imageLinks1 = [
   "./img/Room1/Pic1.jpeg",

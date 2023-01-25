@@ -140,7 +140,7 @@
     left: 16rem;
   }
   .order-string {
-    left: 9rem;
+    left: 11rem;
     /* transform: scale(0.9); */
   }
   .input-stl {
@@ -160,6 +160,9 @@
   }
   .page4-hero-sub2 {
     width: 80%;
+  }
+  .total-price {
+    padding-left: 1.2rem;
   }
 }
 
