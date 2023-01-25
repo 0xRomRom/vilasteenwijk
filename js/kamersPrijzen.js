@@ -302,55 +302,71 @@ const hideImages = (a, b, c, d, e, f, g) => {
 };
 
 //Hildo krop
-dotBox1.addEventListener("click", (e) => {
-  const image = document.querySelector(".kamer2-img");
 
+const k1img1 = document.querySelector(".kamer1-img1");
+const k1img2 = document.querySelector(".kamer1-img2");
+const k1img3 = document.querySelector(".kamer1-img3");
+const k1img4 = document.querySelector(".kamer1-img4");
+const k1img5 = document.querySelector(".kamer1-img5");
+const k1img6 = document.querySelector(".kamer1-img6");
+const k1img7 = document.querySelector(".kamer1-img7");
+const k1img8 = document.querySelector(".kamer1-img8");
+
+dotBox1.addEventListener("click", (e) => {
   if (e.target.classList.contains("d1")) {
     dot1.classList.add("dot-active");
     hideClasses(dot2, dot3, dot4, dot5, dot6, dot7, dot8);
-    image.src = imageLinks2[0];
+    k1img1.classList.remove("hidden");
+    hideImages(k1img2, k1img3, k1img4, k1img5, k1img6, k1img7, k1img8);
     return;
   }
   if (e.target.classList.contains("d2")) {
     dot2.classList.add("dot-active");
     hideClasses(dot1, dot3, dot4, dot5, dot6, dot7, dot8);
-    image.src = imageLinks2[1];
+    k1img2.classList.remove("hidden");
+    hideImages(k1img1, k1img3, k1img4, k1img5, k1img6, k1img7, k1img8);
     return;
   }
   if (e.target.classList.contains("d3")) {
     dot3.classList.add("dot-active");
     hideClasses(dot1, dot2, dot4, dot5, dot6, dot7, dot8);
-    image.src = imageLinks2[2];
+    k1img3.classList.remove("hidden");
+    hideImages(k1img1, k1img2, k1img4, k1img5, k1img6, k1img7, k1img8);
     return;
   }
   if (e.target.classList.contains("d4")) {
     dot4.classList.add("dot-active");
     hideClasses(dot1, dot2, dot3, dot5, dot6, dot7, dot8);
-    image.src = imageLinks2[3];
+    k1img4.classList.remove("hidden");
+    hideImages(k1img1, k1img2, k1img3, k1img5, k1img6, k1img7, k1img8);
     return;
   }
   if (e.target.classList.contains("d5")) {
     dot5.classList.add("dot-active");
     hideClasses(dot1, dot2, dot3, dot4, dot6, dot7, dot8);
-    image.src = imageLinks2[4];
+    k1img5.classList.remove("hidden");
+    hideImages(k1img1, k1img2, k1img3, k1img4, k1img6, k1img7, k1img8);
     return;
   }
   if (e.target.classList.contains("d6")) {
     dot6.classList.add("dot-active");
     hideClasses(dot1, dot2, dot3, dot4, dot5, dot7, dot8);
-    image.src = imageLinks2[5];
+    k1img6.classList.remove("hidden");
+    hideImages(k1img1, k1img2, k1img3, k1img4, k1img5, k1img7, k1img8);
     return;
   }
   if (e.target.classList.contains("d7")) {
     dot7.classList.add("dot-active");
     hideClasses(dot1, dot2, dot3, dot4, dot5, dot6, dot8);
-    image.src = imageLinks2[6];
+    k1img7.classList.remove("hidden");
+    hideImages(k1img1, k1img2, k1img3, k1img4, k1img5, k1img6, k1img8);
     return;
   }
   if (e.target.classList.contains("d8")) {
     dot8.classList.add("dot-active");
     hideClasses(dot1, dot2, dot3, dot4, dot5, dot6, dot7);
-    image.src = imageLinks2[7];
+    k1img8.classList.remove("hidden");
+    hideImages(k1img1, k1img2, k1img3, k1img4, k1img5, k1img6, k1img7);
     return;
   }
 });
