@@ -96,16 +96,25 @@
   }
   .contact-modal {
     transform: scale(0.8);
+    position: relative;
+    top: 15rem;
   }
   .contact-modal-box {
     gap: 0rem;
-    top: 27rem;
+    top: 12rem;
+    height: 65rem;
   }
   .contact-modal {
     top: 0rem;
   }
   .app {
     height: 82rem;
+  }
+  .page-hero {
+    top: 5.5rem;
+  }
+  .betaal-via {
+    top: 0.55rem;
   }
 }
 
@@ -129,5 +138,10 @@
   }
   .contact-modal {
     transform: scale(0.6);
+    top: -15rem;
+  }
+  .maps {
+    position: relative;
+    top: -10rem;
   }
 }

@@ -61,16 +61,8 @@
   min-height: 63rem;
   width: 100vw;
   /* background-color: rgb(2, 32, 2); */
-  background: linear-gradient(
-    180deg,
-    rgb(2, 32, 2),
-    rgb(2, 32, 2),
-    rgb(2, 32, 2),
-    rgb(2, 32, 2),
-    rgb(2, 32, 2),
-    rgb(2, 32, 2),
-    black
-  );
+  background-color: black;
+
   overflow: hidden;
 }
 

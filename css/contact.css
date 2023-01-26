@@ -14,6 +14,7 @@
 
 body {
   overflow-x: hidden; /* Hide horizontal scrollbar */
+  background-color: black !important;
 }
 
 .app {
@@ -112,7 +113,7 @@ a {
 .contact-modal-box {
   position: relative;
   width: 100vw;
-  height: 35rem;
+  height: 38rem;
   top: 18rem;
   display: flex;
   justify-content: center;
@@ -144,7 +145,7 @@ a {
 .layer {
   position: relative;
   width: 100%;
-  height: 6rem;
+  height: 10rem;
   background-color: rgba(2, 32, 2, 0.422);
   border-radius: 0.8rem;
   display: flex;
@@ -195,14 +196,14 @@ a {
   display: block;
   font-family: "Open Sans";
   letter-spacing: 1px;
-  font-size: 1.2rem;
+  font-size: 1.25rem !important;
   font-weight: 600;
   text-shadow: 0px 0px 5px rgb(171, 164, 164);
 }
 
 .contact-modal {
   position: relative;
-  width: 40rem;
+  width: 42rem;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -212,7 +213,7 @@ a {
 .inner-modal {
   position: relative;
   width: 30rem;
-  height: 35rem;
+  height: 100%;
   background-color: rgba(2, 32, 2, 0.422);
   border-radius: 0.8rem;
   border: 1px solid rgb(4, 61, 4);
@@ -226,7 +227,7 @@ a {
   width: 95%;
   left: 2.5%;
   top: 0.5rem;
-  height: 22rem;
+  height: 25rem;
   background-color: black;
   border: 1px solid rgb(5, 53, 12);
   outline: 0;
@@ -549,8 +550,9 @@ a {
 
 .betaal-via {
   position: absolute;
-  left: -8rem;
-  top: 0.4rem;
+  left: -9rem;
+  top: 0.1rem;
+  width: 2rem;
 }
 
 .contant {
@@ -559,4 +561,12 @@ a {
 
 .info-box span {
   font-size: 1rem;
+}
+
+span {
+  color: white !important;
+}
+
+.maps {
+  width: 100vw;
 }
