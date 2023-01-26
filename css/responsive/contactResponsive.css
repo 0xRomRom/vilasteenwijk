@@ -2,13 +2,19 @@
   .contact-modal-box {
     flex-direction: column;
     gap: 3rem;
-    top: 30rem;
+    top: 35rem;
   }
   .layer {
     height: 7rem;
   }
   .app {
-    height: 85rem;
+    height: 90rem;
+  }
+  .textbox {
+    height: 15rem;
+  }
+  .inner-modal {
+    height: 28rem;
   }
 }
 
@@ -93,6 +99,13 @@
   }
   .contact-modal-box {
     gap: 0rem;
+    top: 27rem;
+  }
+  .contact-modal {
+    top: 0rem;
+  }
+  .app {
+    height: 82rem;
   }
 }
 
@@ -106,7 +119,7 @@
     top: -8rem;
   }
   .app {
-    height: 70rem;
+    height: 75rem;
   }
 }
 
