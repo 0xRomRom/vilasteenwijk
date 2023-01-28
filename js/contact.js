@@ -48,7 +48,7 @@ verzendenButton.addEventListener("click", (e) => {
     message: messageInput.value,
   };
   emailjs.send(
-    "service_syt8eao",
+    "service_a939mwr",
     "template_zsbkdcj",
     params,
     "1ExHLcqOKMpwg2JF5"

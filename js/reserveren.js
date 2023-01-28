@@ -338,7 +338,7 @@ boekingBevestigen.addEventListener("click", () => {
     phonenumber: reservation.userInfo.phoneNumber,
     payment: reservation.userInfo.payment,
   };
-  emailjs.send("service_syt8eao", "Standaard", params, "1ExHLcqOKMpwg2JF5");
+  emailjs.send("service_a939mwr", "Standaard", params, "1ExHLcqOKMpwg2JF5");
 });
 
 const vanafCalendarButton = document.querySelector(".calendar-icon");
