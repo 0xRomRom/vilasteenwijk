@@ -85,7 +85,7 @@ a {
   align-items: center;
   gap: 2rem;
   background-color: transparent;
-  background-color: rgba(0, 0, 0, 0.454);
+  background-color: black;
   z-index: 5;
   text-decoration: none;
   padding-top: 0rem !important;
