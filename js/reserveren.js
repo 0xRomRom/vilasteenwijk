@@ -48,6 +48,36 @@ tab3.forEach((item) => {
   });
 });
 
+const male = document.querySelector(".male");
+const female = document.querySelector(".female");
+
+male.addEventListener("click", () => {
+  male.classList.add("gender-choice");
+  female.classList.remove("gender-choice");
+  reservation.userInfo.gender = "Male";
+});
+
+female.addEventListener("click", () => {
+  female.classList.add("gender-choice");
+  male.classList.remove("gender-choice");
+  reservation.userInfo.gender = "Female";
+});
+
+const cash = document.querySelector(".cash");
+const transfer = document.querySelector(".transfer");
+
+cash.addEventListener("click", () => {
+  cash.classList.add("pay-choice");
+  transfer.classList.remove("pay-choice");
+  reservation.userInfo.payment = "Contant";
+});
+
+transfer.addEventListener("click", () => {
+  transfer.classList.add("pay-choice");
+  cash.classList.remove("pay-choice");
+  reservation.userInfo.payment = "Overschrijving";
+});
+
 const room1 = document.querySelector(".opt1");
 const room2 = document.querySelector(".opt2");
 const room3 = document.querySelector(".opt3");
@@ -167,36 +197,6 @@ kamerBevestigen.addEventListener("click", () => {
   page1.classList.add("hidden");
   page2.classList.add("hidden");
   page3.classList.remove("hidden");
-});
-
-const male = document.querySelector(".male");
-const female = document.querySelector(".female");
-
-male.addEventListener("click", () => {
-  male.classList.add("gender-choice");
-  female.classList.remove("gender-choice");
-  reservation.userInfo.gender = "Male";
-});
-
-female.addEventListener("click", () => {
-  female.classList.add("gender-choice");
-  male.classList.remove("gender-choice");
-  reservation.userInfo.gender = "Female";
-});
-
-const cash = document.querySelector(".cash");
-const transfer = document.querySelector(".transfer");
-
-cash.addEventListener("click", () => {
-  cash.classList.add("pay-choice");
-  transfer.classList.remove("pay-choice");
-  reservation.userInfo.payment = "Contant";
-});
-
-transfer.addEventListener("click", () => {
-  transfer.classList.add("pay-choice");
-  cash.classList.remove("pay-choice");
-  reservation.userInfo.payment = "Overschrijving";
 });
 
 const nameInput = document.querySelector(".name-input");
