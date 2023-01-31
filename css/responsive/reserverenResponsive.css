@@ -101,6 +101,12 @@
   .fa-check {
     left: 17rem;
   }
+  .reserveren-center {
+    min-width: 35rem;
+  }
+  .reserveren-center-outer {
+    box-shadow: 5px 5px 10px rgb(4, 61, 4);
+  }
 }
 
 @media only screen and (max-width: 470px) {
@@ -122,6 +128,12 @@
     top: 8rem;
     z-index: 500;
   }
+  .reserveren-center {
+    min-width: 30rem;
+  }
+  .reserveren-center-outer {
+    width: 30rem;
+  }
 }
 
 @media only screen and (max-width: 430px) {
@@ -130,7 +142,7 @@
   }
   .calendar-grid {
     transform: scale(0.8);
-    left: -2rem;
+    left: -3rem;
   }
   .beschikbaarheid-box {
     left: 16rem;
@@ -161,6 +173,15 @@
   }
   .total-price {
     padding-left: 1.7rem;
+  }
+  .reserveren-center {
+    min-width: 27rem;
+  }
+  .reserveren-center-outer {
+    width: 27rem;
+  }
+  .beschikbaarheid-box {
+    left: 15rem;
   }
 }
 
