@@ -40,21 +40,3 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
 });
-
-//Toggle menus
-const fotosButton = document.querySelector(".fotos");
-const mediaButton = document.querySelector(".media");
-
-fotosButton.addEventListener("click", () => {
-  mediaButton.classList.remove("cta-active");
-  fotosButton.classList.add("cta-active");
-  fotosgrid.classList.remove("hidden");
-  mediagrid.classList.add("hidden");
-});
-
-mediaButton.addEventListener("click", () => {
-  mediaButton.classList.add("cta-active");
-  fotosButton.classList.remove("cta-active");
-  fotosgrid.classList.add("hidden");
-  mediagrid.classList.remove("hidden");
-});
