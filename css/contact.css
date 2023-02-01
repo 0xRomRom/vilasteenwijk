@@ -146,17 +146,21 @@ a {
   position: relative;
   width: 100%;
   height: 10rem;
-  background-color: rgba(2, 32, 2, 0.422);
+  background: linear-gradient(
+    150deg,
+    rgba(2, 32, 2, 0.774),
+    rgba(3, 76, 12, 0.491),
+    rgba(5, 68, 5, 0.161)
+  );
+  background-color: rgb(2, 32, 2);
+  background-color: black;
   border-radius: 0.8rem;
   display: flex;
   border: 1px solid rgb(2, 32, 2);
-  box-shadow: -1px 0px 17px rgb(4, 61, 4);
+  /* box-shadow: -1px 0px 17px rgb(4, 61, 4); */
   /* margin-top: 1.5rem; */
   transition: all 0.3s ease-in-out;
-}
-
-.layer:hover {
-  color: white !important;
+  z-index: 5;
 }
 
 .icon-boxs {
@@ -168,12 +172,13 @@ a {
   justify-content: center;
   align-items: center;
   /* border: 1px solid red; */
+  z-index: 10;
 }
 
 .icon-stl {
   font-size: 2.5rem;
   color: rgb(218, 211, 211);
-  text-shadow: 0px 0px 55px rgb(171, 164, 164);
+  text-shadow: 0px 0px 10px rgb(171, 164, 164);
 }
 
 .info-box {
@@ -186,6 +191,7 @@ a {
   align-items: center;
   flex-direction: column;
   gap: 0.2rem;
+  z-index: 10;
 }
 
 .info-box span {
@@ -198,7 +204,7 @@ a {
   letter-spacing: 1px;
   font-size: 1.25rem !important;
   font-weight: 600;
-  text-shadow: 0px 0px 5px rgb(171, 164, 164);
+  text-shadow: 0px 0px 2px rgb(171, 164, 164);
 }
 
 .contact-modal {
@@ -249,7 +255,7 @@ a {
   padding: 0.5rem;
   font-size: 1.2rem;
   text-decoration: none;
-  box-shadow: 0px 0px 10px rgb(4, 61, 4);
+  box-shadow: 0px 0px 5px rgb(4, 61, 4);
 }
 
 .textbox::placeholder {
@@ -288,7 +294,7 @@ a {
   padding-left: 0.5rem;
   color: white;
   font-size: 1.1rem;
-  box-shadow: 0px 0px 10px rgb(4, 61, 4);
+  box-shadow: 0px 0px 5px rgb(4, 61, 4);
 }
 
 .sender-email::placeholder {
@@ -310,7 +316,7 @@ a {
   padding-left: 0.5rem;
   color: white;
   font-size: 1.1rem;
-  box-shadow: 0px 0px 10px rgb(4, 61, 4);
+  box-shadow: 0px 0px 5px rgb(4, 61, 4);
 }
 
 .sender-naam::placeholder {
@@ -335,7 +341,7 @@ a {
   font-size: 1.1rem;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  box-shadow: 0px 0px 10px rgb(4, 61, 4);
+  box-shadow: 0px 0px 7px rgb(4, 61, 4);
 }
 
 .verzenden:hover {
@@ -577,7 +583,7 @@ a {
 }
 
 span {
-  color: white !important;
+  color: rgba(255, 255, 255, 0.743) !important;
 }
 
 .maps {

@@ -120,6 +120,30 @@ a {
 }
 
 .grid {
+  position: relative;
+  /* border: 1px solid blue; */
+  top: 15rem;
+  width: 90%;
+  left: 5%;
+  /* opacity: 0; */
+  height: auto;
+  animation: opaIn 1.5s ease-in-out forwards;
+}
+
+.grid-item {
+  width: 45%;
+  height: auto;
+  position: relative;
+  /* border: 1px solid yellow; */
+  padding: 0.3rem;
+  cursor: pointer;
+}
+.grid-item img {
+  width: 100%;
+}
+
+.media-grid {
+  position: relative;
   /* border: 1px solid blue; */
   top: 15rem;
   width: 90%;
@@ -334,4 +358,35 @@ a {
   background-color: black;
   display: none;
   z-index: 300;
+}
+
+.cta-box {
+  position: absolute;
+  top: 9.7rem;
+  width: 100vw;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  z-index: 100;
+}
+
+.cta-btn {
+  padding: 0.75rem 2.25rem;
+  font-family: "Open Sans";
+  background-color: transparent;
+  color: white;
+
+  font-size: 1.1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  outline: 0;
+  border: 3px solid rgba(0, 0, 0, 0.266);
+}
+
+.cta-active {
+  background-color: rgba(0, 0, 0, 0.266);
+  border: 2px solid rgba(0, 0, 0, 0.266);
+  cursor: initial;
 }
