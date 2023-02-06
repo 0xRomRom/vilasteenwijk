@@ -25,16 +25,7 @@ body {
   position: relative;
   width: 100vw;
   max-height: 100vh;
-  background: linear-gradient(
-    180deg,
-    rgb(2, 32, 2),
-    rgb(2, 32, 2),
-    rgb(2, 32, 2),
-    rgb(2, 32, 2),
-    rgb(2, 32, 2),
-    rgb(2, 32, 2),
-    black
-  );
+  background-color: rgb(20, 20, 20);
 }
 
 a {
@@ -393,5 +384,9 @@ a {
 
 .frames {
   position: absolute;
-  width: 100vw;
+  width: 100vw !important;
+}
+
+.faded-in {
+  background-color: black !important;
 }
