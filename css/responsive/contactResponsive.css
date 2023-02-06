@@ -1,3 +1,10 @@
+@media only screen and (max-width: 1300px) {
+  .navlist {
+    gap: 1.2rem;
+    padding-left: 3rem;
+  }
+}
+
 @media (max-width: 1150px) {
   .contact-modal-box {
     flex-direction: column;
@@ -15,6 +22,9 @@
   }
   .inner-modal {
     height: 28rem;
+  }
+  .maps {
+    margin-top: 5rem;
   }
 }
 

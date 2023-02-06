@@ -19,6 +19,13 @@
   }
 }
 
+@media only screen and (max-width: 1300px) {
+  .navlist {
+    gap: 1.2rem;
+    padding-left: 3rem;
+  }
+}
+
 @media only screen and (max-width: 1150px) {
   .app {
     height: 430rem;
@@ -98,6 +105,9 @@
 @media only screen and (max-width: 900px) {
   .app {
     height: 310rem;
+  }
+  .copyright {
+    width: 100vw !important;
   }
 }
 /* @media only screen and (max-width: 750px) {

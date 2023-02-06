@@ -1,0 +1,397 @@
+@font-face {
+  font-family: luxuryFont;
+  src: url(../fonts/CinzelDecorative-Regular.ttf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  background-color: rgb(2, 32, 2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.app {
+  position: relative;
+  width: 100vw;
+  max-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    black
+  );
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.navlist {
+  position: fixed;
+  top: 0rem;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  padding-right: 2rem;
+  align-items: center;
+  gap: 2rem;
+  background-color: transparent;
+  /* display: none !important; */
+  background-color: black;
+  z-index: 5;
+  text-decoration: none;
+}
+
+.navlist li {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  list-style-type: none;
+  font-family: luxuryFont;
+  font-size: 1.1rem;
+  user-select: none;
+  color: #ffd900;
+  text-shadow: 0px 0px 5px black;
+}
+
+.navlist li:hover {
+  transform: scale(1.12);
+  text-shadow: 0px 0px 2px gray;
+}
+
+.nav-logo-href {
+  position: fixed;
+  width: 0rem;
+  top: 0.5rem;
+  left: 0rem;
+}
+
+.brand-logo {
+  position: absolute;
+  width: 4rem;
+  left: 1rem;
+  cursor: pointer;
+}
+
+.cta-a {
+  text-decoration: none;
+  color: black;
+}
+
+.reserveren-li {
+  border-bottom: 1px solid #ffd700;
+}
+
+.page-hero {
+  position: absolute;
+  width: 100vw;
+  height: 4rem;
+  top: 10rem;
+  padding-left: 6.1rem;
+  user-select: none;
+  transform: scale(0.1);
+  opacity: 0 !important;
+  transition: all 0.8s ease-in-out;
+}
+
+.hero-title {
+  font-family: luxuryFont;
+  color: #ffd700;
+}
+
+.active {
+  opacity: 1 !important;
+  transform: scaleY(1);
+}
+
+.grid {
+  position: relative;
+  /* border: 1px solid blue; */
+  top: 15rem;
+  width: 90%;
+  left: 5%;
+  /* opacity: 0; */
+  height: auto;
+  animation: opaIn 1.5s ease-in-out forwards;
+}
+
+.grid-item {
+  width: 45%;
+  height: auto;
+  position: relative;
+  /* border: 1px solid yellow; */
+  padding: 0.3rem;
+  cursor: pointer;
+}
+.grid-item img {
+  width: 100%;
+}
+
+.media-grid {
+  position: relative;
+  /* border: 1px solid blue; */
+  top: 15rem;
+  width: 90%;
+  left: 5%;
+  /* opacity: 0; */
+  height: auto;
+  animation: opaIn 1.5s ease-in-out forwards;
+}
+
+.grid-item {
+  width: 45%;
+  height: auto;
+  position: relative;
+  /* border: 1px solid yellow; */
+  padding: 0.3rem;
+  cursor: pointer;
+}
+.grid-item img {
+  width: 100%;
+}
+
+@keyframes opaIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Footer code */
+
+.footer {
+  position: relative;
+  width: 100vw;
+  height: 30rem;
+  background-color: black;
+  /* padding-top: 5rem; */
+}
+
+.hr {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  /* background-color: gray;
+      color: gray; */
+  border: 1px solid rgb(70, 68, 68);
+}
+
+.footer-inner {
+  position: relative;
+  width: 70%;
+  left: 15%;
+  height: 20rem;
+  top: 5rem;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.logo-box {
+  position: relative;
+  width: 8rem;
+  height: 100%;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3.5rem;
+}
+
+.links-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  position: absolute;
+  color: rgb(130, 124, 124);
+  font-family: "Open Sans";
+  width: 100%;
+  height: 1rem;
+  top: 18.8rem;
+  text-align: center;
+  /* background-color: green; */
+  user-select: none;
+}
+
+.icon {
+  color: white;
+  /* background-color: white; */
+  width: 8rem;
+}
+
+.reserveren-box {
+  position: absolute;
+  top: 5rem;
+  width: 15rem;
+  /* left: 25%; */
+  height: 8rem;
+  /* border: 1px solid white; */
+}
+
+.footer-hero {
+  position: relative;
+  width: 100%;
+  height: 2.5rem;
+  /* border: 1px solid blue; */
+  text-align: center;
+  color: #ffd900;
+  font-family: luxuryFont;
+  user-select: none;
+}
+
+.small-hr {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  border: 1px solid rgb(70, 68, 68);
+}
+
+.icons-box {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  top: 0.5rem;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-box {
+  position: relative;
+  width: 3rem;
+  height: 100%;
+  /* border: 1px solid yellow; */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-box:hover {
+  transform: scale(1.1);
+}
+
+.active {
+  opacity: 1 !important;
+  transform: scaleY(1);
+}
+/* Footer code end */
+
+.image-overlay {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 500 !important;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-image {
+  max-width: 100vw;
+  max-height: 100vh;
+  cursor: pointer;
+}
+
+.anchor {
+  color: #ffd900;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 4;
+  position: relative;
+  right: -755%;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.blackbox {
+  position: fixed;
+  width: 100vw;
+  height: 5rem;
+  top: 0rem;
+  background-color: black;
+  display: none;
+  z-index: 300;
+}
+
+.cta-box {
+  position: absolute;
+  top: 9.7rem;
+  width: 100vw;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  z-index: 100;
+}
+
+.cta-btn {
+  padding: 0.75rem 2.25rem;
+  font-family: "Open Sans";
+  background-color: transparent;
+  color: white;
+
+  font-size: 1.1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  outline: 0;
+  border: 3px solid rgba(0, 0, 0, 0.266);
+}
+
+.cta-active {
+  background-color: rgba(0, 0, 0, 0.266);
+  border: 2px solid rgba(0, 0, 0, 0.266);
+  cursor: initial;
+}
+
+.frames {
+  position: absolute;
+  width: 100vw;
+}
