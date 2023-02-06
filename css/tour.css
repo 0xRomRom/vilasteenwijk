@@ -383,10 +383,14 @@ a {
 }
 
 .frames {
-  position: absolute;
+  position: relative;
   width: 100vw !important;
 }
 
 .faded-in {
   background-color: black !important;
+}
+
+#loader-cont {
+  position: relative;
 }
