@@ -119,11 +119,12 @@ a {
   position: relative;
   width: 100vw;
   top: 15rem;
-  height: 90rem;
   /* border: 1px solid #ffd700; */
+  padding: 0rem 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   animation: opaIn 1.5s ease-in-out forwards;
 }
 
@@ -139,30 +140,27 @@ a {
 .omgeving-inner {
   position: relative;
   width: 80%;
-  height: 90rem;
-  top: 23rem;
+  min-height: 90rem;
   /* border: 1px solid red; */
 }
 
 .top-img {
-  position: absolute;
-  width: 70vw;
-  left: 15vw;
+  position: relative;
+  width: 100%;
+  left: 0rem;
   top: 0rem;
-  height: 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   border-radius: 0.8rem;
   /* border: 1px solid red; */
 }
 
 .banner-img {
-  height: 180%;
   width: 100%;
-  left: 10%;
-  border-radius: 0.8rem;
+  height: 20rem;
+  max-width: 1400px !important;
+  border-radius: 0.8rem !important;
 }
 
 .modal-box {
@@ -259,7 +257,7 @@ a {
   /* border: 1px solid white; */
   font-family: luxuryFont;
   color: #ffd900;
-  padding: 4rem;
+  padding: 2rem;
   font-size: 1.2rem;
   letter-spacing: 1px;
 }
@@ -424,4 +422,61 @@ a {
   background-color: black;
   display: none;
   z-index: 300;
+}
+
+.rent-scooter {
+  position: relative;
+  width: 37.5rem;
+  height: 12.5rem;
+  background: linear-gradient(90deg, darkgreen, green);
+  margin: 3rem 0rem;
+  border-radius: 0.8rem;
+}
+
+.rent-hero {
+  color: white;
+  font-family: luxuryFont;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
+.fa-arrow-right {
+  transition: all 0.3s ease-in-out;
+  color: black;
+}
+
+.book-cta {
+  position: absolute;
+  width: 9rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  left: 26rem;
+  top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+}
+
+.book-cta:hover {
+  box-shadow: 0px 0px 5px black;
+  color: green;
+}
+
+.book-cta:hover .fa-arrow-right {
+  color: green;
+  transform: translateX(1rem);
+}
+
+.scooter-img {
+  position: absolute;
+  height: 10rem;
+  width: 15rem;
+  top: 3rem;
+  /* left: 0.5rem; */
 }

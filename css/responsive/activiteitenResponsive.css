@@ -1,14 +1,11 @@
-@media only screen and (max-width: 1350px) {
-  .top-img {
-    width: 80vw;
-    left: 10%;
-  }
-}
-
 @media only screen and (max-width: 1300px) {
   .navlist {
     gap: 1.2rem;
     padding-left: 3rem;
+  }
+
+  .omgeving-box {
+    padding: 0;
   }
 }
 
@@ -67,18 +64,7 @@
     display: flex;
     gap: 3%;
   }
-  .top-img {
-    width: 95vw;
-    left: 2.5%;
-  }
-  .omgeving-inner {
-    position: relative;
-    width: 95%;
-    left: 0%;
-    height: 90rem;
-    top: 23rem;
-    /* border: 1px solid red; */
-  }
+
   .blackbox {
     display: block;
   }
@@ -92,6 +78,9 @@
   .modal {
     transform: scale(0.8);
   }
+  .omgeving-inner {
+    height: 98rem;
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -103,7 +92,7 @@
     padding-left: 0.5rem;
   }
   .app {
-    height: 130rem;
+    height: 150rem;
   }
   .footer-inner {
     top: -4rem;
@@ -129,9 +118,7 @@
   .modal {
     width: 25rem;
   }
-  .app {
-    height: 200rem;
-  }
+
   .beziens {
     padding-left: 2.2rem;
   }
@@ -146,10 +133,10 @@
   }
   .omgeving-text-box {
     position: relative;
-    width: 90%;
-    left: 5%;
+    width: 100%;
     height: auto;
     top: 3rem;
+    left: 0rem;
     /* border: 1px solid white; */
     font-family: luxuryFont;
     color: #ffd900;
@@ -158,19 +145,16 @@
     letter-spacing: 1px;
   }
   .app {
-    height: 170rem;
+    height: 190rem;
   }
-  .top-img {
-    width: 200vw;
-    left: -100vw;
+  .rent-scooter {
+    transform: scale(0.8);
   }
 }
 
 @media only screen and (max-width: 500px) {
   .omgeving-text-box {
     position: relative;
-    width: 90%;
-    left: 5%;
     height: auto;
     top: 3rem;
     /* border: 1px solid white; */
@@ -181,16 +165,19 @@
     letter-spacing: 1px;
   }
   .app {
-    height: 165rem;
+    height: 190rem;
   }
-  .top-img {
-    width: 200vw;
-    left: -100vw;
+  .rent-scooter {
+    transform: scale(0.65);
   }
 }
 
 @media only screen and (max-width: 400px) {
   .app {
-    height: 180rem;
+    height: 200rem;
+  }
+
+  .rent-scooter {
+    transform: scale(0.55);
   }
 }
