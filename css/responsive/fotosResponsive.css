@@ -8,15 +8,9 @@
   .media-grid {
     left: 10%;
   }
-  .app {
-    height: 550rem;
-  }
 }
 
 @media only screen and (max-width: 1350px) {
-  .app {
-    height: 500rem;
-  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -26,9 +20,15 @@
   }
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1280px) {
   .app {
-    height: 430rem;
+    height: 620rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .app {
+    height: 560rem;
   }
 }
 
@@ -89,7 +89,7 @@
     gap: 3%;
   }
   .app {
-    height: 410rem;
+    height: 530rem;
   }
   .blackbox {
     display: block;
@@ -98,13 +98,13 @@
 
 @media only screen and (max-width: 1000px) {
   .app {
-    height: 380rem;
+    height: 490rem;
   }
 }
 
 @media only screen and (max-width: 900px) {
   .app {
-    height: 310rem;
+    height: 440rem;
   }
   .copyright {
     width: 100vw !important;
@@ -121,7 +121,7 @@
     padding-left: 4.7rem;
   }
   .app {
-    height: 310rem;
+    height: 390rem;
   }
   .copyright {
     top: 10rem;
@@ -133,7 +133,7 @@
 
 @media only screen and (max-width: 680px) {
   .app {
-    height: 270rem;
+    height: 340rem;
   }
 }
 
@@ -156,7 +156,7 @@
   }
   .app {
     overflow: hidden !important;
-    height: 240rem;
+    height: 320rem;
   }
   .logo-box {
     position: absolute;
@@ -170,9 +170,15 @@
   }
 }
 
+@media only screen and (max-width: 550px) {
+  .app {
+    height: 300rem;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .app {
-    height: 230rem;
+    height: 270rem;
   }
   .cta-box {
     transform: scale(0.8);
@@ -180,9 +186,9 @@
   }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 450px) {
   .app {
-    height: 190rem;
+    height: 245rem;
   }
 }
 
@@ -192,13 +198,19 @@
     position: absolute;
     gap: 0.5rem;
   }
+  .app {
+    height: 230rem;
+  }
 }
 
 @media only screen and (max-width: 390px) {
-  .app {
-    height: 170rem;
-  }
   .cta-box {
     transform: scale(0.6);
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .app {
+    height: 200rem;
   }
 }
