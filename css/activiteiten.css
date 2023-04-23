@@ -434,7 +434,7 @@ a {
 }
 
 .rent-hero {
-  color: white;
+  color: rgb(218, 211, 211);
   font-family: luxuryFont;
   position: absolute;
   left: 1rem;
@@ -461,6 +461,7 @@ a {
   font-size: 20px;
   cursor: pointer;
   color: black;
+  background-color: rgb(218, 211, 211);
 }
 
 .book-cta:hover {
@@ -479,4 +480,20 @@ a {
   width: 15rem;
   top: 3rem;
   /* left: 0.5rem; */
+}
+
+.co2 {
+  position: absolute;
+  color: white;
+  height: 4rem;
+  top: 7rem;
+  left: 17.7rem;
+}
+
+.zero {
+  position: absolute;
+  color: rgb(182, 174, 174);
+  left: 19rem;
+  top: 10.2rem;
+  font-family: Helvetica;
 }

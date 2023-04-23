@@ -709,7 +709,6 @@ a {
   left: 25rem;
   top: 2.2rem;
   /* border: 1px solid red; */
-  border-left: 1px solid gray;
 }
 
 .voorzien-hero {
@@ -853,6 +852,9 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.appartment-box:hover .appartment-hero {
+  text-decoration: underline;
 }
 
 .wooden-house {

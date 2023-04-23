@@ -283,6 +283,7 @@
   }
   .kamer-desc-box {
     width: 12rem;
+    left: 0.3rem;
   }
   .voorzien-hero {
     top: -0.5rem;
@@ -291,6 +292,10 @@
   }
   .dotbox {
     left: 22%;
+  }
+
+  .voorzieningen {
+    left: 14rem;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -301,17 +306,12 @@
     left: 20%;
   }
   .voorzieningen {
-    left: 14rem;
+    left: 12.3rem;
   }
   .prijs {
     font-size: 0.7rem;
   }
   .prijs2 {
     font-size: 0.7rem;
-  }
-}
-@media only screen and (max-width: 380px) {
-  .voorzieningen {
-    left: 13rem;
   }
 }
