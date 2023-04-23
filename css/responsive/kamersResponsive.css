@@ -86,6 +86,13 @@
   .kamer-modal {
     top: 4rem;
   }
+  .kamer-outer-box {
+    top: 0.2rem;
+  }
+
+  .cta-box {
+    top: 51rem;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -95,7 +102,7 @@
     gap: 5rem;
   }
   .app {
-    height: 140rem;
+    height: 157.5rem;
   }
   .page-hero {
     padding-left: 2rem;
@@ -113,15 +120,30 @@
   .kamer-modal {
     height: 140rem;
   }
+
+  .appartment-box {
+    top: 82rem;
+  }
+
+  .wrapper {
+    top: 0rem;
+  }
 }
 
 @media only screen and (max-width: 700px) {
   .kamer-outer-box {
-    transform: scale(0.9);
+    width: 100%;
   }
   .copyright {
     top: 10rem;
     width: 100vw;
+  }
+  .kam-over {
+    width: 100%;
+    left: 0rem;
+  }
+  .navlist {
+    display: none;
   }
 }
 
@@ -149,13 +171,7 @@
     top: -3rem;
     left: 35vw;
   }
-  .kamer-outer-box {
-    transform: scale(0.8) !important;
-    top: -4rem;
-  }
-  .cta-box {
-    top: 49rem;
-  }
+
   .kamer-desc-box {
     position: absolute;
     width: 17rem;
@@ -171,6 +187,13 @@
   }
   .dotbox {
     left: 27%;
+  }
+  .app {
+    height: 165rem;
+  }
+
+  .kam-over {
+    width: 100vw !important;
   }
 }
 
@@ -201,17 +224,17 @@
   .voorzieningen {
     left: 15rem;
   }
-  .cta-box {
-    top: 45rem;
+
+  .appartment-box {
+    transform: scale(0.8);
+  }
+
+  .kamer-outer-box {
+    width: 100vw;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .kamer-outer-box {
-    transform: scale(0.7);
-    top: -4rem;
-    overflow: hidden;
-  }
   .voorzien-list {
     top: 3rem;
     width: 12rem;
@@ -221,29 +244,20 @@
     left: -2rem;
     font-size: 1.2rem;
   }
-  .kamer-outer-box {
-    transform: scale(1) !important;
-    top: 0rem;
-  }
+
   .kamer-img-box {
     left: 0rem;
     width: 100vw;
   }
-  .cta-box {
-    top: 52rem;
-  }
-  .kamer-inner-box2 {
-    margin-right: 0.5rem;
-  }
   .kamer-desc-box {
-    left: 0.5rem;
+    left: 1.2rem;
   }
-  .prijs {
-    left: 0.5rem;
+  /* .prijs {
+    left: 0.56rem;
   }
   .prijs2 {
-    left: 0.5rem;
-  }
+    left: 0.56rem;
+  } */
   .dotbox {
     left: 24%;
   }

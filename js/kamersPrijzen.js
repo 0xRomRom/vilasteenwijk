@@ -20,10 +20,15 @@ setTimeout(() => {
   box1.style.visibility = "visible";
 }, 2500);
 setTimeout(() => {
+  box5.classList.add("dropIn");
+  box5.style.visibility = "visible";
+}, 3000);
+setTimeout(() => {
   box1.classList.remove("dropIn");
   box2.classList.remove("dropIn");
   box3.classList.remove("dropIn");
   box4.classList.remove("dropIn");
+  box5.classList.remove("dropIn");
 }, 3500);
 
 //Animate doors
@@ -36,15 +41,19 @@ const doorImage1 = document.querySelector(".img1");
 const doorImage2 = document.querySelector(".img2");
 const doorImage3 = document.querySelector(".img3");
 const doorImage4 = document.querySelector(".img4");
+const doorImage5 = document.querySelector(".img5");
 const box1 = document.querySelector(".box1");
 const box2 = document.querySelector(".box2");
 const box3 = document.querySelector(".box3");
 const box4 = document.querySelector(".box4");
+const box5 = document.querySelector(".box5");
 const kamerOuter1 = document.querySelector(".kamer-inner-box1");
 const kamerOuter2 = document.querySelector(".kamer-inner-box2");
 const kamerOuter3 = document.querySelector(".kamer-inner-box3");
 const kamerOuter4 = document.querySelector(".kamer-inner-box4");
+const kamerOuter5 = document.querySelector(".kamer-inner-box5");
 const ctaButton = document.querySelector(".cta-box");
+const wrapperDiv = document.querySelector(".wrapper");
 
 doorImage1.addEventListener("click", () => {
   doorImage1.disabled = true;
@@ -54,10 +63,12 @@ doorImage1.addEventListener("click", () => {
   kamerOuter2.classList.add("hidden");
   kamerOuter3.classList.add("hidden");
   kamerOuter4.classList.add("hidden");
+  kamerOuter5.classList.add("hidden");
 
   box2.classList.add("fadeOut");
   box3.classList.add("fadeOut");
   box4.classList.add("fadeOut");
+  box5.classList.add("fadeOut");
   setTimeout(() => {
     kamerModal.classList.add("fadeIn");
   }, 1000);
@@ -70,6 +81,11 @@ doorImage1.addEventListener("click", () => {
     ctaButton.classList.add("opacityIn");
     window.scrollTo({ top: -30, behavior: "smooth" });
   }, 2300);
+
+  wrapperDiv.classList.add("fadeOut");
+  setTimeout(() => {
+    wrapperDiv.classList.remove("fadeOut");
+  }, 2000);
 });
 
 doorImage2.addEventListener("click", () => {
@@ -79,10 +95,12 @@ doorImage2.addEventListener("click", () => {
   kamerOuter1.classList.add("hidden");
   kamerOuter3.classList.add("hidden");
   kamerOuter4.classList.add("hidden");
+  kamerOuter5.classList.add("hidden");
 
   box1.classList.add("fadeOut");
   box3.classList.add("fadeOut");
   box4.classList.add("fadeOut");
+  box5.classList.add("fadeOut");
   setTimeout(() => {
     kamerModal.classList.add("fadeIn");
   }, 1000);
@@ -95,6 +113,11 @@ doorImage2.addEventListener("click", () => {
     ctaButton.classList.add("opacityIn");
     window.scrollTo({ top: -30, behavior: "smooth" });
   }, 2300);
+
+  wrapperDiv.classList.add("fadeOut");
+  setTimeout(() => {
+    wrapperDiv.classList.remove("fadeOut");
+  }, 2000);
 });
 
 doorImage3.addEventListener("click", () => {
@@ -104,10 +127,12 @@ doorImage3.addEventListener("click", () => {
   kamerOuter1.classList.add("hidden");
   kamerOuter2.classList.add("hidden");
   kamerOuter4.classList.add("hidden");
+  kamerOuter5.classList.add("hidden");
 
   box1.classList.add("fadeOut");
   box2.classList.add("fadeOut");
   box4.classList.add("fadeOut");
+  box5.classList.add("fadeOut");
   setTimeout(() => {
     kamerModal.classList.add("fadeIn");
   }, 1000);
@@ -120,6 +145,11 @@ doorImage3.addEventListener("click", () => {
     ctaButton.classList.add("opacityIn");
     window.scrollTo({ top: -30, behavior: "smooth" });
   }, 2300);
+
+  wrapperDiv.classList.add("fadeOut");
+  setTimeout(() => {
+    wrapperDiv.classList.remove("fadeOut");
+  }, 2000);
 });
 
 doorImage4.addEventListener("click", () => {
@@ -129,10 +159,12 @@ doorImage4.addEventListener("click", () => {
   kamerOuter1.classList.add("hidden");
   kamerOuter2.classList.add("hidden");
   kamerOuter3.classList.add("hidden");
+  kamerOuter5.classList.add("hidden");
 
   box1.classList.add("fadeOut");
   box2.classList.add("fadeOut");
   box3.classList.add("fadeOut");
+  box5.classList.add("fadeOut");
   setTimeout(() => {
     kamerModal.classList.add("fadeIn");
   }, 1000);
@@ -145,6 +177,38 @@ doorImage4.addEventListener("click", () => {
     ctaButton.classList.add("opacityIn");
     window.scrollTo({ top: -30, behavior: "smooth" });
   }, 2300);
+
+  wrapperDiv.classList.add("fadeOut");
+  setTimeout(() => {
+    wrapperDiv.classList.remove("fadeOut");
+  }, 2000);
+});
+
+doorImage5.addEventListener("click", () => {
+  kamerOuter4.classList.add("hidden");
+  kamerOuter1.classList.add("hidden");
+  kamerOuter2.classList.add("hidden");
+  kamerOuter3.classList.add("hidden");
+  kamerOuter5.classList.remove("hidden");
+  window.scrollTo({ top: -30, behavior: "smooth" });
+
+  box1.classList.add("fadeOut");
+  box2.classList.add("fadeOut");
+  box3.classList.add("fadeOut");
+  box4.classList.add("fadeOut");
+  setTimeout(() => {
+    kamerModal.classList.add("fadeIn");
+  }, 1000);
+
+  setTimeout(() => {
+    kamerOuter5.classList.add("opacityIn");
+    ctaButton.classList.add("opacityIn");
+  }, 2300);
+
+  wrapperDiv.classList.add("fadeOut");
+  setTimeout(() => {
+    wrapperDiv.classList.remove("fadeOut");
+  }, 2000);
 });
 
 const kamerModal = document.querySelector(".kamer-modal");
@@ -155,6 +219,7 @@ closeKamerModal.addEventListener("click", () => {
   kamerOuter2.classList.remove("opacityIn");
   kamerOuter3.classList.remove("opacityIn");
   kamerOuter4.classList.remove("opacityIn");
+  kamerOuter5.classList.remove("opacityIn");
   ctaButton.classList.remove("opacityIn");
   kamerModal.classList.add("transitionOut");
   kamerModal.classList.remove("fadeIn");
@@ -170,6 +235,7 @@ closeKamerModal.addEventListener("click", () => {
     kamerOuter2.classList.add("hidden");
     kamerOuter3.classList.add("hidden");
     kamerOuter4.classList.add("hidden");
+    kamerOuter5.classList.add("hidden");
   }, 1000);
 
   setTimeout(() => {
@@ -183,6 +249,7 @@ closeKamerModal.addEventListener("click", () => {
   box2.classList.remove("fadeOut");
   box3.classList.remove("fadeOut");
   box4.classList.remove("fadeOut");
+  box5.classList.remove("fadeOut");
 });
 
 //Johan Van den Kornput
@@ -233,6 +300,18 @@ const imageLinks4 = [
   "./img/Room4/Pic8.jpeg",
 ];
 
+//Appartement
+const imageLinks5 = [
+  "./img/Room5/Pic1.JPG",
+  "./img/Room5/Pic2.JPG",
+  "./img/Room5/Pic3.JPG",
+  "./img/Room5/Pic4.JPG",
+  "./img/Room5/Pic5.JPG",
+  "./img/Room5/Pic6.JPG",
+  "./img/Room5/Pic7.JPG",
+  "./img/Room5/Pic8.JPG",
+];
+
 //Dotbox transition
 const dot1 = document.querySelector(".d1");
 const dot2 = document.querySelector(".d2");
@@ -266,6 +345,14 @@ const dot29 = document.querySelector(".d29");
 const dot30 = document.querySelector(".d30");
 const dot31 = document.querySelector(".d31");
 const dot32 = document.querySelector(".d32");
+const dot33 = document.querySelector(".d33");
+const dot34 = document.querySelector(".d34");
+const dot35 = document.querySelector(".d35");
+const dot36 = document.querySelector(".d36");
+const dot37 = document.querySelector(".d37");
+const dot38 = document.querySelector(".d38");
+const dot39 = document.querySelector(".d39");
+const dot40 = document.querySelector(".d40");
 
 const hideClasses = (a, b, c, d, e, f, g) => {
   a.classList.remove("dot-active");
@@ -281,6 +368,7 @@ const dotBox1 = document.querySelector(".dbox1");
 const dotBox2 = document.querySelector(".dbox2");
 const dotBox3 = document.querySelector(".dbox3");
 const dotBox4 = document.querySelector(".dbox4");
+const dotBox5 = document.querySelector(".dbox5");
 
 const hideImages = (a, b, c, d, e, f, g) => {
   a.classList.add("hidden");
@@ -567,6 +655,75 @@ dotBox4.addEventListener("click", (e) => {
     hideClasses(dot25, dot26, dot27, dot28, dot29, dot30, dot31);
     k4img8.classList.remove("hidden");
     hideImages(k4img1, k4img2, k4img3, k4img4, k4img5, k4img6, k4img7);
+    return;
+  }
+});
+
+//Appartement
+const k5img1 = document.querySelector(".kamer5-img1");
+const k5img2 = document.querySelector(".kamer5-img2");
+const k5img3 = document.querySelector(".kamer5-img3");
+const k5img4 = document.querySelector(".kamer5-img4");
+const k5img5 = document.querySelector(".kamer5-img5");
+const k5img6 = document.querySelector(".kamer5-img6");
+const k5img7 = document.querySelector(".kamer5-img7");
+const k5img8 = document.querySelector(".kamer5-img8");
+
+dotBox5.addEventListener("click", (e) => {
+  if (e.target.classList.contains("d33")) {
+    dot33.classList.add("dot-active");
+    hideClasses(dot34, dot35, dot36, dot37, dot38, dot39, dot40);
+    k5img1.classList.remove("hidden");
+    hideImages(k5img2, k5img3, k5img4, k5img5, k5img6, k5img7, k5img8);
+    return;
+  }
+  if (e.target.classList.contains("d34")) {
+    dot34.classList.add("dot-active");
+    hideClasses(dot33, dot35, dot36, dot37, dot38, dot39, dot40);
+    k5img2.classList.remove("hidden");
+    hideImages(k5img1, k5img3, k5img4, k5img5, k5img6, k5img7, k5img8);
+    return;
+  }
+  if (e.target.classList.contains("d35")) {
+    dot35.classList.add("dot-active");
+    hideClasses(dot33, dot34, dot36, dot37, dot38, dot39, dot40);
+    k5img3.classList.remove("hidden");
+    hideImages(k5img1, k5img2, k5img4, k5img5, k5img6, k5img7, k5img8);
+    return;
+  }
+  if (e.target.classList.contains("d36")) {
+    dot36.classList.add("dot-active");
+    hideClasses(dot33, dot34, dot35, dot37, dot38, dot39, dot40);
+    k5img4.classList.remove("hidden");
+    hideImages(k5img1, k5img2, k5img3, k5img5, k5img6, k5img7, k5img8);
+    return;
+  }
+  if (e.target.classList.contains("d37")) {
+    dot37.classList.add("dot-active");
+    hideClasses(dot33, dot34, dot35, dot36, dot38, dot39, dot40);
+    k5img5.classList.remove("hidden");
+    hideImages(k5img1, k5img2, k5img3, k5img4, k5img6, k5img7, k5img8);
+    return;
+  }
+  if (e.target.classList.contains("d38")) {
+    dot38.classList.add("dot-active");
+    hideClasses(dot33, dot34, dot35, dot36, dot37, dot39, dot40);
+    k5img6.classList.remove("hidden");
+    hideImages(k5img1, k5img2, k5img3, k5img4, k5img5, k5img7, k5img8);
+    return;
+  }
+  if (e.target.classList.contains("d39")) {
+    dot39.classList.add("dot-active");
+    hideClasses(dot33, dot34, dot35, dot36, dot37, dot38, dot40);
+    k5img7.classList.remove("hidden");
+    hideImages(k5img1, k5img2, k5img3, k5img4, k5img5, k5img6, k5img8);
+    return;
+  }
+  if (e.target.classList.contains("d40")) {
+    dot40.classList.add("dot-active");
+    hideClasses(dot33, dot34, dot35, dot36, dot37, dot38, dot39);
+    k5img8.classList.remove("hidden");
+    hideImages(k5img1, k5img2, k5img3, k5img4, k5img5, k5img6, k5img7);
     return;
   }
 });
