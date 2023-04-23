@@ -254,62 +254,62 @@ closeKamerModal.addEventListener("click", () => {
 
 //Johan Van den Kornput
 const imageLinks1 = [
-  "./img/Room1/Pic1.jpeg",
-  "./img/Room1/Pic2.jpeg",
-  "./img/Room1/Pic3.jpeg",
-  "./img/Room1/Pic4.jpeg",
-  "./img/Room1/Pic5.jpeg",
-  "./img/Room1/Pic6.jpeg",
-  "./img/Room1/Pic7.jpeg",
-  "./img/Room1/Pic8.jpeg",
+  "./img/Room1/Pic1.webp",
+  "./img/Room1/Pic2.webp",
+  "./img/Room1/Pic3.webp",
+  "./img/Room1/Pic4.webp",
+  "./img/Room1/Pic5.webp",
+  "./img/Room1/Pic6.webp",
+  "./img/Room1/Pic7.webp",
+  "./img/Room1/Pic8.webp",
 ];
 
 //Hildo Krop
 const imageLinks2 = [
-  "./img/Room2/Pic1.jpeg",
-  "./img/Room2/Pic2.jpeg",
-  "./img/Room2/Pic3.jpeg",
-  "./img/Room2/Pic4.jpeg",
-  "./img/Room2/Pic5.jpeg",
-  "./img/Room2/Pic6.jpeg",
-  "./img/Room2/Pic7.jpeg",
-  "./img/Room2/Pic8.jpeg",
+  "./img/Room2/Pic1.webp",
+  "./img/Room2/Pic2.webp",
+  "./img/Room2/Pic3.webp",
+  "./img/Room2/Pic4.webp",
+  "./img/Room2/Pic5.webp",
+  "./img/Room2/Pic6.webp",
+  "./img/Room2/Pic7.webp",
+  "./img/Room2/Pic8.webp",
 ];
 
 //Tromp Meester
 const imageLinks3 = [
-  "./img/Room3/Pic1.jpeg",
-  "./img/Room3/Pic2.jpeg",
-  "./img/Room3/Pic3.jpeg",
-  "./img/Room3/Pic4.jpeg",
-  "./img/Room3/Pic5.jpeg",
-  "./img/Room3/Pic6.jpeg",
-  "./img/Room3/Pic7.jpeg",
-  "./img/Room3/Pic8.jpeg",
+  "./img/Room3/Pic1.webp",
+  "./img/Room3/Pic2.webp",
+  "./img/Room3/Pic3.webp",
+  "./img/Room3/Pic4.webp",
+  "./img/Room3/Pic5.webp",
+  "./img/Room3/Pic6.webp",
+  "./img/Room3/Pic7.webp",
+  "./img/Room3/Pic8.webp",
 ];
 
 //Kleibeuker
 const imageLinks4 = [
-  "./img/Room4/Pic1.jpeg",
-  "./img/Room4/Pic2.jpeg",
-  "./img/Room4/Pic3.jpeg",
-  "./img/Room4/Pic4.jpeg",
-  "./img/Room4/Pic5.jpeg",
-  "./img/Room4/Pic6.jpeg",
-  "./img/Room4/Pic7.jpeg",
-  "./img/Room4/Pic8.jpeg",
+  "./img/Room4/Pic1.webp",
+  "./img/Room4/Pic2.webp",
+  "./img/Room4/Pic3.webp",
+  "./img/Room4/Pic4.webp",
+  "./img/Room4/Pic5.webp",
+  "./img/Room4/Pic6.webp",
+  "./img/Room4/Pic7.webp",
+  "./img/Room4/Pic8.webp",
 ];
 
 //Appartement
 const imageLinks5 = [
-  "./img/Room5/Pic1.JPG",
-  "./img/Room5/Pic2.JPG",
-  "./img/Room5/Pic3.JPG",
-  "./img/Room5/Pic4.JPG",
-  "./img/Room5/Pic5.JPG",
-  "./img/Room5/Pic6.JPG",
-  "./img/Room5/Pic7.JPG",
-  "./img/Room5/Pic8.JPG",
+  "./img/Room5/Pic1.webp",
+  "./img/Room5/Pic2.webp",
+  "./img/Room5/Pic3.webp",
+  "./img/Room5/Pic4.webp",
+  "./img/Room5/Pic5.webp",
+  "./img/Room5/Pic6.webp",
+  "./img/Room5/Pic7.webp",
+  "./img/Room5/Pic8.webp",
 ];
 
 //Dotbox transition
