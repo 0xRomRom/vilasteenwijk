@@ -13,7 +13,7 @@
   }
   .bekijk-kamers {
     position: absolute;
-    top: 30.8rem;
+    top: 25rem;
     right: 1rem;
   }
   .navlist {
@@ -141,7 +141,7 @@
   .bekijk-kamers {
     color: rgb(199, 188, 188);
     /* position: absolute; */
-    top: 20rem;
+    top: 23rem;
     right: 5rem;
     width: 100%;
     left: -0.5rem;
@@ -158,6 +158,10 @@
 @media only screen and (max-width: 1200px) {
   .reviews-container {
     transform: scale(0.9);
+  }
+
+  .content-main {
+    gap: 1rem;
   }
 }
 @media only screen and (max-width: 1050px) {
