@@ -1,10 +1,8 @@
 const imageLinks = [
   //Landing page image cycle
-  "./img/landing/1.jpg",
-  "./img/landing/2.JPG",
-  "./img/landing/3.JPG",
-  "./img/landing/4.JPG",
-  "./img/landing/5.JPG",
+  "./img/landing/1.jpeg",
+  "./img/landing/2.jpeg",
+  "./img/landing/3.jpeg",
 ];
 
 const landingImg = document.querySelector(".cycle-image");
@@ -39,18 +37,12 @@ const cycleImages = () => {
     setTimeout(() => {
       transitionImage(imageLinks[2]);
     }, 16000);
-    setTimeout(() => {
-      transitionImage(imageLinks[3]);
-    }, 24000);
-    setTimeout(() => {
-      transitionImage(imageLinks[4]);
-    }, 32000);
   };
   cycle();
 
   setInterval(() => {
     cycle();
-  }, 42000);
+  }, 24000);
 };
 cycleImages();
 

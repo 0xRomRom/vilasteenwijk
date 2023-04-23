@@ -1,0 +1,31 @@
+# Ignore directories
+/node_modules/
+/.next/
+/.cache/
+/.vscode/
+/venv/
+/__pycache__/
+
+# Ignore files
+*.log
+*.pyc
+*.swp
+*.DS_Store
+*.env
+*.idea/
+*.iml
+.git
+.parcel-cache
+
+# Ignore build output
+/build/
+/dist/
+
+# Ignore sensitive or personal data
+/secrets.env
+/secrets.yml
+/secrets.json
+
+# Ignore dependencies installed via package managers
+/yarn.lock
+/package-lock.json
