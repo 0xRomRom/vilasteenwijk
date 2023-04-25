@@ -161,6 +161,7 @@ a {
   height: 20rem;
   max-width: 1400px !important;
   border-radius: 0.8rem !important;
+  object-fit: cover;
 }
 
 .modal-box {
@@ -428,7 +429,7 @@ a {
   position: relative;
   width: 37.5rem;
   height: 12.5rem;
-  background: linear-gradient(90deg, darkgreen, green);
+  background: linear-gradient(90deg, darkgreen, green, rgb(8, 174, 8));
   margin: 3rem 0rem;
   border-radius: 0.8rem;
 }
@@ -437,7 +438,7 @@ a {
   color: rgb(218, 211, 211);
   font-family: luxuryFont;
   position: absolute;
-  left: 1rem;
+  left: 2.3rem;
   top: 1rem;
 }
 
@@ -479,6 +480,7 @@ a {
   height: 10rem;
   width: 15rem;
   top: 3rem;
+  left: 0rem;
   /* left: 0.5rem; */
 }
 
@@ -486,14 +488,14 @@ a {
   position: absolute;
   color: white;
   height: 4rem;
-  top: 7rem;
-  left: 17.7rem;
+  top: 5rem;
+  left: 15rem;
 }
 
 .zero {
   position: absolute;
   color: rgb(182, 174, 174);
-  left: 19rem;
-  top: 10.2rem;
+  left: 16.5rem;
+  top: 9rem;
   font-family: Helvetica;
 }

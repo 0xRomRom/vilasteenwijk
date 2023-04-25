@@ -58,7 +58,7 @@
 
 .app {
   position: relative;
-  min-height: 90rem;
+  height: 90rem;
   width: 100vw;
   /* background-color: rgb(2, 32, 2); */
   background-color: black;
@@ -253,9 +253,10 @@ a {
 
 .kamer-modal {
   position: absolute;
-  top: 0rem;
+  top: 0;
+  left: 0;
   width: 100vw;
-  height: 70rem;
+  height: 90rem;
   background-color: black;
   z-index: 10;
   opacity: 0;

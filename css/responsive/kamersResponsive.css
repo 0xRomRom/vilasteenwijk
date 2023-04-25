@@ -283,7 +283,7 @@
   }
   .kamer-desc-box {
     width: 12rem;
-    left: 0.3rem;
+    left: 1rem;
   }
   .voorzien-hero {
     top: -0.5rem;
@@ -306,12 +306,12 @@
     left: 20%;
   }
   .voorzieningen {
-    left: 12.3rem;
+    left: 12.9rem;
   }
   .prijs {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   .prijs2 {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
