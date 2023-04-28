@@ -8,3 +8,9 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
 });
+
+const bookCTA = document.querySelector(".book-cta");
+
+bookCTA.addEventListener("click", () => {
+  window.location.href = "contact.html";
+});
