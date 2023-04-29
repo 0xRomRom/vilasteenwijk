@@ -1,7 +1,4 @@
 @media only screen and (max-width: 1300px) {
-  .cycle-image {
-    min-width: 80vw;
-  }
   .fancy-modal {
     font-size: 0.9rem;
   }
@@ -40,12 +37,6 @@
   }
   .locatie {
     height: 80rem;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .cycle-image {
-    min-width: 800px !important;
   }
 }
 
@@ -265,6 +256,13 @@
     top: -17rem;
     /* left: 40vw; */
     position: relative;
+  }
+  .cycle-image {
+    position: relative;
+    object-fit: contain;
+    width: auto;
+    width: 100vw;
+    height: 100% !important;
   }
 }
 

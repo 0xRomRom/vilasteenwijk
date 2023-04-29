@@ -5,14 +5,31 @@ const imageLinks = [
   "./img/landing/3.jpeg",
 ];
 
+const imageLinks2 = [
+  //Landing page image cycle
+  "./img/landing/1 small.jpeg",
+  "./img/landing/2 small.jpeg",
+  "./img/landing/3.jpeg",
+];
+
 const landingImg = document.querySelector(".cycle-image");
 const ctaDown = document.querySelector(".down-cta-box");
 
 window.onload = () => {
-  cycleImages();
-  setTimeout(() => {
-    ctaDown.style.display = "flex";
-  }, 1000);
+  console.log(window.innerWidth);
+  if (window.innerWidth < 500) {
+    cycleImages2();
+    setTimeout(() => {
+      ctaDown.style.display = "flex";
+    }, 1000);
+    return;
+  }
+  if (window.innerWidth > 500) {
+    cycleImages();
+    setTimeout(() => {
+      ctaDown.style.display = "flex";
+    }, 1000);
+  }
 };
 
 const transitionImage = (imageSrc) => {
@@ -44,7 +61,25 @@ const cycleImages = () => {
     cycle();
   }, 24000);
 };
-cycleImages();
+
+const cycleImages2 = () => {
+  const cycle = () => {
+    setTimeout(() => {
+      transitionImage(imageLinks2[0]);
+    }, 0);
+    setTimeout(() => {
+      transitionImage(imageLinks2[1]);
+    }, 8000);
+    setTimeout(() => {
+      transitionImage(imageLinks2[2]);
+    }, 16000);
+  };
+  cycle();
+
+  setInterval(() => {
+    cycle();
+  }, 24000);
+};
 
 // Animate scroll cta
 
