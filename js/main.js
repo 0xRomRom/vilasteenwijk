@@ -16,20 +16,10 @@ const landingImg = document.querySelector(".cycle-image");
 const ctaDown = document.querySelector(".down-cta-box");
 
 window.onload = () => {
-  console.log(window.innerWidth);
-  if (window.innerWidth < 500) {
-    cycleImages2();
-    setTimeout(() => {
-      ctaDown.style.display = "flex";
-    }, 1000);
-    return;
-  }
-  if (window.innerWidth > 500) {
     cycleImages();
     setTimeout(() => {
       ctaDown.style.display = "flex";
     }, 1000);
-  }
 };
 
 const transitionImage = (imageSrc) => {

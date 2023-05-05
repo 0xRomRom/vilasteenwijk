@@ -257,11 +257,11 @@
     /* left: 40vw; */
     position: relative;
   }
-  .cycle-image {
+  /* .cycle-image {
     position: relative;
     width: auto;
     height: 100% !important;
-  }
+  } */
 }
 
 @media only screen and (max-width: 450px) {
