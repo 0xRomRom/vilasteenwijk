@@ -223,6 +223,7 @@ closeKamerModal.addEventListener("click", () => {
   ctaButton.classList.remove("opacityIn");
   kamerModal.classList.add("transitionOut");
   kamerModal.classList.remove("fadeIn");
+  reserverenFrame.classList.add("hidden");
 
   doorImage1.disabled = true;
   doorImage2.disabled = true;
@@ -745,4 +746,11 @@ const navMenu = document.querySelector(".navlist");
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
+});
+
+const reserverenButton = document.querySelector(".reserveren-cta");
+const reserverenFrame = document.querySelector(".reserveren-frame");
+
+reserverenButton.addEventListener("click", () => {
+  reserverenFrame.classList.remove("hidden");
 });

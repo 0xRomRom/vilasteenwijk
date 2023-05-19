@@ -86,12 +86,6 @@
           <a href="tour.html"><li>3D Virtuele Tour</li></a>
           <a href="activiteiten.html"><li>Activiteiten</li></a>
           <a href="contact.html"><li>Contact</li></a>
-          <a
-            class="cta-a reserveren-li"
-            target="_blank"
-            href="https://www.booking.com/hotel/nl/villa-steenwyck.nl.html"
-            ><li class="r">Reserveren</li></a
-          >
         </ul>
         <div class="hamburger">
           <span class="bar"></span>
@@ -143,7 +137,7 @@
         </div>
       </div>
 
-      <div class="kamer-modal">
+      <div class="kamer-modal" id="kamers">
         <div class="close-modal">
           <button class="close-kamer-btn">
             <i class="fa-solid fa-xmark"></i>
@@ -649,11 +643,18 @@
           </div>
         </div>
         <div class="cta-box">
-          <a
-            target="_blank"
-            href="https://www.booking.com/hotel/nl/villa-steenwyck.nl.html"
-            ><button class="reserveren-cta">Reserveren</button></a
-          >
+          <!-- <a href="./export.ics" target="_blank"><button class="reserveren-cta">Reserveren</button></a
+            ></a> -->
+
+          <button class="reserveren-cta">Reserveren</button>
+          <iframe
+            class="reserveren-frame hidden"
+            src="https://www.bedandbreakfast.nl/ibook/v2/77029/nl/yellow"
+            width="100%"
+            height="780"
+            frameborder="0"
+            allowtransparency="true"
+          ></iframe>
         </div>
       </div>
     </div>
@@ -664,10 +665,7 @@
         <div class="links-box">
           <div class="reserveren-box">
             <div class="footer-hero">
-              <a
-                target="_blank"
-                href="https://www.booking.com/hotel/nl/villa-steenwyck.nl.html"
-                class="anchor"
+              <a href="#kamers" class="anchor"
                 ><h2 class="footer-hero-text">Reserveer</h2></a
               >
               <hr class="small-hr" />
