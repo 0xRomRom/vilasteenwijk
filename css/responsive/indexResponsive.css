@@ -290,6 +290,9 @@
   .nav-list {
     z-index: 0 !important;
   }
+    .cycle-image {
+    object-fit: contain;
+  }
 }
 
 @media only screen and (max-width: 360px) {

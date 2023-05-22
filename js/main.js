@@ -5,13 +5,6 @@ const imageLinks = [
   "./img/landing/3.jpeg",
 ];
 
-const imageLinks2 = [
-  //Landing page image cycle
-  "./img/landing/1 small.jpeg",
-  "./img/landing/2 small.jpeg",
-  "./img/landing/3.jpeg",
-];
-
 const landingImg = document.querySelector(".cycle-image");
 const ctaDown = document.querySelector(".down-cta-box");
 
@@ -43,25 +36,6 @@ const cycleImages = () => {
     }, 8000);
     setTimeout(() => {
       transitionImage(imageLinks[2]);
-    }, 16000);
-  };
-  cycle();
-
-  setInterval(() => {
-    cycle();
-  }, 24000);
-};
-
-const cycleImages2 = () => {
-  const cycle = () => {
-    setTimeout(() => {
-      transitionImage(imageLinks2[0]);
-    }, 0);
-    setTimeout(() => {
-      transitionImage(imageLinks2[1]);
-    }, 8000);
-    setTimeout(() => {
-      transitionImage(imageLinks2[2]);
     }, 16000);
   };
   cycle();

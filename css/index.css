@@ -108,6 +108,15 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
+  background: linear-gradient(
+    90deg,
+    black,
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    black
+  );
 }
 
 .landing-img-container {
@@ -126,9 +135,9 @@ body {
   position: absolute;
   top: 5rem;
   height: 100%;
-  width: 100vw;
+  width: auto;
   max-height: 100vh;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .smooth-transition {
@@ -1028,3 +1037,5 @@ body {
   display: none;
   z-index: 300;
 }
+
+
