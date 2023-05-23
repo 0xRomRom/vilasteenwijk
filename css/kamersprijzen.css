@@ -167,9 +167,9 @@ a {
   width: 100%;
   height: 40rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 6rem;
+  
 }
 
 .home-img-box {
@@ -319,6 +319,7 @@ a {
   height: 24rem;
   position: relative;
   cursor: pointer;
+  margin-right: 1rem;
 }
 
 .room-flex:hover span {
@@ -366,6 +367,16 @@ a {
   left: 2.5rem;
 }
 
+.room-name5 {
+  display: inline-block;
+  color: white;
+  position: absolute;
+  top: 21rem;
+  font-family: luxuryFont;
+  color: #ffd700;
+  left: 2.5rem;
+}
+
 .box1 {
   visibility: hidden;
   cursor: pointer;
@@ -383,6 +394,10 @@ a {
   cursor: pointer;
 }
 .box5 {
+  visibility: hidden;
+  cursor: pointer;
+}
+.box6 {
   visibility: hidden;
   cursor: pointer;
 }
@@ -590,6 +605,17 @@ a {
 }
 
 .kamer-inner-box5 {
+  position: relative;
+  width: 40rem;
+  height: 45rem;
+  border-radius: 20px 5px 20px 5px;
+  background: url("../img/Script.png");
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  /* border: 1px solid red; */
+}
+
+.kamer-inner-box6 {
   position: relative;
   width: 40rem;
   height: 45rem;

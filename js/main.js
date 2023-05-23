@@ -9,10 +9,13 @@ const landingImg = document.querySelector(".cycle-image");
 const ctaDown = document.querySelector(".down-cta-box");
 
 window.onload = () => {
+    // landingImg.src = "./img/landing/Bg-mobile.png";
+
     cycleImages();
     setTimeout(() => {
       ctaDown.style.display = "flex";
     }, 1000);
+  
 };
 
 const transitionImage = (imageSrc) => {
@@ -27,6 +30,11 @@ const transitionImage = (imageSrc) => {
 };
 
 const cycleImages = () => {
+
+  if (window.innerWidth < 450) {
+    landingImg.src = "./img/landing/Bg-mobile.png";
+    return;
+  }
   const cycle = () => {
     setTimeout(() => {
       transitionImage(imageLinks[0]);

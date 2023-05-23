@@ -60,10 +60,12 @@
     display: flex;
     gap: 3%;
   }
+  .room-flex {
+  margin-right: 0;
+  }
+
   .kamers-box {
-    /* flex-direction: column; */
-    /* top: 50rem; */
-    gap: 2rem;
+    justify-content: center;
   }
   .close-modal {
     position: relative;
@@ -95,15 +97,22 @@
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
+  .app {
+    height: 180rem;
+  }
   .kamers-box {
     flex-direction: column;
-    top: 45rem;
-    gap: 5rem;
+    height: 70rem;
+    top: 30rem;
+    gap: 4rem;
   }
-  .app {
-    height: 157.5rem;
+  .appartment-box {
+    top: 65rem;
   }
+}
+
+@media only screen and (max-width: 900px) {
   .page-hero {
     padding-left: 2rem;
     top: 6rem;
@@ -120,11 +129,6 @@
   .kamer-modal {
     height: 140rem;
   }
-
-  .appartment-box {
-    top: 82rem;
-  }
-
   .wrapper {
     top: 0rem;
   }
@@ -188,10 +192,6 @@
   .dotbox {
     left: 27%;
   }
-  .app {
-    height: 165rem;
-  }
-
   .kam-over {
     width: 100vw !important;
   }
