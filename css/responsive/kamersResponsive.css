@@ -195,6 +195,10 @@
   .kam-over {
     width: 100vw !important;
   }
+
+  .kamers-box {
+    top: 40rem;
+  }
 }
 
 @media only screen and (max-width: 560px) {
