@@ -83,7 +83,9 @@
     z-index: 600 !important;
   }
   .blackbox {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .kamer-modal {
     top: 4rem;
@@ -146,9 +148,9 @@
     width: 100%;
     left: 0rem;
   }
-  .navlist {
+  /* .navlist {
     display: none;
-  }
+  } */
 }
 
 @media only screen and (max-width: 640px) {
@@ -300,6 +302,10 @@
 
   .voorzieningen {
     left: 14rem;
+  }
+    .blackbox {
+      font-size: 12px;
+      padding-left: 1rem;
   }
 }
 @media only screen and (max-width: 400px) {

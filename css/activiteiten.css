@@ -423,6 +423,10 @@ a {
   background-color: black;
   display: none;
   z-index: 300;
+  font-family: luxuryFont;
+  color: #ffd700;
+  font-size: 15px;
+  padding-top: 0.875rem;
 }
 
 .rent-scooter {

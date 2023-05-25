@@ -92,7 +92,9 @@
     height: 410rem;
   }
   .blackbox {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .brand-logo {
     display: none !important;
@@ -177,6 +179,13 @@
   .cta-box {
     transform: scale(0.8);
     gap: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .blackbox {
+    font-size: 12px;
+    padding-left: 1rem;
   }
 }
 

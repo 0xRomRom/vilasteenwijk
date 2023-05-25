@@ -92,7 +92,9 @@
     /* height: 530rem; */
   }
   .blackbox {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -189,6 +191,13 @@
 @media only screen and (max-width: 450px) {
   .app {
     height: 290rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .blackbox {
+    font-size: 12px;
+    padding-left: 1rem;
   }
 }
 
