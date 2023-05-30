@@ -455,6 +455,15 @@ a {
   color: black;
 }
 
+.desc1 {
+  color: rgb(218, 211, 211);
+  position: absolute;
+  top: 8rem;
+  left: 0.5rem;
+  text-shadow: 0px 0px 5px gray;
+  font-size: 15px;
+}
+
 .book-cta {
   position: absolute;
   width: 9rem;
