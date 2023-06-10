@@ -319,66 +319,6 @@ closeKamerModal.addEventListener("click", () => {
   box6.classList.remove("fadeOut");
 });
 
-//Johan Van den Kornput
-const imageLinks1 = [
-  "./img/Room1/Pic1.webp",
-  "./img/Room1/Pic2.webp",
-  "./img/Room1/Pic3.webp",
-  "./img/Room1/Pic4.webp",
-  "./img/Room1/Pic5.webp",
-  "./img/Room1/Pic6.webp",
-  "./img/Room1/Pic7.webp",
-  "./img/Room1/Pic8.webp",
-];
-
-//Hildo Krop
-const imageLinks2 = [
-  "./img/Room2/Pic1.webp",
-  "./img/Room2/Pic2.webp",
-  "./img/Room2/Pic3.webp",
-  "./img/Room2/Pic4.webp",
-  "./img/Room2/Pic5.webp",
-  "./img/Room2/Pic6.webp",
-  "./img/Room2/Pic7.webp",
-  "./img/Room2/Pic8.webp",
-];
-
-//Tromp Meester
-const imageLinks3 = [
-  "./img/Room3/Pic1.webp",
-  "./img/Room3/Pic2.webp",
-  "./img/Room3/Pic3.webp",
-  "./img/Room3/Pic4.webp",
-  "./img/Room3/Pic5.webp",
-  "./img/Room3/Pic6.webp",
-  "./img/Room3/Pic7.webp",
-  "./img/Room3/Pic8.webp",
-];
-
-//Kleibeuker
-const imageLinks4 = [
-  "./img/Room4/Pic1.webp",
-  "./img/Room4/Pic2.webp",
-  "./img/Room4/Pic3.webp",
-  "./img/Room4/Pic4.webp",
-  "./img/Room4/Pic5.webp",
-  "./img/Room4/Pic6.webp",
-  "./img/Room4/Pic7.webp",
-  "./img/Room4/Pic8.webp",
-];
-
-//Appartement
-const imageLinks5 = [
-  "./img/Room6/Pic1.webp",
-  "./img/Room6/Pic2.webp",
-  "./img/Room6/Pic3.webp",
-  "./img/Room6/Pic4.webp",
-  "./img/Room6/Pic5.webp",
-  "./img/Room6/Pic6.webp",
-  "./img/Room6/Pic7.webp",
-  "./img/Room6/Pic8.webp",
-];
-
 //Dotbox transition
 const dot1 = document.querySelector(".d1");
 const dot2 = document.querySelector(".d2");
