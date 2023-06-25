@@ -169,7 +169,6 @@ a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  
 }
 
 .home-img-box {
@@ -561,7 +560,7 @@ a {
   width: 40rem;
   height: 45rem;
   border-radius: 20px 5px 20px 5px;
-  background: url("../img/Script.png");
+  background: url("../img/Script.jpg");
   opacity: 0;
   transition: all 0.5s ease-in-out;
   /* border: 1px solid red; */
@@ -572,7 +571,7 @@ a {
   width: 40rem;
   height: 45rem;
   border-radius: 20px 5px 20px 5px;
-  background: url("../img/Script.png");
+  background: url("../img/Script.jpg");
   background-size: cover;
   opacity: 0;
   transition: all 0.5s ease-in-out;
@@ -585,7 +584,7 @@ a {
   width: 40rem;
   height: 45rem;
   border-radius: 20px 5px 20px 5px;
-  background: url("../img/Script.png");
+  background: url("../img/Script.jpg");
   opacity: 0;
   transition: all 0.5s ease-in-out;
   /* border: 1px solid red; */
@@ -598,7 +597,7 @@ a {
   width: 40rem;
   height: 45rem;
   border-radius: 20px 5px 20px 5px;
-  background: url("../img/Script.png");
+  background: url("../img/Script.jpg");
   opacity: 0;
   transition: all 0.5s ease-in-out;
   /* border: 1px solid red; */
@@ -609,7 +608,7 @@ a {
   width: 40rem;
   height: 45rem;
   border-radius: 20px 5px 20px 5px;
-  background: url("../img/Script.png");
+  background: url("../img/Script.jpg");
   opacity: 0;
   transition: all 0.5s ease-in-out;
   /* border: 1px solid red; */
@@ -620,7 +619,7 @@ a {
   width: 40rem;
   height: 45rem;
   border-radius: 20px 5px 20px 5px;
-  background: url("../img/Script.png");
+  background: url("../img/Script.jpg");
   opacity: 0;
   transition: all 0.5s ease-in-out;
   /* border: 1px solid red; */
@@ -907,5 +906,5 @@ a {
 }
 
 .kam-over {
-  /* background: url("../img/Script.png") !important; */
+  /* background: url("../img/Script.jpg") !important; */
 }
