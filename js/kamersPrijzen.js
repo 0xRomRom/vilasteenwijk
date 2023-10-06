@@ -65,7 +65,6 @@ const wrapperDiv = document.querySelector(".wrapper");
 
 doorImage1.addEventListener("click", () => {
   doorImage1.disabled = true;
-  picture1.src = "./img/animated-door2.gif";
   kamerModal.classList.remove("hidden");
 
   kamerOuter1.classList.remove("hidden");
@@ -80,29 +79,19 @@ doorImage1.addEventListener("click", () => {
   box4.classList.add("fadeOut");
   box5.classList.add("fadeOut");
   box6.classList.add("fadeOut");
-  setTimeout(() => {
-    kamerModal.classList.add("fadeIn");
-  }, 2500);
-  setTimeout(() => {
-    picture1.src = "./img/closed-door2.jpg";
-    doorImage1.disabled = false;
-  }, 3500);
-  setTimeout(() => {
-    kamerOuter1.classList.add("opacityIn");
-    ctaButton.classList.add("opacityIn");
-    window.scrollTo({ top: -30, behavior: "smooth" });
-  }, 3800);
+  kamerModal.classList.add("fadeIn");
+  doorImage1.disabled = false;
+  kamerOuter1.classList.add("opacityIn");
+  ctaButton.classList.add("opacityIn");
+  window.scrollTo({ top: -30, behavior: "smooth" });
 
   wrapperDiv.classList.add("fadeOut");
-  setTimeout(() => {
-    wrapperDiv.classList.remove("fadeOut");
-  }, 3500);
+  wrapperDiv.classList.remove("fadeOut");
 });
 
 doorImage2.addEventListener("click", () => {
   doorImage2.disabled = true;
   kamerModal.classList.remove("hidden");
-  picture2.src = "./img/animated-door2.gif";
   kamerOuter2.classList.remove("hidden");
   kamerOuter1.classList.add("hidden");
   kamerOuter3.classList.add("hidden");
@@ -115,29 +104,19 @@ doorImage2.addEventListener("click", () => {
   box4.classList.add("fadeOut");
   box5.classList.add("fadeOut");
   box6.classList.add("fadeOut");
-  setTimeout(() => {
-    kamerModal.classList.add("fadeIn");
-  }, 2500);
-  setTimeout(() => {
-    doorImage2.disabled = false;
-    picture2.src = "./img/closed-door2.jpg";
-  }, 3500);
-  setTimeout(() => {
-    kamerOuter2.classList.add("opacityIn");
-    ctaButton.classList.add("opacityIn");
-    window.scrollTo({ top: -30, behavior: "smooth" });
-  }, 3800);
+  kamerModal.classList.add("fadeIn");
+  doorImage2.disabled = false;
+  kamerOuter2.classList.add("opacityIn");
+  ctaButton.classList.add("opacityIn");
+  window.scrollTo({ top: -30, behavior: "smooth" });
 
   wrapperDiv.classList.add("fadeOut");
-  setTimeout(() => {
-    wrapperDiv.classList.remove("fadeOut");
-  }, 3500);
+  wrapperDiv.classList.remove("fadeOut");
 });
 
 doorImage3.addEventListener("click", () => {
   doorImage3.disabled = true;
   kamerModal.classList.remove("hidden");
-  picture3.src = "./img/animated-door2.gif";
   kamerOuter3.classList.remove("hidden");
   kamerOuter1.classList.add("hidden");
   kamerOuter2.classList.add("hidden");
@@ -150,29 +129,19 @@ doorImage3.addEventListener("click", () => {
   box4.classList.add("fadeOut");
   box5.classList.add("fadeOut");
   box6.classList.add("fadeOut");
-  setTimeout(() => {
-    kamerModal.classList.add("fadeIn");
-  }, 2500);
-  setTimeout(() => {
-    picture3.src = "./img/closed-door2.jpg";
-    doorImage3.disabled = false;
-  }, 3500);
-  setTimeout(() => {
-    kamerOuter3.classList.add("opacityIn");
-    ctaButton.classList.add("opacityIn");
-    window.scrollTo({ top: -30, behavior: "smooth" });
-  }, 3800);
+  kamerModal.classList.add("fadeIn");
+  doorImage3.disabled = false;
+  kamerOuter3.classList.add("opacityIn");
+  ctaButton.classList.add("opacityIn");
+  window.scrollTo({ top: -30, behavior: "smooth" });
 
   wrapperDiv.classList.add("fadeOut");
-  setTimeout(() => {
-    wrapperDiv.classList.remove("fadeOut");
-  }, 3500);
+  wrapperDiv.classList.remove("fadeOut");
 });
 
 doorImage4.addEventListener("click", () => {
   doorImage4.disabled = true;
   kamerModal.classList.remove("hidden");
-  picture4.src = "./img/animated-door2.gif";
   kamerOuter4.classList.remove("hidden");
   kamerOuter1.classList.add("hidden");
   kamerOuter2.classList.add("hidden");
@@ -186,28 +155,18 @@ doorImage4.addEventListener("click", () => {
   box5.classList.add("fadeOut");
   box6.classList.add("fadeOut");
   window.scrollTo({ top: -30, behavior: "smooth" });
-  setTimeout(() => {
-    kamerModal.classList.add("fadeIn");
-  }, 2500);
-  setTimeout(() => {
-    doorImage4.disabled = false;
-    picture4.src = "./img/closed-door2.jpg";
-  }, 3500);
-  setTimeout(() => {
-    kamerOuter4.classList.add("opacityIn");
-    ctaButton.classList.add("opacityIn");
-  }, 3800);
+  kamerModal.classList.add("fadeIn");
+  doorImage4.disabled = false;
+  kamerOuter4.classList.add("opacityIn");
+  ctaButton.classList.add("opacityIn");
 
   wrapperDiv.classList.add("fadeOut");
-  setTimeout(() => {
-    wrapperDiv.classList.remove("fadeOut");
-  }, 3500);
+  wrapperDiv.classList.remove("fadeOut");
 });
 
 doorImage5.addEventListener("click", () => {
   doorImage5.disabled = true;
   kamerModal.classList.remove("hidden");
-  picture5.src = "./img/animated-door2.gif";
   kamerOuter5.classList.remove("hidden");
   kamerOuter1.classList.add("hidden");
   kamerOuter2.classList.add("hidden");
@@ -220,24 +179,14 @@ doorImage5.addEventListener("click", () => {
   box3.classList.add("fadeOut");
   box4.classList.add("fadeOut");
   box6.classList.add("fadeOut");
-  setTimeout(() => {
-    kamerModal.classList.add("fadeIn");
-    window.scrollTo({ top: -30, behavior: "smooth" });
-  }, 2500);
-  setTimeout(() => {
-    doorImage5.disabled = false;
-    picture5.src = "./img/closed-door2.jpg";
-  }, 3500);
-  setTimeout(() => {}, 3300);
-  setTimeout(() => {
-    kamerOuter5.classList.add("opacityIn");
-    ctaButton.classList.add("opacityIn");
-  }, 3800);
+  kamerModal.classList.add("fadeIn");
+  window.scrollTo({ top: -30, behavior: "smooth" });
+  doorImage5.disabled = false;
+  kamerOuter5.classList.add("opacityIn");
+  ctaButton.classList.add("opacityIn");
 
   wrapperDiv.classList.add("fadeOut");
-  setTimeout(() => {
-    wrapperDiv.classList.remove("fadeOut");
-  }, 3500);
+  wrapperDiv.classList.remove("fadeOut");
 });
 
 doorImage6.addEventListener("click", () => {
@@ -255,19 +204,13 @@ doorImage6.addEventListener("click", () => {
   box3.classList.add("fadeOut");
   box4.classList.add("fadeOut");
   box5.classList.add("fadeOut");
-  setTimeout(() => {
-    kamerModal.classList.add("fadeIn");
-  }, 2500);
+  kamerModal.classList.add("fadeIn");
 
-  setTimeout(() => {
-    kamerOuter6.classList.add("opacityIn");
-    ctaButton.classList.add("opacityIn");
-  }, 3800);
+  kamerOuter6.classList.add("opacityIn");
+  ctaButton.classList.add("opacityIn");
 
   wrapperDiv.classList.add("fadeOut");
-  setTimeout(() => {
-    wrapperDiv.classList.remove("fadeOut");
-  }, 3500);
+  wrapperDiv.classList.remove("fadeOut");
 });
 
 const kamerModal = document.querySelector(".kamer-modal");
