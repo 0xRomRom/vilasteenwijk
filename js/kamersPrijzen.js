@@ -3,6 +3,7 @@ const block2 = document.querySelector(".block2");
 
 const pageHero = document.querySelector(".page-hero");
 pageHero.classList.add("active");
+
 setTimeout(() => {
   box2.classList.add("dropIn");
   box2.style.visibility = "visible";
