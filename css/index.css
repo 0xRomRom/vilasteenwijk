@@ -703,7 +703,7 @@ body {
   top: 0.5rem;
   /* border: 1px solid white; */
   /* background-color: rgb(124, 188, 209); */
-  background: url("../img/Script.png");
+  background: url("../img/Script.jpg");
   border-radius: 0.6rem;
   transition: all 0.4s ease-in-out;
   box-shadow: 0px 0px 10px yellow;
@@ -1041,5 +1041,3 @@ body {
   font-size: 15px;
   padding-top: 0.875rem;
 }
-
-
