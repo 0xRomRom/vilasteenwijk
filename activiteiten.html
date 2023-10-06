@@ -1,248 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/activiteiten.css" rel="stylesheet" />
+    <link href="./css/responsive/activiteitenResponsive.css" rel="stylesheet" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="Boutique Hotel Villa Steenwyck" />
+    <script defer src="./js/activiteiten.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5f3c108898.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Boutique Hotel Villa Steenwyck</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="./css/activiteiten.css" rel="stylesheet" />
-  <link href="./css/responsive/activiteitenResponsive.css" rel="stylesheet" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="description" content="Boutique Hotel Villa Steenwyck" />
-  <script defer src="./js/activiteiten.js"></script>
-  <script src="https://kit.fontawesome.com/5f3c108898.js" crossorigin="anonymous"></script>
-  <title>Boutique Hotel Villa Steenwyck</title>
-  <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <meta property="og:url" content="https://www.villasteenwyck.nl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Boutique Hotel Villa Steenwyck" />
+    <meta property="og:title" content="Home" />
+    <meta
+      property="og:description"
+      content="Luxe overnachten in Boutique Hotel Villa Steenwijk"
+    />
+    <meta
+      property="og:image"
+      content="https://firebasestorage.googleapis.com/v0/b/prompt-maker.appspot.com/o/Villa%2FLogo%20plain.png?alt=media&token=9ace04e2-2eb1-418b-91d1-b7c9403c332f"
+    />
+    <meta
+      property="og:title"
+      content="Boutique hotel villa bed and breakfast - Luxe verblijf in een prachtige omgeving"
+    />
+    <meta
+      property="og:title"
+      content="Geniet van een boutique ervaring - Villa bed and breakfast"
+    />
+    <meta
+      property="og:title"
+      content="Ontdek onze boutique hotel villa bed and breakfast - Luxe en comfort in één"
+    />
+    <meta
+      property="og:title"
+      content="Boek uw verblijf bij onze boutique hotel villa bed and breakfast - Unieke ervaring gegarandeerd"
+    />
+    <meta
+      property="og:title"
+      content="Boutique hotel villa bed and breakfast - Geniet van een exclusief verblijf in stijl"
+    />
+    <meta
+      property="og:title"
+      content="Beleef luxe en comfort in onze boutique hotel villa bed and breakfast - Boek nu"
+    />
+    <meta
+      property="og:title"
+      content="Boutique hotel villa bed and breakfast - Ontsnap aan de drukte en ontspan in stijl"
+    />
+    <meta
+      property="og:title"
+      content="Ontdek onze boutique hotel villa bed and breakfast - Ideaal voor een romantisch uitje"
+    />
+    <meta
+      property="og:title"
+      content="Boutique hotel villa bed and breakfast - Geniet van de charme van een historisch pand"
+    />
+    <meta
+      property="og:title"
+      content="Van harte welkom bij Boutique Hotel Villa Steenwyck"
+    />
+  </head>
 
-  <meta property="og:url" content="https://www.villasteenwyck.nl" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Boutique Hotel Villa Steenwyck" />
-  <meta property="og:title" content="Home" />
-  <meta property="og:description" content="Luxe overnachten in Boutique Hotel Villa Steenwijk" />
-  <meta property="og:image"
-    content="https://firebasestorage.googleapis.com/v0/b/prompt-maker.appspot.com/o/Villa%2FLogo%20plain.png?alt=media&token=9ace04e2-2eb1-418b-91d1-b7c9403c332f" />
-  <meta property="og:title"
-    content="Boutique hotel villa bed and breakfast - Luxe verblijf in een prachtige omgeving" />
-  <meta property="og:title" content="Geniet van een boutique ervaring - Villa bed and breakfast" />
-  <meta property="og:title" content="Ontdek onze boutique hotel villa bed and breakfast - Luxe en comfort in één" />
-  <meta property="og:title"
-    content="Boek uw verblijf bij onze boutique hotel villa bed and breakfast - Unieke ervaring gegarandeerd" />
-  <meta property="og:title"
-    content="Boutique hotel villa bed and breakfast - Geniet van een exclusief verblijf in stijl" />
-  <meta property="og:title" content="Beleef luxe en comfort in onze boutique hotel villa bed and breakfast - Boek nu" />
-  <meta property="og:title"
-    content="Boutique hotel villa bed and breakfast - Ontsnap aan de drukte en ontspan in stijl" />
-  <meta property="og:title"
-    content="Ontdek onze boutique hotel villa bed and breakfast - Ideaal voor een romantisch uitje" />
-  <meta property="og:title"
-    content="Boutique hotel villa bed and breakfast - Geniet van de charme van een historisch pand" />
-  <meta property="og:title" content="Van harte welkom bij Boutique Hotel Villa Steenwyck" />
-</head>
-
-<body>
-  <div class="app">
-    <nav>
-      <ul class="navlist">
-        <a href="/" class="nav-logo-href"><img src="./img/Villa.png" class="brand-logo"
-            alt="Villa Steenwijk logo" /></a>
-        <a href="/">
-          <li class="home">Home</li>
-        </a>
-        <a href="kamersprijzen.html">
-          <li>Kamers & Prijzen</li>
-        </a>
-        <a href="fotos.html">
-          <li>Foto's</li>
-        </a>
-        <a href="media.html">
-          <li>Media</li>
-        </a>
-        <a href="tour.html">
-          <li>3D Virtuele Tour</li>
-        </a>
-        <a href="activiteiten.html">
-          <li>Activiteiten</li>
-        </a>
-        <a href="contact.html">
-          <li>Contact</li>
-        </a>
-        <a class="cta-a reserveren-li" href="kamersprijzen.html">
-          <li class="r">Reserveren</li>
-        </a>
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+  <body>
+    <div class="app">
+      <nav>
+        <ul class="navlist">
+          <a href="/" class="nav-logo-href"
+            ><img
+              src="./img/Villa.png"
+              class="brand-logo"
+              alt="Villa Steenwijk logo"
+          /></a>
+          <a href="/">
+            <li class="home">Home</li>
+          </a>
+          <a href="kamersprijzen.html">
+            <li>Kamers & Prijzen</li>
+          </a>
+          <a href="fotos.html">
+            <li>Foto's</li>
+          </a>
+          <a href="media.html">
+            <li>Media</li>
+          </a>
+          <a href="tour.html">
+            <li>3D Virtuele Tour</li>
+          </a>
+          <a href="activiteiten.html">
+            <li>Activiteiten</li>
+          </a>
+          <a href="contact.html">
+            <li>Contact</li>
+          </a>
+          <a
+            class="cta-a reserveren-li"
+            href="https://www.booking.com/hotel/nl/villa-steenwyck.nl.html"
+            target="_blank"
+          >
+            <li class="r">Reserveren</li>
+          </a>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <div class="page-hero">
+        <h1 class="hero-title">Activiteiten</h1>
       </div>
-    </nav>
-    <div class="page-hero">
-      <h1 class="hero-title">Activiteiten</h1>
+      <div class="omgeving-box">
+        <div class="top-img">
+          <img src="./img/Steenwijk.jpg" class="banner-img" />
+        </div>
+        <div class="rent-scooter">
+          <h2 class="rent-hero">Huur een E-Chopper!</h2>
+          <button class="book-cta">
+            Book <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <span class="desc1"
+            >4 uur €35,-<br />1 dag €50,-<br />1 E-Chopper is voor 1 persoon<br />Max.
+            40KM bereik</span
+          >
+        </div>
+        <div class="omgeving-inner">
+          <div class="mbox2">
+            <div class="modal">
+              <div class="inner-modal">
+                <h1 class="title beziens">Activiteiten</h1>
+                <ul class="item-list">
+                  <a
+                    target="_blank"
+                    href="https://www.hendrickdekeyser.nl/museumbezoek/villa-rams-woerthe-Steenwijk"
+                  >
+                    <li>~ Villa Ramswoerthe</li>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://rijksmonumenten.nl/monument/34576/grote-of-sint-clemenskerk/steenwijk/"
+                  >
+                    <li>~ Sint Clemens kerk</li>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://rijksmonumenten.nl/monument/34599/kleine-of-onze-lieve-vrouwekerk/steenwijk/"
+                  >
+                    <li>~ Onze lieve vrouwe kerk</li>
+                  </a>
+                  <a target="_blank" href="https://www.taman-indonesia.nl/">
+                    <li>~ Dierenpark Taman Indonesia</li>
+                  </a>
+                  <a target="_blank" href="https://www.demeenthe.nl/">
+                    <li>~ Theater De Meenthe</li>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.stadsmuseumsteenwijk.nl/"
+                  >
+                    <li>~ Stadsmuseum</li>
+                  </a>
+                  <a target="_blank" href="https://klimbos-overijssel.nl/">
+                    <li>~ Klimbos Avontuurlijk</li>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.stadsmuseumsteenwijk.nl/content/19-Stadswandeling-steenwijk.html?menu_parent=19"
+                  >
+                    <li>~ Stadswandeling Steenwijk Vestingstad</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <div class="modal">
+              <div class="inner-modal">
+                <h1 class="title smol">In de regio</h1>
+                <ul class="item-list">
+                  <a target="_blank" href="https://giethoorn.com/">
+                    <li>~ Giethoorn</li>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.drenthe.nl/cultuur-erfgoed/hunebedden/"
+                  >
+                    <li>~ Hunnebedden</li>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.staatsbosbeheer.nl/uit-in-de-natuur/locaties/weerribben"
+                  >
+                    <li>~ Weerribben</li>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.mooisteroutes.nl/routes/95b1407/de-woldberg"
+                  >
+                    <li>~ De Woldberg</li>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.drenthe.nl/locaties/4274250260/tourist-info-havelte"
+                  >
+                    <li>~ Havelte</li>
+                  </a>
+                  <a target="_blank" href="https://www.orchideeenhoeve.nl/">
+                    <li>~ De Orchideeën Hoeve</li>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.friesland.nl/nl/locaties/4140876077/kasteel-old-stoutenburght"
+                  >
+                    <li>~ Kasteel Old Stoutenburght</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-box">
+            <div class="modal">
+              <div class="inner-modal">
+                <h1 class="title dineren">Dineren</h1>
+                <ul class="item-list">
+                  <a target="_blank" href="https://www.argentinotango.nl/">
+                    <li>~ Argentijns restaurant Argentino Tango</li>
+                  </a>
+                  <a target="_blank" href="https://www.woodyshouse.nl/">
+                    <li>~ Woody's Steakhouse</li>
+                  </a>
+                  <a target="_blank" href="http://www.hetsteakhouse.nl/">
+                    <li>~ Tennessee Steakhouse</li>
+                  </a>
+                  <a target="_blank" href="https://restaurantdeopschepper.com/">
+                    <li>~ Bistro De Opschepper</li>
+                  </a>
+                  <a target="_blank" href="https://www.deherenvanderechter.nl/">
+                    <li>~ De heren van de rechter</li>
+                  </a>
+                  <a target="_blank" href="https://brasseriezusenzo.nl/">
+                    <li>~ Brasserie Zus en Zo</li>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.bovenmeestersteenwijk.nl/"
+                  >
+                    <li>~ Bovenmeester</li>
+                  </a>
+                  <a target="_blank" href="https://rhodossteenwijk.nl/">
+                    <li>~ Rhodos</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <div class="modal">
+              <div class="inner-modal">
+                <h1 class="title links">Links</h1>
+                <ul class="item-list">
+                  <a target="_blank" href="https://steenwijk.com/informatie/">
+                    <li>~ VVV Steenwijk</li>
+                  </a>
+                  <a target="_blank" href="http://www.taxiooststeenwijk.nl/">
+                    <li>~ Taxi Oost</li>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.toyota-vanderlinde.nl/over-ons/auto-huren-steenwijk/"
+                  >
+                    <li>~ Auto huren</li>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://rijwielshopsteenwijk.nl/verhuur/"
+                  >
+                    <li>~ (Elektrische) fiets huren</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="omgeving-text-box">
+            <p>
+              Steenwijk ligt in de kop van Overijssel op de grens van enkele
+              stuwwallen (de Woldberg en de Havelterberg) en het laagveengebied
+              van Giethoorn, De Wieden en De Weerribben. Door Steenwijk stroomt
+              van oorsprong een kleine rivier, de Steenwijker Aa, welke ontstaan
+              is door smeltwater. Later is deze Steenwijker Aa gekanaliseerd en
+              heet dan vanaf Steenwijk het Steenwijker Diep en deze maakte de
+              stad bereikbaar voor scheepvaart. Aan het Steenwijker Diep ligt
+              een kleine jachthaven. Het stadsbeeld wordt bepaald door de Sint
+              Clemenstoren, met zijn hoogte van 87 meter de veertiende hoogste
+              kerktoren van Nederland.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="omgeving-box">
-      <div class="top-img">
-        <img src="./img/Steenwijk.jpg" class="banner-img" />
-      </div>
-      <div class="rent-scooter">
-        <h2 class="rent-hero">Huur een E-Chopper!</h2>
-        <button class="book-cta">
-          Book <i class="fa-solid fa-arrow-right"></i>
-        </button>
-        <span class="desc1">4 uur €35,-<br>1 dag €50,-<br>1 E-Chopper is voor 1 persoon<br>Max. 40KM bereik</span>
-      </div>
-      <div class="omgeving-inner">
-        <div class="mbox2">
-          <div class="modal">
-            <div class="inner-modal">
-              <h1 class="title beziens">Activiteiten</h1>
-              <ul class="item-list">
-                <a target="_blank" href="https://www.hendrickdekeyser.nl/museumbezoek/villa-rams-woerthe-Steenwijk">
-                  <li>~ Villa Ramswoerthe</li>
-                </a>
-                <a target="_blank"
-                  href="https://rijksmonumenten.nl/monument/34576/grote-of-sint-clemenskerk/steenwijk/">
-                  <li>~ Sint Clemens kerk</li>
-                </a>
-                <a target="_blank"
-                  href="https://rijksmonumenten.nl/monument/34599/kleine-of-onze-lieve-vrouwekerk/steenwijk/">
-                  <li>~ Onze lieve vrouwe kerk</li>
-                </a>
-                <a target="_blank" href="https://www.taman-indonesia.nl/">
-                  <li>~ Dierenpark Taman Indonesia</li>
-                </a>
-                <a target="_blank" href="https://www.demeenthe.nl/">
-                  <li>~ Theater De Meenthe</li>
-                </a>
-                <a target="_blank" href="https://www.stadsmuseumsteenwijk.nl/">
-                  <li>~ Stadsmuseum</li>
-                </a>
-                <a target="_blank" href="https://klimbos-overijssel.nl/">
-                  <li>~ Klimbos Avontuurlijk</li>
-                </a>
-                <a target="_blank"
-                  href="https://www.stadsmuseumsteenwijk.nl/content/19-Stadswandeling-steenwijk.html?menu_parent=19">
-                  <li>~ Stadswandeling Steenwijk Vestingstad</li>
-                </a>
-              </ul>
+    <footer class="footer">
+      <hr class="hr" />
+      <div class="footer-inner">
+        <div class="logo-box"><img src="./img/Villa.png" class="icon" /></div>
+        <div class="links-box">
+          <div class="reserveren-box">
+            <div class="footer-hero">
+              <a
+                href="https://www.booking.com/hotel/nl/villa-steenwyck.nl.html"
+                target="_blank"
+                class="anchor"
+              >
+                <h2 class="footer-hero-text">Reserveer</h2>
+              </a>
+              <hr class="small-hr" />
             </div>
           </div>
-          <div class="modal">
-            <div class="inner-modal">
-              <h1 class="title smol">In de regio</h1>
-              <ul class="item-list">
-                <a target="_blank" href="https://giethoorn.com/">
-                  <li>~ Giethoorn</li>
-                </a>
-                <a target="_blank" href="https://www.drenthe.nl/cultuur-erfgoed/hunebedden/">
-                  <li>~ Hunnebedden</li>
-                </a>
-                <a target="_blank" href="https://www.staatsbosbeheer.nl/uit-in-de-natuur/locaties/weerribben">
-                  <li>~ Weerribben</li>
-                </a>
-                <a target="_blank" href="https://www.mooisteroutes.nl/routes/95b1407/de-woldberg">
-                  <li>~ De Woldberg</li>
-                </a>
-                <a target="_blank" href="https://www.drenthe.nl/locaties/4274250260/tourist-info-havelte">
-                  <li>~ Havelte</li>
-                </a>
-                <a target="_blank" href="https://www.orchideeenhoeve.nl/">
-                  <li>~ De Orchideeën Hoeve</li>
-                </a>
-                <a target="_blank" href="https://www.friesland.nl/nl/locaties/4140876077/kasteel-old-stoutenburght">
-                  <li>~ Kasteel Old Stoutenburght</li>
-                </a>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="modal-box">
-          <div class="modal">
-            <div class="inner-modal">
-              <h1 class="title dineren">Dineren</h1>
-              <ul class="item-list">
-                <a target="_blank" href="https://www.argentinotango.nl/">
-                  <li>~ Argentijns restaurant Argentino Tango</li>
-                </a>
-                <a target="_blank" href="https://www.woodyshouse.nl/">
-                  <li>~ Woody's Steakhouse</li>
-                </a>
-                <a target="_blank" href="http://www.hetsteakhouse.nl/">
-                  <li>~ Tennessee Steakhouse</li>
-                </a>
-                <a target="_blank" href="https://restaurantdeopschepper.com/">
-                  <li>~ Bistro De Opschepper</li>
-                </a>
-                <a target="_blank" href="https://www.deherenvanderechter.nl/">
-                  <li>~ De heren van de rechter</li>
-                </a>
-                <a target="_blank" href="https://brasseriezusenzo.nl/">
-                  <li>~ Brasserie Zus en Zo</li>
-                </a>
-                <a target="_blank" href="https://www.bovenmeestersteenwijk.nl/">
-                  <li>~ Bovenmeester</li>
-                </a>
-                <a target="_blank" href="https://rhodossteenwijk.nl/">
-                  <li>~ Rhodos</li>
-                </a>
-              </ul>
-            </div>
-          </div>
-          <div class="modal">
-            <div class="inner-modal">
-              <h1 class="title links">Links</h1>
-              <ul class="item-list">
-                <a target="_blank" href="https://steenwijk.com/informatie/">
-                  <li>~ VVV Steenwijk</li>
-                </a>
-                <a target="_blank" href="http://www.taxiooststeenwijk.nl/">
-                  <li>~ Taxi Oost</li>
-                </a>
-                <a target="_blank" href="https://www.toyota-vanderlinde.nl/over-ons/auto-huren-steenwijk/">
-                  <li>~ Auto huren</li>
-                </a>
-                <a target="_blank" href="https://rijwielshopsteenwijk.nl/verhuur/">
-                  <li>~ (Elektrische) fiets huren</li>
-                </a>
-
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="omgeving-text-box">
-          <p>
-            Steenwijk ligt in de kop van Overijssel op de grens van enkele
-            stuwwallen (de Woldberg en de Havelterberg) en het laagveengebied
-            van Giethoorn, De Wieden en De Weerribben. Door Steenwijk stroomt
-            van oorsprong een kleine rivier, de Steenwijker Aa, welke ontstaan
-            is door smeltwater. Later is deze Steenwijker Aa gekanaliseerd en
-            heet dan vanaf Steenwijk het Steenwijker Diep en deze maakte de
-            stad bereikbaar voor scheepvaart. Aan het Steenwijker Diep ligt
-            een kleine jachthaven. Het stadsbeeld wordt bepaald door de Sint
-            Clemenstoren, met zijn hoogte van 87 meter de veertiende hoogste
-            kerktoren van Nederland.
-          </p>
+          <span class="copyright">© 2023 Boutique Hotel Villa Steenwyck</span>
         </div>
       </div>
-    </div>
-  </div>
-  <footer class="footer">
-    <hr class="hr" />
-    <div class="footer-inner">
-      <div class="logo-box"><img src="./img/Villa.png" class="icon" /></div>
-      <div class="links-box">
-        <div class="reserveren-box">
-          <div class="footer-hero">
-            <a href="kamersprijzen.html" class="anchor">
-              <h2 class="footer-hero-text">Reserveer</h2>
-            </a>
-            <hr class="small-hr" />
-          </div>
-        </div>
-        <span class="copyright">© 2023 Boutique Hotel Villa Steenwyck</span>
-      </div>
-    </div>
-  </footer>
-  <div class="blackbox">Boutique Hotel Villa Steenwijk</div>
-</body>
-
+    </footer>
+    <div class="blackbox">Boutique Hotel Villa Steenwijk</div>
+  </body>
 </html>

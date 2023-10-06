@@ -1,113 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/media.css" rel="stylesheet" />
+    <link href="./css/responsive/mediaResponsive.css" rel="stylesheet" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="Boutique Hotel Villa Steenwyck" />
+    <script
+      defer
+      src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"
+    ></script>
+    <script defer src="./js/media.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5f3c108898.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Boutique Hotel Villa Steenwyck</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="./css/media.css" rel="stylesheet" />
-  <link href="./css/responsive/mediaResponsive.css" rel="stylesheet" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="description" content="Boutique Hotel Villa Steenwyck" />
-  <script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-  <script defer src="./js/media.js"></script>
-  <script src="https://kit.fontawesome.com/5f3c108898.js" crossorigin="anonymous"></script>
-  <title>Boutique Hotel Villa Steenwyck</title>
-  <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <meta property="og:url" content="https://www.villasteenwyck.nl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Boutique Hotel Villa Steenwyck" />
+    <meta property="og:title" content="Home" />
+    <meta
+      property="og:description"
+      content="Luxe overnachten in Boutique Hotel Villa Steenwijk"
+    />
+    <meta
+      property="og:image"
+      content="https://firebasestorage.googleapis.com/v0/b/prompt-maker.appspot.com/o/Villa%2FLogo%20plain.png?alt=media&token=9ace04e2-2eb1-418b-91d1-b7c9403c332f"
+    />
+    <meta
+      property="og:title"
+      content="Boutique hotel villa bed and breakfast - Luxe verblijf in een prachtige omgeving"
+    />
+    <meta
+      property="og:title"
+      content="Geniet van een boutique ervaring - Villa bed and breakfast"
+    />
+    <meta
+      property="og:title"
+      content="Ontdek onze boutique hotel villa bed and breakfast - Luxe en comfort in één"
+    />
+    <meta
+      property="og:title"
+      content="Boek uw verblijf bij onze boutique hotel villa bed and breakfast - Unieke ervaring gegarandeerd"
+    />
+    <meta
+      property="og:title"
+      content="Boutique hotel villa bed and breakfast - Geniet van een exclusief verblijf in stijl"
+    />
+    <meta
+      property="og:title"
+      content="Beleef luxe en comfort in onze boutique hotel villa bed and breakfast - Boek nu"
+    />
+    <meta
+      property="og:title"
+      content="Boutique hotel villa bed and breakfast - Ontsnap aan de drukte en ontspan in stijl"
+    />
+    <meta
+      property="og:title"
+      content="Ontdek onze boutique hotel villa bed and breakfast - Ideaal voor een romantisch uitje"
+    />
+    <meta
+      property="og:title"
+      content="Boutique hotel villa bed and breakfast - Geniet van de charme van een historisch pand"
+    />
+    <meta
+      property="og:title"
+      content="Van harte welkom bij Boutique Hotel Villa Steenwyck"
+    />
+  </head>
 
-  <meta property="og:url" content="https://www.villasteenwyck.nl" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Boutique Hotel Villa Steenwyck" />
-  <meta property="og:title" content="Home" />
-  <meta property="og:description" content="Luxe overnachten in Boutique Hotel Villa Steenwijk" />
-  <meta property="og:image"
-    content="https://firebasestorage.googleapis.com/v0/b/prompt-maker.appspot.com/o/Villa%2FLogo%20plain.png?alt=media&token=9ace04e2-2eb1-418b-91d1-b7c9403c332f" />
-  <meta property="og:title"
-    content="Boutique hotel villa bed and breakfast - Luxe verblijf in een prachtige omgeving" />
-  <meta property="og:title" content="Geniet van een boutique ervaring - Villa bed and breakfast" />
-  <meta property="og:title" content="Ontdek onze boutique hotel villa bed and breakfast - Luxe en comfort in één" />
-  <meta property="og:title"
-    content="Boek uw verblijf bij onze boutique hotel villa bed and breakfast - Unieke ervaring gegarandeerd" />
-  <meta property="og:title"
-    content="Boutique hotel villa bed and breakfast - Geniet van een exclusief verblijf in stijl" />
-  <meta property="og:title" content="Beleef luxe en comfort in onze boutique hotel villa bed and breakfast - Boek nu" />
-  <meta property="og:title"
-    content="Boutique hotel villa bed and breakfast - Ontsnap aan de drukte en ontspan in stijl" />
-  <meta property="og:title"
-    content="Ontdek onze boutique hotel villa bed and breakfast - Ideaal voor een romantisch uitje" />
-  <meta property="og:title"
-    content="Boutique hotel villa bed and breakfast - Geniet van de charme van een historisch pand" />
-  <meta property="og:title" content="Van harte welkom bij Boutique Hotel Villa Steenwyck" />
-</head>
-
-<body>
-  <div class="app">
-    <nav>
-      <ul class="navlist">
-        <a href="/" class="nav-logo-href"><img src="./img/Villa.png" class="brand-logo"
-            alt="Boutique Hotel Villa Steenwyck logo" /></a>
-        <a href="/">
-          <li class="home">Home</li>
-        </a>
-        <a href="kamersprijzen.html">
-          <li>Kamers & Prijzen</li>
-        </a>
-        <a href="fotos.html">
-          <li>Foto's</li>
-        </a>
-        <a href="media.html">
-          <li>Media</li>
-        </a>
-        <a href="tour.html">
-          <li>3D Virtuele Tour</li>
-        </a>
-        <a href="activiteiten.html">
-          <li>Activiteiten</li>
-        </a>
-        <a href="contact.html">
-          <li>Contact</li>
-        </a>
-        <a class="cta-a reserveren-li" href="kamersprijzen.html">
-          <li class="r">Reserveren</li>
-        </a>
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
-    <div class="page-hero">
-      <h1 class="hero-title">Media</h1>
-    </div>
-    <div class="grid">
-      <div class="grid-item"><img src="./img/media/Article.png" /></div>
-      <div class="grid-item"><img src="./img/media/Leerpartij.jpeg" /></div>
-      <div class="grid-item"><img src="./img/media/TVShow.jpeg" /></div>
-      <div class="grid-item"><img src="./img/media/DuckyArticle.webp" /></div>
-    </div>
-  </div>
-  <div class="image-overlay hidden">
-    <img src="./img/cover/fallback.png" alt="overlay image" class="overlay-image" />
-  </div>
-  <footer class="footer">
-    <hr class="hr" />
-    <div class="footer-inner">
-      <div class="logo-box"><img src="./img/Villa.png" class="icon" /></div>
-      <div class="links-box">
-        <div class="reserveren-box">
-          <div class="footer-hero">
-            <a href="kamersprijzen.html" class="anchor">
-              <h2 class="footer-hero-text">Reserveer</h2>
-            </a>
-            <hr class="small-hr" />
-          </div>
+  <body>
+    <div class="app">
+      <nav>
+        <ul class="navlist">
+          <a href="/" class="nav-logo-href"
+            ><img
+              src="./img/Villa.png"
+              class="brand-logo"
+              alt="Boutique Hotel Villa Steenwyck logo"
+          /></a>
+          <a href="/">
+            <li class="home">Home</li>
+          </a>
+          <a href="kamersprijzen.html">
+            <li>Kamers & Prijzen</li>
+          </a>
+          <a href="fotos.html">
+            <li>Foto's</li>
+          </a>
+          <a href="media.html">
+            <li>Media</li>
+          </a>
+          <a href="tour.html">
+            <li>3D Virtuele Tour</li>
+          </a>
+          <a href="activiteiten.html">
+            <li>Activiteiten</li>
+          </a>
+          <a href="contact.html">
+            <li>Contact</li>
+          </a>
+          <a
+            class="cta-a reserveren-li"
+            href="https://www.booking.com/hotel/nl/villa-steenwyck.nl.html"
+            target="_blank"
+          >
+            <li class="r">Reserveren</li>
+          </a>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-        <span class="copyright">© 2023 Boutique Hotel Villa Steenwyck</span>
+      </nav>
+      <div class="page-hero">
+        <h1 class="hero-title">Media</h1>
+      </div>
+      <div class="grid">
+        <div class="grid-item"><img src="./img/media/Article.png" /></div>
+        <div class="grid-item"><img src="./img/media/Leerpartij.jpeg" /></div>
+        <div class="grid-item"><img src="./img/media/TVShow.jpeg" /></div>
+        <div class="grid-item"><img src="./img/media/DuckyArticle.webp" /></div>
       </div>
     </div>
-  </footer>
-  <div class="blackbox">Boutique Hotel Villa Steenwijk</div>
-</body>
-
+    <div class="image-overlay hidden">
+      <img
+        src="./img/cover/fallback.png"
+        alt="overlay image"
+        class="overlay-image"
+      />
+    </div>
+    <footer class="footer">
+      <hr class="hr" />
+      <div class="footer-inner">
+        <div class="logo-box"><img src="./img/Villa.png" class="icon" /></div>
+        <div class="links-box">
+          <div class="reserveren-box">
+            <div class="footer-hero">
+              <a
+                href="https://www.booking.com/hotel/nl/villa-steenwyck.nl.html"
+                target="_blank"
+                class="anchor"
+              >
+                <h2 class="footer-hero-text">Reserveer</h2>
+              </a>
+              <hr class="small-hr" />
+            </div>
+          </div>
+          <span class="copyright">© 2023 Boutique Hotel Villa Steenwyck</span>
+        </div>
+      </div>
+    </footer>
+    <div class="blackbox">Boutique Hotel Villa Steenwijk</div>
+  </body>
 </html>
