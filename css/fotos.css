@@ -5,6 +5,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+html {
+  width: 100vw !important;
+}
+
 body {
   overflow-x: hidden; /* Hide horizontal scrollbar */
   background-color: rgb(2, 32, 2);
@@ -35,6 +39,7 @@ body {
     rgb(2, 32, 2),
     black
   );
+  margin-top: 5rem;
 }
 
 a {
@@ -98,10 +103,8 @@ a {
 }
 
 .page-hero {
-  position: absolute;
-  width: 100vw;
-  height: 4rem;
-  top: 10rem;
+  position: relative;
+  top: 4rem;
   padding-left: 6.1rem;
   user-select: none;
   transform: scale(0.1);
@@ -119,14 +122,19 @@ a {
   transform: scaleY(1);
 }
 
+.gridwrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 6rem;
+  margin-bottom: 0rem;
+  padding-bottom: 4rem;
+}
+
 .grid {
   position: relative;
-  /* border: 1px solid blue; */
-  top: 15rem;
+  margin: 0 auto;
   width: 90%;
-  left: 5%;
-  /* opacity: 0; */
-  height: auto;
   animation: opaIn 1.5s ease-in-out forwards;
 }
 
